@@ -1,0 +1,81 @@
+#room-list-cards-container{
+    display: flex;
+    justify-content: center;
+    line-height: 0;
+    padding-top: 7px;
+    
+    text-shadow: none;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: 12%;
+    margin-left: 12%;
+    /* color: #fff; */
+}
+.card-list{
+    display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  gap: 4%;
+}
+.row{
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+.room-list{
+    margin-bottom: 50px;
+    position: relative;
+    transition: all 0.3s ease 0s;
+    display: block;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+}
+.card-body{
+    align-self: center!important;
+    flex: 0 0 auto;
+    width: 50%;
+    max-width: 100%;
+    padding-right: calc(var(30px) * .5);
+    padding-left: calc(var(30px) * .5);
+    margin-top: var(0);
+    box-sizing: border-box;
+}
+.room-img{
+    flex: 0 0 auto;
+    /* width: 50%; */
+}
+.room-list:hover {
+    box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+#room-list-pagination-container{
+    display: flex;
+    justify-content: center;
+    line-height: 0;
+    padding-top: 7px;
+}
+.paggination-button{
+    background: #ffffff none repeat scroll 0 0;
+    border: 0 none;
+    color: #444444;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 15px;
+    margin: 0 7px;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+.paggination-button:hover{
+    transition: all 0.3s ease 0s;
+    color: #b5876d;
+    background: transparent;
+    font-size: 30px;
+}

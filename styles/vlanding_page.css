@@ -1,0 +1,188 @@
+/* Global Styling */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* Page Layout */
+.vishnu_page1_mainContainer {
+    width: 100%;
+    height: 100%;
+}
+
+.vishnu_page1_mainContainer_div_1 {
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+/* Video Container */
+.Video_div {
+    width: 53%;
+    overflow: hidden;
+    background-color: black;
+}
+
+#playButton {
+    width: 60px;
+    height: 60px;
+    border: 6px solid grey;
+    border-radius: 50%;
+    position: absolute;
+    top: 43%;
+    left: 23%;
+}
+
+#triangle {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 30px solid grey;
+    rotate: 90deg;
+    margin: auto;
+    margin-top: 13px;
+    margin-left: 14px;
+}
+
+#playButton:hover {
+    border-color: white;
+}
+
+.Video_div:hover {
+    filter: brightness(0.6);
+    #playButton {
+        border-color: rgb(255, 255, 255);
+        margin-left: 20%;
+    }
+}
+
+/* Contact Details */
+.contact_details {
+    margin-top: 30px;
+    text-justify: auto;
+    font-size: 1rem;
+}
+
+/* Social Media Icons */
+.Contactus_div {
+    width: 43%;
+}
+
+.fa {
+    margin-top: 30px;
+    padding: 15px;
+    font-size: 40px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    color: #b88b72;
+}
+
+.fa:hover {
+    background-color: #b5876d;
+    color: white;
+    cursor: pointer;
+}
+
+/* Second Section Layout */
+.vishnu_page1_mainContainer_div_2 {
+    width: 42%;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+}
+
+#secondmain_heading {
+    margin-bottom: 30px;
+}
+
+/* Grid Layout */
+.vishnu_page1_mainContainer_div_3 {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.singleGrid {
+    width: 100%;
+    height: 420px;
+
+    .gridText {
+        display: none;
+    }
+
+    .gridPrice {
+        display: none;
+    }
+
+    .gridButton {
+        display: none;
+    }
+
+    .perNight {
+        display: none;
+    }
+}
+
+.gridTitle {
+    text-align: center;
+    margin-top: 200px;
+    font-size: 2rem;
+    color: white;
+}
+
+.singleGrid:hover {
+    filter: brightness(0.8);
+    opacity: 100%;
+    transition: transform all 3s;
+
+    .gridTitle {
+        transform: translateY(-100px);
+    }
+
+    .gridText {
+        display: block;
+        transform: translateY(-50px);
+        color: white;
+        text-align: center;
+    }
+
+    .gridButton {
+        display: block;
+        background-color: #b5876d;
+        border: none;
+        color: white;
+        font-size: 0.9rem;
+        padding: 15px;
+        font-weight: 700;
+        transform: translateX(150px);
+    }
+
+    .gridButton:hover {
+        color: #b5876d;
+        background-color: white;
+        transition: background-color 1s initial;
+    }
+
+    .gridPrice {
+        display: block;
+        font-size: xx-large;
+        color: white;
+        text-align: right;
+        margin-right: 30px;
+    }
+
+    .perNight {
+        display: block;
+        font-size: medium;
+        color: white;
+        text-align: right;
+        margin-right: 30px;
+    }
+}

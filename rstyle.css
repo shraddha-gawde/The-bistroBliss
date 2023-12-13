@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 1000px;
+}
+.top1{
+    margin-right: 37%;
+    gap: 3%;
+}
+header{
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+}
+.ggg::after{
+    background: #b5876d none repeat scroll 0 0;
+    content: "";
+    height: 141px;
+    left: -5%;
+    position: absolute;
+    top: 0;
+    -webkit-transform: skewX(-34deg);
+    transform: skewX(-34deg);
+    width: 28%;
+}
+.innerdiv{
+    /* padding-top: 46px; */
+    position: relative;
+    z-index: 9;
+}
+.nlogo{
+    height: 130px;
+    margin-left: 70px;
+}
+a.nav-link{
+    color: white;
+}
+.navbar>.container-fluid{
+    padding: 0;
+    box-shadow: 0 0 10px #000;
+     background: #00000083;
+}
+.navbar{
+    padding: 0!im;
+}
+.container-fluid{
+    background-color: white;
+}
+.rlogoi{
+    width: 15px;
+    height: 15px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    margin-right: 40%;
+    gap: 40%;
+}
+.top2{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    margin-top: 13px;
+}
+.top3{
+    display: flex;
+    
+}
+.c-item{
+    height: 600px;
+}
+.c-img{
+    height: 100%;
+    object-fit: cover;
+}
+.mt{
+  margin-top: 10rem;
+}
+.rdate{
+    height: 15%;
+    width: 90%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: auto;
+    position: relative;
+    background-color: white;
+    top: -50px;
+}
+  #start{
+    /* _text-align: center; */
+    margin-top: 50px;
+    margin-left: 50px;
+    height: 50px;
+    width: 180px;
+  }
+  #Astart{
+    height: 50px;
+    width: 180px;
+    margin-left: 50px;
+  }
+  .Check{
+    border: none;
+    height: 50px;
+    width: 180px ;
+    background-color: #b5876d;
+    padding: 10px;
+    color: white;
+    margin-left: 50px;
+  }
+  .Check:hover{
+    background-color: #000;
+  }
+  .bCheck{
+    border: none;
+    height: 50px;
+    width: 150px ;
+    color: #b5876d;
+    padding: 10px;
+    background-color: white;
+    font-size:20px;
+    /* text-align: center; */
+    
+  }
+  .bCheck:hover{
+    background-color: #b5876d;
+    color: white;
+  }

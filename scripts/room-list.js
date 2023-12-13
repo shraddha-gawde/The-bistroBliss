@@ -5,7 +5,7 @@ const paginationContainer = document.getElementById('room-list-pagination-contai
 
 // const baseServerURL = `http://localhost:${import.meta.env.REACT_APP_JSON_SERVER_PORT
 //   }`;
-let roomDetailsURL = `http://localhost:3000/roomDetails`;
+let roomDetailsURL = `https://neural-innovator-5123.onrender.com/roomDetails`;
 
 let pageNumber = 1;
 

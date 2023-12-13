@@ -42,7 +42,7 @@
     flex: 0 0 auto;
     /* width: 42%; */
 }
-.card-body > h3, h4 {
+.card-body > h3 {
     margin-bottom: 15px;
     color: #444;
     margin: 0;
@@ -55,12 +55,19 @@
     margin-inline-end: 0px;
     
 }
-h4{
+.card-body > h4{ 
     color: #444;
     margin: 0;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     line-height: 1.2;
+    margin-bottom: 15px;
+    color: #444;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    
 }
 .room-services{
     display: flex;

@@ -46,7 +46,7 @@
             "type": "Royal Suit",
             "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod hytt tempor incididuc utd labore et dolore magna aliqua. Ut enim ad minim yttveniam, quis nostrud exercitation csdd ullamco laboris  ed do eiusmod hytt ",
             "roomFacilities": "Breakfast Include , Free wi-fi , Private Balcony , Free Newspaper , Full AC, Beach View , Sweeming Pool",
-            "price": 130
+            "price": 140
         },
         {
             "id": 7,
@@ -151,6 +151,20 @@
             "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod hytt tempor incididuc utd labore et dolore magna aliqua. Ut enim ad minim yttveniam, quis nostrud exercitation csdd ullamco laboris  ed do eiusmod hytt ",
             "roomFacilities": "Breakfast Include , Free wi-fi , Private Balcony , Free Newspaper , Full AC, Beach View , Sweeming Pool",
             "price": 190
+        },
+        {
+            "id": 20,
+            "image": "https://htmldemo.net/oestin/oestin/img/room/14.jpg",
+            "type": "Royal Suit",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod hytt tempor incididuc utd labore et dolore magna aliqua. Ut enim ad minim yttveniam, quis nostrud exercitation csdd ullamco laboris  ed do eiusmod hytt ",
+            "roomFacilities": "Breakfast Include , Free wi-fi , Private Balcony , Free Newspaper , Full AC, Beach View , Sweeming Pool",
+            "price": 250
+        }
+    ],
+    "newsletterSubScribers":[
+        {
+            "email" : "shraddha@gmail.com"
         }
     ]
+
 }

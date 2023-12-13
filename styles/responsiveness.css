@@ -1,6 +1,140 @@
+
+/* Base Styles */
+/* .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.room-list {
+    margin-bottom: 50px;
+    position: relative;
+    transition: all 0.3s ease 0s;
+    display: flex;
+    flex-direction: row;
+} */
+
+
+
+.card-body {
+    align-self: center!important;
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 100%;
+    margin-top: var(0);
+    box-sizing: border-box;
+}
+
+@media (max-width: 767px) {
+    .room-list {
+        flex-direction: column;
+    }
+
+    .container {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .card-body {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .room-img {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+    .room-img img {
+        width: 100%;
+    }
+    
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
     #room-list-cards-container {
         width: 750px;
         max-width: 100%;
     }
+    
+    
 }
+
+@media (min-width: 1200px) {
+    .h3, h3 {
+        font-size: 1.75rem;
+    }
+
+    .h4, h4 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1920px) {
+    .room-list .room-pamount {
+        width: 170px;
+    }
+
+    .container {
+        width: 1230px;
+        max-width: 100%;
+    }
+}
+@media (min-width: 992px){
+    .card-body {
+        flex: 0 0 auto;
+        width: 58.33333333%;
+    }
+}
+
+@media (min-width: 1920px){
+    .container {
+    width: 1230px;
+    max-width: 100%;
+}
+}
+/* Base styles for larger screens */
+.newsletter-area {
+    padding: 80px 0;
+}
+
+.newsletter-container {
+    text-align: center;
+}
+
+.newsletter-form {
+    display: inline-block;
+}
+
+/* Styles for smaller screens (e.g., tablets and below) */
+@media only screen and (max-width: 768px) {
+    .newsletter-area {
+        padding: 60px 0;
+    }
+
+    .newsletter-container {
+        text-align: center;
+    }
+
+    .newsletter-form {
+        display: block;
+    }
+
+    /* Adjust any other styles as needed for smaller screens */
+    #mc-email {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+
+
+
+

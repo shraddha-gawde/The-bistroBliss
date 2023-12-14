@@ -1,13 +1,13 @@
 get https://neural-innovator-5123.onrender.com/roomDetails/
 
 ###
-PATCH https://neural-innovator-5123.onrender.com/roomDetails/6
+PATCH https://neural-innovator-5123.onrender.com/roomDetails/19
 Content-Type: application/json
 
 {
-    "price": 200
+    "descriptionOfRoom": "The room features a plush king-size bed with high-quality linens, offering a perfect blend of comfort and style.A modern and stylish headboard serves as a focal point, complementing the room's contemporary design.A separate sitting area is furnished with a comfortable sofa and a coffee table, creating a cozy space for relaxation or casual meetings.Large windows provide ample natural light and offer panoramic views of the cityscape.A well-equipped workstation with a spacious desk and ergonomic chair caters to business travelers, providing a dedicated space for work or planning.A flat-screen TV with premium cable channels is mounted for entertainment, along with a selection of on-demand movies and streaming services.A well-stocked mini-bar offers a selection of beverages and snacks, providing convenience for guests looking to unwind in the comfort of their room."
 }
 
 
 ###
-DELETE https://neural-innovator-5123.onrender.com/roomDetails/6
+DELETE https://neural-innovator-5123.onrender.com/roomDetails/1

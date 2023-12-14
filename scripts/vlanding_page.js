@@ -1,83 +1,82 @@
-let mainpagegrid = [
-  {
-    name: "Royal Suit",
-    image: "Sources/Images/gridImages/one.webp",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
-    price: 220,
-  },
-  {
-    name: "Deluxe Suit",
-    image: "Sources/Images/gridImages/two.webp",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
-    price: 150,
-  },
-  {
-    name: "Single Room",
-    image: "Sources/Images/gridImages/three.webp",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
-    price: 120,
-  },
-  {
-    name: "Double Room",
-    image: "Sources/Images/gridImages/four.webp",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
-    price: 100,
-  },
-];
-
 let vishnu_page1_mainContainer = document.getElementById(
   "vishnu_page1_mainContainer"
 );
+
+async function fetchGrids() {
+  try {
+    let res = await fetch(
+      `https://neural-innovator-5123.onrender.com/roomDetails?_limit=4`
+    );
+    let data = await res.json();
+    if (res.ok) {
+      console.log(data);
+      displayGrids(data);
+    }
+  } catch (error) {
+    console.log(`${error} error found`);
+  }
+}
+
+fetchGrids();
 
 let Vishnu_Video_page = document.getElementsByClassName("Vishnu_Video_page");
 
 let playButton = document.getElementById("playButton");
 let palyLink = document.getElementById("playLink");
+let Video_div = document.getElementsByClassName("Video_div");
+let gridVideo = document.getElementsByClassName("gridVideo");
+let videoImage = document.getElementById("videoImage");
 
 playButton.addEventListener("click", (e) => {
-  window.location.href = palyLink.getAttribute("href");
+  playButton.style.display = "none";
+
+  videoImage.style.display = "none";
+  let newIframe = document.createElement("iframe");
+  newIframe.className = "gridVideo";
+  newIframe.width = "100%";
+  newIframe.height = "100%";
+  newIframe.src = "https://www.youtube.com/embed/rXcp6s0VjZk";
+  newIframe.allowFullscreen = true;
+  let videoDiv = document.querySelector(".Video_div");
+  videoDiv.appendChild(newIframe);
 });
 
 let vishnu_page1_mainContainer_div_3 = document.getElementsByClassName(
   "vishnu_page1_mainContainer_div_3"
 )[0];
-mainpagegrid.forEach((item) => {
-  let singleGrid = document.createElement("div");
-  singleGrid.className = "singleGrid";
-  singleGrid.style.backgroundImage = `url(${item.image})`;
-  singleGrid.style.backgroundSize = "cover";
-  console.log(item.image);
-  singleGrid.style.backgroundPosition = "center";
+function displayGrids(data) {
+  data.forEach((item) => {
+    let singleGrid = document.createElement("div");
+    singleGrid.className = "singleGrid";
+    singleGrid.style.backgroundImage = `url(${item.image})`;
+    singleGrid.style.backgroundSize = "cover";
+    console.log(item.image);
+    singleGrid.style.backgroundPosition = "center";
 
-  let gridTitle = document.createElement("h3");
-  gridTitle.className = "gridTitle";
-  gridTitle.textContent = item.name;
-  let gridText = document.createElement("p");
-  gridText.className = "gridText";
-  gridText.textContent = item.text;
-  let gridButton = document.createElement("button");
-  gridButton.className = "gridButton";
-  gridButton.textContent = "DETAILS";
-  let gridPrice = document.createElement("h4");
-  gridPrice.className = "gridPrice";
-  gridPrice.textContent = `$${item.price}`;
-  let perNight = document.createElement("span");
-  perNight.className = "perNight";
-  perNight.innerText = "Per Night";
+    let gridTitle = document.createElement("h3");
+    gridTitle.className = "gridTitle";
+    gridTitle.textContent = item.type;
+    let gridText = document.createElement("p");
+    gridText.className = "gridText";
+    gridText.textContent = item.description;
+    let gridButton = document.createElement("button");
+    gridButton.className = "gridButton";
+    gridButton.textContent = "DETAILS";
+    let gridPrice = document.createElement("h4");
+    gridPrice.className = "gridPrice";
+    gridPrice.textContent = `$${item.price}`;
+    let perNight = document.createElement("span");
+    perNight.className = "perNight";
+    perNight.innerText = "Per Night";
 
-  singleGrid.addEventListener("hover", () => {
-    singleGrid.gridText.style.display = "block";
-    singleGrid.querySelector(".grid-price").style.display = "block";
+    singleGrid.addEventListener("hover", () => {
+      singleGrid.gridText.style.display = "block";
+      singleGrid.querySelector(".grid-price").style.display = "block";
+    });
+
+    singleGrid.append(gridTitle, gridText, gridButton, gridPrice, perNight);
+    vishnu_page1_mainContainer_div_3.appendChild(singleGrid);
   });
-
-  singleGrid.append(gridTitle, gridText, gridButton, gridPrice, perNight);
-  vishnu_page1_mainContainer_div_3.appendChild(singleGrid);
-});
+}
 
 vishnu_page1_mainContainer.appendChild(vishnu_page1_mainContainer_div_3);
-
-// singleGrid.innerHTML = `
-//   <h3>${item.name}</h3>
-//   <p>${item.text}</p>
-//   <h4>$${item.price}</h4>
-// `;

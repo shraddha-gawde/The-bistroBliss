@@ -34,8 +34,10 @@
 
 .bg-3 {
     background-image: url(https://htmldemo.net/oestin/oestin/img/bg/3.jpg);
-    /* opacity: 1; */
+    overflow: hidden;
+    filter: blur(4px);
 }
+
 
 .bg-3{
     background-attachment: scroll;

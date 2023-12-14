@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="rstyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Raleway:ital,wght@0,400;0,500;1,300;1,500&display=swap"
+        rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Raleway:ital,wght@0,400;1,300;1,500&display=swap"
         rel="stylesheet">
@@ -18,7 +23,7 @@
 </head>
 
 <body>
-    <header class="">
+    <header class="sticky">
         <nav class=" navbar navbar-light navbar-expand-md">
             <div class="ggg">
                 <div class="innerdiv"><img class="nlogo" src="rLogo.png" alt=""></div>
@@ -78,10 +83,10 @@
                 <div class="col-12">
                     <div class="breadcrumb-text text-center">
                         <h2>room - List view</h2>
-                        <p>A quality room of Oestin with sea or mountain view</p>
+                        <p>A quality room of the BISTROBLISS with sea or mountain view</p>
                         <div class="breadcrumb-bar">
                             <ul class="breadcrumb">
-                                <li><a href="index.html">Home</a></li>
+                                <li><a href="index.html">Home //</a></li>
                                 <li>Room - list view</li>
                             </ul>
                         </div>
@@ -111,49 +116,38 @@
             <div class="col">
                 <div class="search-arts-wrapper" id="search-arts-wrapper">
                     <select id="search-by-select">
-                        <option value="">Search By</option>
-                        <option value="type">type</option>
-                        <!-- <option value="artist">artist</option> -->
+                        <option value="search">Search By</option>
+                        <option value="type">Type</option>
                     </select>
-                    <input type="text" id="search-by-input" placeholder="Enter title/artist here" />
-                    <button id="search-by-button" style="background-color: #33c3f0; color: white; border: none">
+                    <input type="text" id="search-by-input" placeholder="Enter Room Type" />
+                    <button id="search-by-button">
                         Search
                     </button>
                 </div>
             </div>
-            <div class="col">
+            
+            <div class="col-auto">
+                <select id="filter-by-type">
+                    <option value="">Filter By Type</option>
+                    <option value="single-room">Single Room</option>
+                    <option value="royal-suit">Royal Suit</option>
+                    <option value="delux-suit">Delux Suit</option>
+                    <option value="double-room">Double Room</option>
+                </select>
+            </div>
+            
+            <div class="col-auto">
                 <select id="sort-by-select">
                     <option value="">Sort By Price</option>
-                    <option value="price" id="sort-low-to-high" class="u-full-width button button-primary">Low To High
-                    </option>
-                    <option value="price" id="sort-high-to-low" class="u-full-width button button-primary">High To Low
-                    </option>
+                    <option value="low-to-high">Low To High</option>
+                    <option value="high-to-low">High To Low</option>
                 </select>
-
             </div>
+            
 
-            <div>
-                <h2>Filter Based On Type of room</h2>
-                <button id="filter-single-room" class="u-full-width button button-primary">
-                    Single Room
-                </button>
-                <button id="filter-royal-suit" class="u-full-width button button-primary">
-                    Royal Suit
-                </button>
-                <button id="filter-de lux-suit" class="u-full-width button button-primary">
-                    Delux Suit
-                </button>
-
-                <button id="filter-double-room" class="u-full-width button button-primary">
-                    Double Room
-                </button>
-
-
-            </div>
+            
 
         </div>
-
-
     </div>
     <!-- room list cards here -->
 

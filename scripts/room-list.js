@@ -1,16 +1,11 @@
 const cardsContainer = document.getElementById('room-list-cards-container');
 const paginationContainer = document.getElementById('room-list-pagination-container');
+
 let searchBySelect = document.getElementById("search-by-select");
 let searchByInput = document.getElementById("search-by-input");
 let searchByButton = document.getElementById("search-by-button");
-
-let sortAtoZBtn = document.getElementById("sort-low-to-high");
-let sortZtoABtn = document.getElementById("sort-high-to-low");
-
-let filterSingleRoom = document.getElementById("filter-single-room");
-let filterRoyalSuit = document.getElementById("filter-royal-suit");
-let filterDeluxSuit = document.getElementById("filter-delux-suit");
-let filterDoubleRoom = document.getElementById("filter-double-room");
+let sortBySelect = document.getElementById("sort-by-select");
+let filterByType = document.getElementById("filter-by-type");
 
 
 let roomDetailsURL = `https://neural-innovator-5123.onrender.com/roomDetails`;
@@ -138,10 +133,6 @@ searchByButton.addEventListener("click", () => {
     if (searchOption === "type") {
       searchParam = `type=${searchQuery}&`;
     } 
-    // else if (searchOption === "artist") {
-    //   searchParam = `artist=${searchQuery}&`;
-    // }
-
     fetchData(roomDetailsURL, searchParam);
   } 
   else{
@@ -149,58 +140,51 @@ searchByButton.addEventListener("click", () => {
   }
 });
 
-sortAtoZBtn.addEventListener("click", (e) => {
-  fetchData(roomDetailsURL, "_sort=price&_order=asc&")
-})
-sortZtoABtn.addEventListener("click", (e) => {
-  fetchData(roomDetailsURL, "_sort=price&_order=desc&")
-})
+sortBySelect.addEventListener("change", (e) => {
+  
+  const sortOption = sortBySelect.value;
 
-filterSingleRoom.addEventListener("click", (e) => {
-  fetchData(roomDetailsURL, "type=Single Room&")
-})
-filterRoyalSuit.addEventListener("click", (e) => {
-  fetchData(roomDetailsURL, "type=Royal Suit&")
-})
-filterDoubleRoom.addEventListener("click", (e) => {
-  fetchData(roomDetailsURL, "type=Double Room&")
-})
-
-filterDoubleRoom.addEventListener("click", (e) => {
-  fetchData(roomDetailsURL, "type=Delux Suit&")
-})
-
-// Assuming mc-submit is the ID of your subscribe button
-const subscribeBtn = document.getElementById("mc-submit");
-
-// Add event listener to the subscribe button
-subscribeBtn.addEventListener("click", (event) => {
-  event.preventDefault(); // Prevent the default form submission behavior
-
-  // Assuming mc-email is the ID of your email input field
-  const emailInput = document.getElementById("mc-email");
-
-  // Get the value entered in the email input field
-  const emailValue = emailInput.value;
-
-  // Check if the email value is not empty
-  if (emailValue.trim() !== "") {
-    // Create an object with the email
-    const emailObj = {
-      email: emailValue,
-    };
-
-    // Call the function to add the email to db.json
-    addEmail(emailObj);
-  } else {
-    // Handle the case where the email input is empty
-    alert("Email cannot be empty");
+  if (sortOption === "low-to-high") {
+      fetchData(roomDetailsURL, "_sort=price&_order=asc&");
+  } else if (sortOption === "high-to-low") {
+      fetchData(roomDetailsURL, "_sort=price&_order=desc&");
+  }
+});
+filterByType.addEventListener("change", (e) => {
+  const filterOption = filterByType.value;
+  if (filterOption ==="single-room") {
+    fetchData(roomDetailsURL, "type=Single Room&");
+  }
+  else if(filterOption ==="royal-suit"){
+    fetchData(roomDetailsURL, "type=Royal Suit&");
+  }
+  else if(filterOption ==="delux-suit"){
+    fetchData(roomDetailsURL, "type=Delux Suit&");
+  }
+  else if(filterOption ==="double-room"){
+    fetchData(roomDetailsURL, "type=Double Room&");
   }
 });
 
-// Function to add email to db.json
+
+// subcribe button event handller
+const subscribeBtn = document.getElementById("mc-submit");
+
+subscribeBtn.addEventListener("click", (event) => {
+  const emailInput = document.getElementById("mc-email");
+  const emailValue = emailInput.value;
+  if (emailValue.trim() !== "") {
+    const emailObj = {
+        email: emailValue,
+    };
+addEmail(emailObj);
+  } 
+  else {
+    alert("Email cannot be empty or please enter correct email id");
+  }
+});
+
 function addEmail(emailObj) {
-  // Replace 'http://localhost:3000/subscribe' with your actual server endpoint
   const subscribeURL = 'https://neural-innovator-5123.onrender.com/newsletterSubScribers';
 
   fetch(subscribeURL, {
@@ -212,18 +196,10 @@ function addEmail(emailObj) {
   })
     .then((res) => res.json())
     .then((data) => {
-      // Handle success
       console.log(data);
-      showSuccessPopup(); // Call function to show success popup
+      alert("Wonderful! You have successfully subscribed to our newsletter.");
     })
     .catch((error) => {
-      // Handle errors
       console.error(error);
     });
-}
-
-// Function to show success popup
-function showSuccessPopup() {
-  // You can customize this popup according to your needs
-  alert("Wonderful! You have successfully subscribed to our newsletter.");
 }

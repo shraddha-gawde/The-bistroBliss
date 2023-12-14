@@ -1,0 +1,47 @@
+form {
+    max-width: 50px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin: auto;
+  }
+  
+  input[type="submit"] {
+    background-color: #b5876d;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #333;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 600px) {
+    form {
+      width: 70%;
+    }
+  }
+
+.col img {
+    width: 100%;
+    border-radius: 5px;
+} 
+body{
+    background-image: url(https://images.unsplash.com/photo-1541194577687-8c63bf9e7ee3?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bXklMjByb29tfGVufDB8fDB8fHww);
+}
+

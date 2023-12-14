@@ -3,8 +3,6 @@ const paginationContainer = document.getElementById('room-list-pagination-contai
 
 
 
-// const baseServerURL = `http://localhost:${import.meta.env.REACT_APP_JSON_SERVER_PORT
-//   }`;
 let roomDetailsURL = `https://neural-innovator-5123.onrender.com/roomDetails`;
 
 let pageNumber = 1;
@@ -63,12 +61,16 @@ function createArtCard(PerRoom) {
   const body = document.createElement("div");
   body.className = "card-body";
 
+
+  
+
   const type = document.createElement("h3");
-  type.className = "room-type";
-  type.textContent = PerRoom.type;
+  const bodyLink = document.createElement("a");
+  bodyLink.href = "https://htmldemo.net/oestin/oestin/room-details.html";
+  bodyLink.textContent = PerRoom.type;
+  type.append(bodyLink);
 
   const description = document.createElement("p");
-  description.className = "card-description";
   description.textContent = PerRoom.description;
 
   const facility = document.createElement("h4");
@@ -94,40 +96,9 @@ function createArtCard(PerRoom) {
   perNight.className = "count";
   perNight.textContent = "Per Night";
   priceDIV.append(perNight);
+  roomServices.append(priceDIV);
 
-//   const paintbrushes = document.createElement("p");
-//   paintbrushes.className = "card-paintbrushes";
-//   paintbrushes.textContent = `paintbrushes : ${art.details ? (art.details.paintbrushes ? art.details.paintbrushes.join(', ') : '') : ''}`;
-
-//   const price = document.createElement("p");
-//   price.className = "card-price";
-//   price.textContent = art.price;
-
-//   const medium = document.createElement("p");
-//   medium.className = "card-medium";
-//   medium.textContent = art.medium;
-
-//   const editLink = document.createElement("a");
-//   editLink.href = "#";
-//   editLink.setAttribute("data-id", art.id);
-//   editLink.className = "card-link";
-//   editLink.textContent = "Edit";
-
-//   editLink.addEventListener("click", (e) => {
-//     e.preventDefault();
-//     updateArtForm(art);
-//   });
-
-//   const deleteButton = document.createElement("button");
-//   deleteButton.className = "card-button";
-//   deleteButton.textContent = "Delete";
-
-//   deleteButton.addEventListener("click", () => {
-//     const artId = art.id;
-//     deleteArt(artId);
-//   });
-
-  body.append(type, description, facility, roomServices, priceDIV);
+  body.append(type, description, facility, roomServices);
   room.append(imgDiv);
   room.append(body);
 
@@ -148,3 +119,5 @@ function createButtons(number, query) {
     paginationContainer.append(pageButtons);
   }
 }
+
+

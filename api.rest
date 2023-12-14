@@ -1,0 +1,13 @@
+get https://neural-innovator-5123.onrender.com/roomDetails/
+
+###
+PATCH https://neural-innovator-5123.onrender.com/roomDetails/6
+Content-Type: application/json
+
+{
+    "price": 200
+}
+
+
+###
+DELETE https://neural-innovator-5123.onrender.com/roomDetails/6

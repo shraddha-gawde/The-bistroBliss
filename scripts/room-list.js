@@ -1,6 +1,16 @@
 const cardsContainer = document.getElementById('room-list-cards-container');
 const paginationContainer = document.getElementById('room-list-pagination-container');
+let searchBySelect = document.getElementById("search-by-select");
+let searchByInput = document.getElementById("search-by-input");
+let searchByButton = document.getElementById("search-by-button");
 
+let sortAtoZBtn = document.getElementById("sort-low-to-high");
+let sortZtoABtn = document.getElementById("sort-high-to-low");
+
+let filterSingleRoom = document.getElementById("filter-single-room");
+let filterRoyalSuit = document.getElementById("filter-royal-suit");
+let filterDeluxSuit = document.getElementById("filter-delux-suit");
+let filterDoubleRoom = document.getElementById("filter-double-room");
 
 
 let roomDetailsURL = `https://neural-innovator-5123.onrender.com/roomDetails`;
@@ -44,7 +54,7 @@ function displayRoom(roomData) {
 function createArtCard(PerRoom) {
   const room = document.createElement("div");
   room.className = "room-list";
-  room.setAttribute("data-id", room.id);
+  room.setAttribute("data-id", PerRoom.id);
 
   const imgDiv = document.createElement("div");
   imgDiv.className = "room-img";
@@ -119,5 +129,101 @@ function createButtons(number, query) {
     paginationContainer.append(pageButtons);
   }
 }
+searchByButton.addEventListener("click", () => {
+  const searchOption = searchBySelect.value;
+  const searchQuery = searchByInput.value.trim();
 
+  if (searchQuery !== "") {
+    let searchParam;
+    if (searchOption === "type") {
+      searchParam = `type=${searchQuery}&`;
+    } 
+    // else if (searchOption === "artist") {
+    //   searchParam = `artist=${searchQuery}&`;
+    // }
 
+    fetchData(roomDetailsURL, searchParam);
+  } 
+  else{
+    fetchData(roomDetailsURL);
+  }
+});
+
+sortAtoZBtn.addEventListener("click", (e) => {
+  fetchData(roomDetailsURL, "_sort=price&_order=asc&")
+})
+sortZtoABtn.addEventListener("click", (e) => {
+  fetchData(roomDetailsURL, "_sort=price&_order=desc&")
+})
+
+filterSingleRoom.addEventListener("click", (e) => {
+  fetchData(roomDetailsURL, "type=Single Room&")
+})
+filterRoyalSuit.addEventListener("click", (e) => {
+  fetchData(roomDetailsURL, "type=Royal Suit&")
+})
+filterDoubleRoom.addEventListener("click", (e) => {
+  fetchData(roomDetailsURL, "type=Double Room&")
+})
+
+filterDoubleRoom.addEventListener("click", (e) => {
+  fetchData(roomDetailsURL, "type=Delux Suit&")
+})
+
+// Assuming mc-submit is the ID of your subscribe button
+const subscribeBtn = document.getElementById("mc-submit");
+
+// Add event listener to the subscribe button
+subscribeBtn.addEventListener("click", (event) => {
+  event.preventDefault(); // Prevent the default form submission behavior
+
+  // Assuming mc-email is the ID of your email input field
+  const emailInput = document.getElementById("mc-email");
+
+  // Get the value entered in the email input field
+  const emailValue = emailInput.value;
+
+  // Check if the email value is not empty
+  if (emailValue.trim() !== "") {
+    // Create an object with the email
+    const emailObj = {
+      email: emailValue,
+    };
+
+    // Call the function to add the email to db.json
+    addEmail(emailObj);
+  } else {
+    // Handle the case where the email input is empty
+    alert("Email cannot be empty");
+  }
+});
+
+// Function to add email to db.json
+function addEmail(emailObj) {
+  // Replace 'http://localhost:3000/subscribe' with your actual server endpoint
+  const subscribeURL = 'https://neural-innovator-5123.onrender.com/newsletterSubScribers';
+
+  fetch(subscribeURL, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(emailObj),
+  })
+    .then((res) => res.json())
+    .then((data) => {
+      // Handle success
+      console.log(data);
+      showSuccessPopup(); // Call function to show success popup
+    })
+    .catch((error) => {
+      // Handle errors
+      console.error(error);
+    });
+}
+
+// Function to show success popup
+function showSuccessPopup() {
+  // You can customize this popup according to your needs
+  alert("Wonderful! You have successfully subscribed to our newsletter.");
+}

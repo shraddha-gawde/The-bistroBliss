@@ -163,6 +163,7 @@
     ],
     "newsletterSubScribers":[
         {
+            "id" : 1,
             "email" : "shraddha@gmail.com"
         }
     ]

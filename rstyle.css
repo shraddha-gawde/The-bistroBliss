@@ -1,11 +1,15 @@
 body{
     margin: 0;
     padding: 0;
-    height: 1000px;
 }
 .top1{
-    margin-right: 37%;
-    gap: 3%;
+    width: 100%;
+    gap: 2%;
+    padding-left: 10% !important;
+    
+}
+.signb{
+    width: 200px;
 }
 header{
     left: 0;
@@ -37,13 +41,16 @@ header{
 a.nav-link{
     color: white;
 }
+a.nav-link:hover{
+    color: antiquewhite;
+}
 .navbar>.container-fluid{
     padding: 0;
     box-shadow: 0 0 10px #000;
      background: #00000083;
 }
 .navbar{
-    padding: 0!im;
+    padding: 0px !important;
 }
 .container-fluid{
     background-color: white;
@@ -63,7 +70,8 @@ a.nav-link{
     justify-content: space-between;
     width: 100%;
     margin: 0;
-    margin-top: 13px;
+    margin-left: 18%;
+    margin-top: 30px;
 }
 .top3{
     display: flex;
@@ -78,9 +86,10 @@ a.nav-link{
 }
 .mt{
   margin-top: 10rem;
+  font-size: 60px !important;
 }
 .rdate{
-    height: 15%;
+    height: 150px;
     width: 90%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin: auto;

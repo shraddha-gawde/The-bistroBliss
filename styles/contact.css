@@ -1,0 +1,130 @@
+@media screen  and (max-width:700px){
+    #dcontainer-flex {
+        display: block; 
+    }
+
+    #contact-Details {
+        margin-top: 20px;
+    }
+
+    #contact-header {
+        font-size: 18px; 
+    }
+
+    #dimagesmall {
+
+        width: 50px;
+    }
+
+    #dimage {
+
+        width: 10px;
+    }
+
+    #dtext-message {
+        height: 100px; 
+    }
+
+    #dbutton {
+        background-color: #ff0000; 
+        color: #ffffff; 
+    }
+
+    .dlogo-hover {
+        flex-direction: column; 
+        
+    }
+
+
+    .dcol {
+        margin-right: 10px; 
+        gap: 10px;
+    }
+    #dimagelogo{
+        width: 50px;
+        
+    }
+
+}
+
+
+#dimagesmall{
+    height: 13px;
+    width: 15px;
+}
+
+#dimage{
+    height: 27px;
+    width: 27px;
+}
+#dbutton{
+    background-color: #b5876d;
+    border-radius: 0px;
+    height: 40px;
+    width: 132px;
+    box-sizing: border-box;
+    border: none;
+    color: white;
+    
+}
+#dbutton:hover{
+    background-color: #211a13;
+    transform: scale(1.1);
+}
+#contact-header, #contact-Details h1 {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+#contact-Details{
+    width: 40%;
+    /* border: 2px solid red;  */
+    margin-top: 7%;
+    margin-left: 5%;
+}
+#contact-Details h1,
+#contact-Details p,
+#contact-Details img {
+   
+    margin-right: 15px; 
+}
+
+#contact-Details img {
+    margin-right: 15px; 
+}
+
+
+#dtext-area{
+    /* border: 2px solid black; */
+    margin-top: 5%;
+    width: 60%;
+    margin-left: 2%;
+}
+
+
+
+#dtext-area {
+    padding: 20px; 
+}
+
+#dtext-area h1,
+#dtext-area input,
+#dtext-area textarea,
+#dtext-area button {
+    margin-bottom: 5%; 
+}
+
+
+
+/* logo */
+
+.dlogo-hover{
+   margin-top:60px;
+    display: flex;
+    gap: 80px;
+    flex-wrap: wrap;
+    margin-left: 120px;
+}
+.dcal:hover{
+    background-color: #ab7540;
+}

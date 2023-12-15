@@ -1,4 +1,4 @@
-get https://neural-innovator-5123.onrender.com/newsletterSubScribers/
+get https://neural-innovator-5123.onrender.com/roomDetails/
 
 ###
 PATCH https://neural-innovator-5123.onrender.com/roomDetails/21

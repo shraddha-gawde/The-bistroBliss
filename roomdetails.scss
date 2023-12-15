@@ -1,0 +1,185 @@
+.roomdetails {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .rd1 {
+        width:90%;
+        // border: 2px solid rgb(0, 0, 0);
+        height: auto;
+        display: flex;
+        gap: 50px;
+
+        .rd1l {
+            width: 80%;
+            border: 2px solid rgb(20, 224, 64);
+
+            .rd1lup {
+                height: 580px;
+                border: 2px solid rgb(53, 54, 128);
+                
+                img {
+                    max-width: 100%;
+                    box-sizing: border-box;
+                    height: auto;
+                    // display: block; 
+                  }
+   
+            }
+            .rd1ldown {
+                height: 250px;
+                border: 2px solid rgb(5, 5, 5);
+               
+            }
+        }
+
+        .rd1r {
+            width: 25%;
+            border: 2px solid rgb(76, 120, 202);
+            height: 800px;
+            .rd1rup{
+                border: 2px solid rgb(159, 201, 43);
+                height: 520px;
+                display: flex;
+                flex-direction: column;
+                background-color: #f1f1f1;
+                align-items: center;
+                p{
+                    margin-top: 20px;
+                    font-size: 22px;
+                }
+               
+                #starta, #startb ,#startc, #startd,{
+                    border-radius: 5px;
+                    margin-top: 25px;
+                    font-size: 12px;
+            
+                    // margin-left: 5%;
+                    width:90%;
+                    height: 40px;
+                    border: none;
+                   
+
+                }
+        button{
+            width: 90%;
+            height: 50px;
+            margin-top: 30px;
+            font-size: 14px;
+            color: white;
+            background-color: #b5876d;
+            border: none;
+            transform: perspective(1px) translateZ(0px);
+          transition-duration: 0.2s;
+          transition-property: color;
+            
+        }
+        button:hover{
+          background-color: black;
+          cursor: pointer;
+          transform: perspective(1px) translateZ(0px);
+          transition-duration: 0.2s;
+          transition-property:  background-color black;
+        }
+                
+            }
+            .rd1rdown{
+                border: 2px solid rgb(161, 17, 130);
+                height: 200px;
+                background-color: #f1f1f1;
+               margin-top: 50px;
+               display: flex;
+                    flex-direction: column;
+                    padding: 8%;
+                    font-weight: 400;
+                    
+                    
+                    
+               a {
+                text-decoration: none;
+                    font-size: 16px;
+            }
+             
+
+                a:not(:empty) {
+                    color: rgb(58, 52, 52);
+                    /* Change the text color only */
+                }
+               p{
+                color: rgb(58, 52, 52);
+               }
+                 .iconc {
+                        
+                        font-size:20px;
+                        margin-right: 5px;
+                        color: #ee8743;
+                        padding-top: 30px;
+                    }
+
+                    .iconc:hover {
+                        color: rgb(100, 82, 82);
+                        border: 1px solid white;
+                    }
+            }
+        }
+    }
+    .rd2{
+        width:90%;
+        height: 450px;
+        border: 2px solid rgb(0, 0, 0);
+        display: flex;
+        gap: 50px;
+        
+        a{
+text-decoration: none;
+        }
+        a:not(:empty) {
+            color: rgb(87, 80, 80);
+            /* Change the text color only */
+        }
+        span{
+            font-size: 14px;
+        }
+        
+        .rd2l{
+            border: 2px solid rgb(0, 0, 0);
+            height: 450px;
+            width: 80%;
+            p{
+                margin-top: 20px;
+            }
+        }
+        .rd2r{
+            border: 2px solid rgb(144, 48, 233);
+            height: 450px;
+            width: 25%;
+            background-color: #f1f1f1;
+           
+            h4{
+                margin-top: 20px;
+            }
+            .post-content{
+                display: flex;
+                gap: 8%;
+                align-items: center;
+                margin-top: 40px;
+            }
+           
+        }
+    }
+    .rd3{
+        width:90%;
+        height: 300px;
+        border: 2px solid rgb(0, 0, 0);
+        display: flex;
+        gap: 50px;
+        .rd3l{
+            border: 2px solid rgb(0, 0, 0);
+            height: 400px;
+            width: 73%;
+        }
+        
+    }
+}

@@ -1,7 +1,6 @@
 body{
     margin: 0;
     padding: 0;
-    height: 1500px;
 }
 .top1{
     width: 100%;
@@ -196,11 +195,6 @@ a.nav-link:hover{
     height: 500px;
 }
 .top2 {
-    /* display: ; */
-    /* justify-content: space-evenly; */
     width: 100%;
-    /* margin: 0; */
-    /* margin-left: 18%; */
-    /* margin-top: 30px; */
 }
   }

@@ -100,19 +100,20 @@ a.nav-link:hover{
     position: relative;
     background-color: white;
     top: -50px;
+    padding: 5%;
 }
   .start{
     height: 50px;
-    width: 180px;
+    width: 17%;
   }
   .Astart{
     height: 50px;
-    width: 180px;
+    width: 17%;
   }
   .Check{
     border: none;
     height: 50px;
-    width: 180px ;
+    width: 17% ;
     background-color: #b5876d;
     padding: 10px;
     color: white;

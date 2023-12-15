@@ -13,17 +13,17 @@
         <div class="sign-up">
             <form class="rform" action="#">
         
-                <h1 class="rh1">ADD NEW HOTELS</h1>
+                <h1 class="rh1">Modify Details</h1>
 
-                
-                <input class="dinput" type="text" name="image" placeholder="Enter image source" required="">
-                <input class="dinput" type="text" name="suit" placeholder="suit type" required="">
-                <input class="dinput" type="text" name="description" placeholder="description" >
-                <input class="dinput" type="text" name="facilities" placeholder="facilities" >
-                <input class="dinput" type="number" name="price" placeholder="price" >
+                <input id="modid" class="dinput" type="text" placeholder="Enter ID" required>
+                <input id="modimage" class="dinput" type="text" name="image" placeholder="Enter image source" required="">
+                <input id="modsuit" class="dinput" type="text" name="suit" placeholder="suit type" required="">
+                <input id="moddescription" class="dinput" type="text" name="description" placeholder="description" >
+                <input id="modfacilities" class="dinput" type="text" name="facilities" placeholder="facilities" >
+                <input id="modprice" class="dinput" type="number" name="price" placeholder="price" >
                 
                
-                <button class="rbutton">ADD NEW</button>
+                <button class="rbutton">Modify </button>
             </form>
         </div>
         <div class="sign-in">
@@ -31,11 +31,11 @@
                 <h1 class="rh1">ADD NEW HOTELS</h1>
 
                 
-                <input class="dinput" type="text" name="image" placeholder="Enter image source" required="">
-                <input class="dinput" type="text" name="suit" placeholder="suit type" required="">
-                <input class="dinput" type="text" name="description" placeholder="description" >
-                <input class="dinput" type="text" name="facilities" placeholder="facilities" >
-                <input class="dinput" type="number" name="price" placeholder="price" >
+                <input id="addimage" class="dinput" type="text" name="image" placeholder="Enter image source" required="">
+                <input id="addsuit" class="dinput" type="text" name="suit" placeholder="suit type" required="">
+                <input id="adddesciption" class="dinput" type="text" name="description" placeholder="description" >
+                <input id="addfacilities" class="dinput" type="text" name="facilities" placeholder="facilities" >
+                <input id="addprice" class="dinput" type="number" name="price" placeholder="price" >
                 
                
                 <button class="rbutton">ADD NEW</button>
@@ -44,13 +44,13 @@
         <div class="overlay-container">
             <div class="overlay">
                 <div class="overlay-left">
-                    <h1 class="rh1">Welcome Back!</h1>
-                    <p class="rp">To keep connected with us please login with your personal info</p>
-                    <button class="rbutton" id="signIn">Sign In</button>
+                    <h1 class="rh1">Welcome Back! Admin</h1>
+                    <p class="rp">want to add new</p>
+                    <button class="rbutton" id="signIn">Add new</button>
                 </div>
                 <div class="overlay-right">
                     <h1 class="rh1">Hello Admin</h1>
-                    <p class="rp">Thank you for choosing our website</p>
+                    <p class="rp">Would you like to modify something</p>
                     <button class="rbutton" id="signUp">Modify something</button>
                 </div>
             </div>
@@ -69,5 +69,6 @@
     });
 
     </script>
+    <script src="scripts/addnewdata.js"></script>
 </body>
 </html>

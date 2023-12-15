@@ -1,11 +1,16 @@
 body{
     margin: 0;
     padding: 0;
-    height: 1000px;
+    height: 1500px;
 }
 .top1{
-    margin-right: 37%;
-    gap: 3%;
+    width: 100%;
+    gap: 2%;
+    padding-left: 10% !important;
+    
+}
+.signb{
+    width: 200px;
 }
 header{
     left: 0;
@@ -37,13 +42,16 @@ header{
 a.nav-link{
     color: white;
 }
+a.nav-link:hover{
+    color: antiquewhite;
+}
 .navbar>.container-fluid{
     padding: 0;
     box-shadow: 0 0 10px #000;
      background: #00000083;
 }
 .navbar{
-    padding: 0!im;
+    padding: 0px !important;
 }
 .container-fluid{
     background-color: white;
@@ -63,7 +71,8 @@ a.nav-link{
     justify-content: space-between;
     width: 100%;
     margin: 0;
-    margin-top: 13px;
+    margin-left: 18%;
+    margin-top: 30px;
 }
 .top3{
     display: flex;
@@ -77,28 +86,28 @@ a.nav-link{
     object-fit: cover;
 }
 .mt{
-  margin-top: 10rem;
+  margin-top: 15rem;
+  font-size: 60px !important;
 }
 .rdate{
-    height: 15%;
+    height: 150px;
     width: 90%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     margin: auto;
     position: relative;
     background-color: white;
     top: -50px;
 }
-  #start{
-    /* _text-align: center; */
-    margin-top: 50px;
-    margin-left: 50px;
+  .start{
     height: 50px;
     width: 180px;
   }
-  #Astart{
+  .Astart{
     height: 50px;
     width: 180px;
-    margin-left: 50px;
   }
   .Check{
     border: none;
@@ -107,7 +116,6 @@ a.nav-link{
     background-color: #b5876d;
     padding: 10px;
     color: white;
-    margin-left: 50px;
   }
   .Check:hover{
     background-color: #000;
@@ -119,11 +127,79 @@ a.nav-link{
     color: #b5876d;
     padding: 10px;
     background-color: white;
-    font-size:20px;
-    /* text-align: center; */
-    
+    font-size:20px; 
   }
   .bCheck:hover{
     background-color: #b5876d;
     color: white;
+  }
+  .rmedia{
+    display: none;
+  }
+
+  @media all and (max-width: 991px){
+.ggg::after {
+    height: 92px;
+    width: 39%;
+    position: inherit;
+}
+.nlogo{
+    height: 100px;
+    margin-left: 0;
+    display: none;
+}
+.rmedia{
+    display: block !important;
+    width: 100%;
+    height: 100px;
+    background-color: #b5876d;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size:larger;
+
+}
+.innerdiv{
+    position: relative;
+    z-index: 9;
+    background-color: #b5876d;
+    width: 100%;
+}
+.navbar-toggler{
+    background-color: #b5876d !important;
+}
+.rdate{
+    flex-direction: column;
+    position: unset;
+    height: 30%;
+    width: 100%;
+}
+#start{
+    width: 90%;
+    border: 1px solid black;
+  }
+  #Astart{
+    width: 90%;
+    border: 1px solid black;
+  }
+  .Check{
+    border: none;
+    height: 50px;
+    width: 180px ;
+    background-color: #b5876d;
+    padding: 10px;
+    color: white;
+  }
+  .c-item{
+    height: 500px;
+}
+.top2 {
+    /* display: ; */
+    /* justify-content: space-evenly; */
+    width: 100%;
+    /* margin: 0; */
+    /* margin-left: 18%; */
+    /* margin-top: 30px; */
+}
   }

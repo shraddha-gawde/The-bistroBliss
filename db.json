@@ -163,8 +163,38 @@
     ],
     "newsletterSubScribers":[
         {
+            "id" : 1,
             "email" : "shraddha@gmail.com"
         }
+    ],
+    "adminLogin": [
+        {
+            "id": 1,
+            "email": "shraddha@gmail.com",
+            "password":"1234"
+        },
+        {
+            "id": 2,
+            "email": "raushan@gmail.com",
+            "password":"1234"
+        },
+        {
+            "id": 3,
+            "email": "deepak@gmail.com",
+            "password":"1234"
+        },
+        {
+            "id": 4,
+            "email": "mayank@gmail.com",
+            "password":"1234"
+        },
+        {
+            "id": 5,
+            "email": "vishnuraj@gmail.com",
+            "password":"1234"
+        }
+    ],
+    "users":[
     ]
 
 }

@@ -1,11 +1,6 @@
 const cardsContainer = document.getElementById('room-list-cards-container');
 const paginationContainer = document.getElementById('room-list-pagination-container');
 
-let searchBySelect = document.getElementById("search-by-select");
-let searchByInput = document.getElementById("search-by-input");
-let searchByButton = document.getElementById("search-by-button");
-let sortBySelect = document.getElementById("sort-by-select");
-let filterByType = document.getElementById("filter-by-type");
 
 
 let roomDetailsURL = `https://neural-innovator-5123.onrender.com/roomDetails`;
@@ -49,7 +44,7 @@ function displayRoom(roomData) {
 function createArtCard(PerRoom) {
   const room = document.createElement("div");
   room.className = "room-list";
-  room.setAttribute("data-id", PerRoom.id);
+  room.setAttribute("data-id", room.id);
 
   const imgDiv = document.createElement("div");
   imgDiv.className = "room-img";
@@ -124,82 +119,47 @@ function createButtons(number, query) {
     paginationContainer.append(pageButtons);
   }
 }
-searchByButton.addEventListener("click", () => {
-  const searchOption = searchBySelect.value;
-  const searchQuery = searchByInput.value.trim();
-
-  if (searchQuery !== "") {
-    let searchParam;
-    if (searchOption === "type") {
-      searchParam = `type=${searchQuery}&`;
-    } 
-    fetchData(roomDetailsURL, searchParam);
-  } 
-  else{
-    fetchData(roomDetailsURL);
-  }
-});
-
-sortBySelect.addEventListener("change", (e) => {
-  
-  const sortOption = sortBySelect.value;
-
-  if (sortOption === "low-to-high") {
-      fetchData(roomDetailsURL, "_sort=price&_order=asc&");
-  } else if (sortOption === "high-to-low") {
-      fetchData(roomDetailsURL, "_sort=price&_order=desc&");
-  }
-});
-filterByType.addEventListener("change", (e) => {
-  const filterOption = filterByType.value;
-  if (filterOption ==="single-room") {
-    fetchData(roomDetailsURL, "type=Single Room&");
-  }
-  else if(filterOption ==="royal-suit"){
-    fetchData(roomDetailsURL, "type=Royal Suit&");
-  }
-  else if(filterOption ==="delux-suit"){
-    fetchData(roomDetailsURL, "type=Delux Suit&");
-  }
-  else if(filterOption ==="double-room"){
-    fetchData(roomDetailsURL, "type=Double Room&");
-  }
-});
 
 
-// subcribe button event handller
-const subscribeBtn = document.getElementById("mc-submit");
 
-subscribeBtn.addEventListener("click", (event) => {
-  const emailInput = document.getElementById("mc-email");
-  const emailValue = emailInput.value;
-  if (emailValue.trim() !== "") {
-    const emailObj = {
-        email: emailValue,
-    };
-addEmail(emailObj);
-  } 
-  else {
-    alert("Email cannot be empty or please enter correct email id");
-  }
-});
+var addbutton=document.getElementById("addbtn");
+var modifybtn=document.getElementById("modbtn");
+var deletebtn=document.getElementById("delbtn");
 
-function addEmail(emailObj) {
-  const subscribeURL = 'https://neural-innovator-5123.onrender.com/newsletterSubScribers';
 
-  fetch(subscribeURL, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(emailObj),
-  })
-    .then((res) => res.json())
-    .then((data) => {
-      console.log(data);
-      alert("Wonderful! You have successfully subscribed to our newsletter.");
-    })
-    .catch((error) => {
-      console.error(error);
-    });
-}
+
+addbutton.addEventListener("click",()=>{
+
+})
+
+
+modifybtn.addEventListener("click",()=>{
+
+})
+
+
+deletebtn.addEventListener("click",()=>{
+
+})
+
+
+
+// function openNewWindow() {
+//     var newWindow = window.open('', '_blank', 'width=400,height=300');
+
+//     newWindow.document.write('<html><head><title>Add Details</title></head><body>');
+//     newWindow.document.write('<h2>Fill in the Details</h2>');
+//     newWindow.document.write('<form id="myForm" enctype="multipart/form-data">');
+//     newWindow.document.write('Name: <input type="text" name="name"><br>');
+//     newWindow.document.write('Email: <input type="text" name="email"><br>');
+//     newWindow.document.write('Description: <textarea name="description"></textarea><br>');
+//     newWindow.document.write('Image: <input type="text" name="image"><br>');
+//     newWindow.document.write('<input type="button" value="Submit" onclick="submitForm()">');
+//     newWindow.document.write('</form>');
+//     newWindow.document.write('</body></html>');
+
+//     newWindow.document.close();
+// }
+
+
+

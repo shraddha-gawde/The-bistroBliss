@@ -1,13 +1,26 @@
-get https://neural-innovator-5123.onrender.com/roomDetails/
+get https://neural-innovator-5123.onrender.com/newsletterSubScribers/
 
 ###
-PATCH https://neural-innovator-5123.onrender.com/roomDetails/6
+PATCH https://neural-innovator-5123.onrender.com/roomDetails/21
 Content-Type: application/json
 
 {
-    "price": 200
+"id" : 1
 }
 
 
 ###
-DELETE https://neural-innovator-5123.onrender.com/roomDetails/6
+DELETE https://neural-innovator-5123.onrender.com/newsletterSubScribers/1
+
+###
+POST  https://neural-innovator-5123.onrender.com/roomDetails/
+Content-Type: application/json
+
+{
+ 
+  "image": "https://htmldemo.net/oestin/oestin/img/room/13.jpg",
+  "type": "Double Room",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod hytt tempor incididuc utd labore et dolore magna aliqua. Ut enim ad minim yttveniam, quis nostrud exercitation csdd ullamco laboris  ed do eiusmod hytt ",
+  "roomFacilities": "Breakfast Include , Free wi-fi , Private Balcony , Free Newspaper , Full AC, Beach View , Sweeming Pool",
+  "price": 190
+}

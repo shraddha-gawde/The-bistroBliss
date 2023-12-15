@@ -120,27 +120,85 @@ function createButtons(number, query) {
   }
 }
 
-
+// adding
 
 var addbutton=document.getElementById("addbtn");
 var modifybtn=document.getElementById("modbtn");
 var deletebtn=document.getElementById("delbtn");
 
+let addimage=document.getElementById("image-input-d");
+let addsuit=document.getElementById("hotel-type-d");
+let adddes=document.getElementById("description-d");
+let addfac=document.getElementById("roomFacilities-d");
+let addprice=document.getElementById("price-d")
+
+async function addData(url){
+    try {
+        let res=await fetch(url,{
+            method:"POST",
+            headers:{
+                "Content-type":"application/json"
+        },
+        body:JSON.stringify({
+            image:addimage.value,
+            type:addsuit.value,
+            description:adddes.value,
+            roomFacilities:addfac.value,
+            price:addprice.value
+        }) 
+
+    })
+    fetchData(roomDetailsURL)   
+    } catch (error) {
+        console.log(error);
+    }
+
+}
 
 
 addbutton.addEventListener("click",()=>{
-
+    addData(roomDetailsURL);
 })
 
 
+
+
+// modifying
+let modifyid=document.getElementById("id-d");
+let modifyimage=document.getElementById("image-inpumodt-d");
+let modifysuit=document.getElementById("hotel-typemod-d");
+let modifydes=document.getElementById("descriptionmod-d");
+let modifyfac=document.getElementById("roomFacilitiesmod-d");
+let modifyprice=document.getElementById("pricemod-d")
+
+
+async function modifyData(url,id){
+
+        let res=await fetch(`${url}/${id}`,{
+            method:"PATCH",
+            headers:{
+                "Content-type":"application/json"
+            },
+            body:JSON.stringify({
+                image:addimage.value,
+                type:addsuit.value,
+                description:adddes.value,
+                roomFacilities:addfac.value,
+                price:addprice.value
+            })
+        })
+    fetchData(roomDetailsURL)   
+}
+
+let modid=modifyid.value;
 modifybtn.addEventListener("click",()=>{
-
+    modifyData(url,modid)
 })
 
 
-deletebtn.addEventListener("click",()=>{
+// deletebtn.addEventListener("click",()=>{
 
-})
+// })
 
 
 

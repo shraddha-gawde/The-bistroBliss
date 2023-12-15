@@ -1,3 +1,10 @@
+@media only screen and (max-width: 768px) {
+    #adding-container,
+    #modify-container {
+        width: 80%; 
+    }
+}
+
 #room-list-cards-container{
     display: flex;
     justify-content: center;
@@ -280,24 +287,48 @@ p {
 
 
 /* deepak -css */
+#container-modification{
+    /* padding-left: 10px; */
+    justify-content: space-evenly;
+    padding-right: 10px;
+     display: flex;
+}
 
 
 #addbtn, #delbtn,#modbtn{
     border: none;
-    background-color: blueviolet;
+    background-color: chocolate;
     color: white;
     font-size: 14px;
 }
 
-#adding-container,#modify-container{
-    width: 50%;
-    margin: 10%;
-    background-image: url('https://png.pngtree.com/background/20210706/original/pngtree-personalized-advertising-design-cover-background-business-hotel-picture-image_108968.jpg');
+#addbtn:hover, #delbtn:hover,#modbtn:hover{
+    transform: scale(1.1);
+    background-color: gold;
+}
+
+#adding-container{
+    width: 48%;
+    margin: 5%;
+    background-image: url('https://t4.ftcdn.net/jpg/01/04/13/57/240_F_104135791_1cLZHNM7Y74TFsLKtG08JcfbIe3SiRma.jpg');
     background-size: cover;
     background-position: center center;
     color: rgb(17, 15, 16);
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#modify-container{
+    width: 48%;
+    margin: 5%;
+    background-image: url('https://t4.ftcdn.net/jpg/01/04/13/57/240_F_104135791_1cLZHNM7Y74TFsLKtG08JcfbIe3SiRma.jpg');
+    background-size: cover;
+    background-position: center center;
+    color: rgb(17, 15, 16);
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* margin-left: 12%; */
+    /* padding-right: 11%; */
 }
 
 /* hovering */
@@ -308,23 +339,34 @@ p {
 }
 
 #modify-containe{
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 
 
-#container-modification{
-    display: flex;
-}
+
 
 
 /* input */
 
-#image-input-d,#hotel-type-d,#description-d,#roomFacilities-d,#price-d{
+/* #image-input-d,#hotel-type-d,#description-d,#roomFacilities-d,#price-d{
     /* background-color: #b5876d; */
-    color:  white;
-}
+    /* color:  white; */
+/* } */ 
 
 #addbtn{
     margin-bottom: 12px;
+}
+
+#adding-container input,
+#modify-container input,
+#adding-container button,
+#modify-container button 
+{
+    width: 60%; 
+    margin: 10px 0; 
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
 }

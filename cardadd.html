@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/addnew.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="rlogin.js">
+</head>
+<body class="rbody">
+    <div class="rcontainer" id="rmain">
+        <div class="sign-up">
+            <form class="rform" action="#">
+        
+                <h1 class="rh1">ADD NEW HOTELS</h1>
+
+                
+                <input class="dinput" type="text" name="image" placeholder="Enter image source" required="">
+                <input class="dinput" type="text" name="suit" placeholder="suit type" required="">
+                <input class="dinput" type="text" name="description" placeholder="description" >
+                <input class="dinput" type="text" name="facilities" placeholder="facilities" >
+                <input class="dinput" type="number" name="price" placeholder="price" >
+                
+               
+                <button class="rbutton">ADD NEW</button>
+            </form>
+        </div>
+        <div class="sign-in">
+            <form class="rform" action="#">
+                <h1 class="rh1">ADD NEW HOTELS</h1>
+
+                
+                <input class="dinput" type="text" name="image" placeholder="Enter image source" required="">
+                <input class="dinput" type="text" name="suit" placeholder="suit type" required="">
+                <input class="dinput" type="text" name="description" placeholder="description" >
+                <input class="dinput" type="text" name="facilities" placeholder="facilities" >
+                <input class="dinput" type="number" name="price" placeholder="price" >
+                
+               
+                <button class="rbutton">ADD NEW</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-left">
+                    <h1 class="rh1">Welcome Back!</h1>
+                    <p class="rp">To keep connected with us please login with your personal info</p>
+                    <button class="rbutton" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-right">
+                    <h1 class="rh1">Hello Admin</h1>
+                    <p class="rp">Thank you for choosing our website</p>
+                    <button class="rbutton" id="signUp">Modify something</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    const signUpButton = document.getElementById('signUp');
+    const signInButton = document.getElementById('signIn');
+    const main = document.getElementById('rmain');
+
+    signUpButton.addEventListener('click',()=>{
+        main.classList.add("right-panel-active");
+    });
+    signInButton.addEventListener('click',()=>{
+        main.classList.remove("right-panel-active");
+    });
+
+    </script>
+</body>
+</html>

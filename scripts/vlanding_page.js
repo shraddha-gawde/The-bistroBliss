@@ -1,76 +1,3 @@
-let horizontalGridsData = [
-  {
-    id: 1,
-    name: "Beauty & Health",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. In\nquisquam molestias veritatis",
-    image: "https://htmldemo.net/oestin/oestin/img/icon/spa.png",
-  },
-  {
-    id: 2,
-    name: "Swimming Pool",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. In\nquisquam molestias veritatis",
-    image: "https://htmldemo.net/oestin/oestin/img/icon/swim.png",
-  },
-  {
-    id: 3,
-    name: "Restaurant",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. In\nquisquam molestias veritatis",
-    image: "https://htmldemo.net/oestin/oestin/img/icon/restaurent.png",
-  },
-  {
-    id: 4,
-    name: "Conference",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. In\nquisquam molestias veritatis",
-    image: "https://htmldemo.net/oestin/oestin/img/icon/conference.png",
-  },
-];
-
-let developersData = [
-  {
-    id: 1,
-    name: "Sophieee Rundle",
-    role: "Developer",
-    image: "https://htmldemo.net/oestin/oestin/img/team/1.jpg",
-    about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellente sque",
-  },
-  {
-    id: 2,
-    name: "Sophieee Rundle",
-    role: "Developer",
-    image: "https://htmldemo.net/oestin/oestin/img/team/1.jpg",
-    about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellente sque",
-  },
-  {
-    id: 3,
-    name: "Sophieee Rundle",
-    role: "Developer",
-    image: "https://htmldemo.net/oestin/oestin/img/team/1.jpg",
-    about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellente sque",
-  },
-  {
-    id: 4,
-    name: "Sophieee Rundle",
-    role: "Developer",
-    image: "https://htmldemo.net/oestin/oestin/img/team/1.jpg",
-    about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellente sque",
-  },
-  {
-    id: 5,
-    name: "Sophieee Rundle",
-    role: "Developer",
-    image: "https://htmldemo.net/oestin/oestin/img/team/1.jpg",
-    about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellente sque",
-  },
-];
 let vishnu_page1_mainContainer = document.getElementById(
   "vishnu_page1_mainContainer"
 );
@@ -163,26 +90,44 @@ page1_div5_grid1.className = "vishnu_page1_mainContainer_div_5_grid1";
 let page1_div5_grid2 = document.createElement("div");
 page1_div5_grid2.className = "vishnu_page1_mainContainer_div_5_grid2";
 
-horizontalGridsData.forEach((item) => {
-  let single_hrgrid = document.createElement("div");
-  single_hrgrid.className =
-    "vishnu_page1_mainContainer_div_5_grid1_horizontalgrids";
-  let hrgrid_image = document.createElement("img");
-  hrgrid_image.className =
-    "vishnu_page1_mainContainer_div_5_grid1_horizontalgrids_image";
-  let single_hrgrid_text = document.createElement("div");
-  single_hrgrid_text.className =
-    "vishnu_page1_mainContainer_div_5_grid1_horizontalgrids_text";
-  let hrgrid_title = document.createElement("h3");
-  let hrgrid_desc = document.createElement("p");
+async function HorizontalGrids() {
+  try {
+    let res = await fetch(
+      `https://neural-innovator-5123.onrender.com/horizontalGridsData`
+    );
+    let data = await res.json();
+    if (res.ok) {
+      displayHorizontalGrids(data);
+    }
+  } catch (error) {
+    console.log(error);
+  }
+}
 
-  hrgrid_image.src = item.image;
-  hrgrid_title.textContent = item.name;
-  hrgrid_desc.textContent = item.description;
-  single_hrgrid_text.append(hrgrid_title, hrgrid_desc);
-  single_hrgrid.append(hrgrid_image, single_hrgrid_text);
-  page1_div5_grid1.append(single_hrgrid);
-});
+HorizontalGrids();
+
+function displayHorizontalGrids(data) {
+  data.forEach((item) => {
+    let single_hrgrid = document.createElement("div");
+    single_hrgrid.className =
+      "vishnu_page1_mainContainer_div_5_grid1_horizontalgrids";
+    let hrgrid_image = document.createElement("img");
+    hrgrid_image.className =
+      "vishnu_page1_mainContainer_div_5_grid1_horizontalgrids_image";
+    let single_hrgrid_text = document.createElement("div");
+    single_hrgrid_text.className =
+      "vishnu_page1_mainContainer_div_5_grid1_horizontalgrids_text";
+    let hrgrid_title = document.createElement("h3");
+    let hrgrid_desc = document.createElement("p");
+
+    hrgrid_image.src = item.image;
+    hrgrid_title.textContent = item.name;
+    hrgrid_desc.textContent = item.description;
+    single_hrgrid_text.append(hrgrid_title, hrgrid_desc);
+    single_hrgrid.append(hrgrid_image, single_hrgrid_text);
+    page1_div5_grid1.append(single_hrgrid);
+  });
+}
 
 page1_div5.append(page1_div5_grid1, page1_div5_grid2);
 // ===========================div 5 end ==========================================
@@ -237,57 +182,75 @@ setTimeout(() => {
 
 let developers = document.querySelector(".vishnu_page1_mainContainer_div_8");
 
-developersData.forEach((item) => {
-  let singlegrid = document.createElement("div");
-  singlegrid.className = "developersgrid";
-  console.log(item.image);
-  singlegrid.style.backgroundImage = `url(${item.image})`;
-  let devKey = true;
-  singlegrid.addEventListener("mouseenter", (e) => {
-    if (devKey) {
-      let devDataBox = document.createElement("div");
-      devDataBox.className = "devDataBox";
-
-      let devName = document.createElement("h1");
-      devName.className = "devName";
-      let devRole = document.createElement("p");
-      devRole.className = "devRole";
-      let devAbout = document.createElement("p");
-      devAbout.className = "devAbout";
-      let devSocial = document.createElement("div");
-      devSocial.className = "devSocial";
-      let devFacebook = document.createElement("button");
-      devFacebook.className = "fa fa-facebook";
-      // let devFbAnchor = document.createElement("a");
-      // devFbAnchor.setAttribute("href", "https://www.facebook.com/");
-      let devTwitter = document.createElement("button");
-      devTwitter.className = "fa fa-twitter";
-      // let devTwitterAnchor = document.createElement("a");
-      // devTwitterAnchor.setAttribute("href", "https://twitter.com/");
-      let devPinterest = document.createElement("button");
-      devPinterest.className = "fa fa-pinterest";
-      // let devPinterestAnchor = document.createElement("a");
-      // devPinterestAnchor.setAttribute("href", "https://in.pinterest.com/");
-
-      devName.innerText = item.name;
-      devRole.textContent = item.role;
-      devAbout.textContent = item.about;
-
-      // devFacebook.append(devFbAnchor);
-      // devTwitter.append(devTwitterAnchor);
-      // devPinterest.append(devPinterestAnchor);
-
-      devSocial.append(devFacebook, devTwitter, devPinterest);
-      devDataBox.append(devName, devRole, devAbout, devSocial);
-
-      singlegrid.append(devDataBox);
-      devKey = false;
+async function DisplaydevGirds() {
+  try {
+    let res = await fetch(
+      `https://neural-innovator-5123.onrender.com/developersData`
+    );
+    let data = await res.json();
+    if (res.ok) {
+      DevelopersDataDisplay(data);
     }
-    // alert("vishnuraj");
-  });
+  } catch (error) {
+    console / log(error);
+  }
+}
 
-  developers.append(singlegrid);
-});
+DisplaydevGirds();
+
+function DevelopersDataDisplay(data) {
+  data.forEach((item) => {
+    let singlegrid = document.createElement("div");
+    singlegrid.className = "developersgrid";
+    console.log(item.image);
+    singlegrid.style.backgroundImage = `url(${item.image})`;
+    let devKey = true;
+    singlegrid.addEventListener("mouseenter", (e) => {
+      if (devKey) {
+        let devDataBox = document.createElement("div");
+        devDataBox.className = "devDataBox";
+
+        let devName = document.createElement("h1");
+        devName.className = "devName";
+        let devRole = document.createElement("p");
+        devRole.className = "devRole";
+        let devAbout = document.createElement("p");
+        devAbout.className = "devAbout";
+        let devSocial = document.createElement("div");
+        devSocial.className = "devSocial";
+        let devFacebook = document.createElement("button");
+        devFacebook.className = "fa fa-facebook";
+        // let devFbAnchor = document.createElement("a");
+        // devFbAnchor.setAttribute("href", "https://www.facebook.com/");
+        let devTwitter = document.createElement("button");
+        devTwitter.className = "fa fa-twitter";
+        // let devTwitterAnchor = document.createElement("a");
+        // devTwitterAnchor.setAttribute("href", "https://twitter.com/");
+        let devPinterest = document.createElement("button");
+        devPinterest.className = "fa fa-pinterest";
+        // let devPinterestAnchor = document.createElement("a");
+        // devPinterestAnchor.setAttribute("href", "https://in.pinterest.com/");
+
+        devName.innerText = item.name;
+        devRole.textContent = item.role;
+        devAbout.textContent = item.about;
+
+        // devFacebook.append(devFbAnchor);
+        // devTwitter.append(devTwitterAnchor);
+        // devPinterest.append(devPinterestAnchor);
+
+        devSocial.append(devFacebook, devTwitter, devPinterest);
+        devDataBox.append(devName, devRole, devAbout, devSocial);
+
+        singlegrid.append(devDataBox);
+        devKey = false;
+      }
+      // alert("vishnuraj");
+    });
+
+    developers.append(singlegrid);
+  });
+}
 
 // =========================== div 8 developers end ===================================
 // =========================== div 9 developers start =================================

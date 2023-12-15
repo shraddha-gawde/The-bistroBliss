@@ -123,14 +123,13 @@ function createButtons(number, query) {
 // adding
 
 var addbutton=document.getElementById("addbtn");
-var modifybtn=document.getElementById("modbtn");
-var deletebtn=document.getElementById("delbtn");
+var modifybtn=document.getElementById("modifybtn");
 
-let addimage=document.getElementById("image-input-d");
-let addsuit=document.getElementById("hotel-type-d");
-let adddes=document.getElementById("description-d");
-let addfac=document.getElementById("roomFacilities-d");
-let addprice=document.getElementById("price-d")
+let addimage=document.getElementById("addimage");
+let addsuit=document.getElementById("addsuit");
+let adddes=document.getElementById("adddesciption");
+let addfac=document.getElementById("addfacilities");
+let addprice=document.getElementById("addprice")
 
 async function addData(url){
     try {
@@ -164,12 +163,12 @@ addbutton.addEventListener("click",()=>{
 
 
 // modifying
-let modifyid=document.getElementById("id-d");
-let modifyimage=document.getElementById("image-inpumodt-d");
-let modifysuit=document.getElementById("hotel-typemod-d");
-let modifydes=document.getElementById("descriptionmod-d");
-let modifyfac=document.getElementById("roomFacilitiesmod-d");
-let modifyprice=document.getElementById("pricemod-d")
+let modifyid=document.getElementById("modid");
+let modifyimage=document.getElementById("modimage");
+let modifysuit=document.getElementById("modsuit");
+let modifydes=document.getElementById("moddescription");
+let modifyfac=document.getElementById("modfacilities");
+let modifyprice=document.getElementById("modprice")
 
 
 async function modifyData(url,id){

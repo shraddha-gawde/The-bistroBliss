@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="rlogin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="rlogin.js">
+</head>
+<body class="rbody">
+    <div class="rcontainer" id="rmain">
+        <div class="sign-up">
+            <form class="rform" action="#">
+                <h1 class="rh1">Create Account</h1>
+                <div class="social-container">
+                    <a href="#" class="ra social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="ra social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="ra social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <p class="rp">or use your email for registration</p>
+                <div class="rname">
+                    <input class="rinpu" id="fname" type="text" name="txt" placeholder="FirstName" required="">
+                    <input class="rinpu" id="lname" type="text" name="txt" placeholder="LastName" required="">
+                </div>
+                <!-- <input class="rinput" type="text" name="txt" placeholder="Name" required=""> -->
+                <input class="rinput" id="remail" type="email" name="email" placeholder="Email" required="">
+                <input class="rinput" id="rphone" type="tel" id="phone" name="phone" placeholder="999-999-9999" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+                <input class="rinput" id="rdob" type="date" id="start" name="trip-start" value="YYYY-MM-DD" min="2023-01-01" max="2025-12-31" />
+                <input class="rinput" id="rpswd" type="password" name="pswd" placeholder="Password" required="">
+                <button class="rbutton" id="rsbtn">Sign Up</button>
+            </form>
+        </div>
+        <div class="sign-in">
+            <form class="rform" action="#">
+                <h1 class="rh1">Sign in</h1>
+                <div class="social-container">
+                    <a href="#" class="ra social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="ra social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="ra social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <p class="rp">or use your account</p>
+                <input class="rinput" type="email" name="email" placeholder="Email" required="">
+                <input class="rinput" type="password" name="pswd" placeholder="Password" required="">
+                <a class="ra" href="#">Forget your Password?</a>
+                <button class="rbutton">Sign In</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-left">
+                    <h1 class="rh1">Welcome Back!</h1>
+                    <p class="rp">To keep connected with us please login with your personal info</p>
+                    <button class="rbutton" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-right">
+                    <h1 class="rh1">Hello, Friend</h1>
+                    <p class="rp">Enter your personal details and start journey with us</p>
+                    <button class="rbutton" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    const signUpButton = document.getElementById('signUp');
+    const signInButton = document.getElementById('signIn');
+    const main = document.getElementById('rmain');
+
+    signUpButton.addEventListener('click',()=>{
+        main.classList.add("right-panel-active");
+    });
+    signInButton.addEventListener('click',()=>{
+        main.classList.remove("right-panel-active");
+    });
+
+    </script>
+</body>
+</html>

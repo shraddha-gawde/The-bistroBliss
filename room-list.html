@@ -21,6 +21,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Raleway:ital,wght@0,400;1,300;1,500&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </head>
@@ -28,54 +29,78 @@
 <body>
     <header class="skicky">
         <nav class=" navbar navbar-light navbar-expand-md">
-          <div class="rmedia"><h3>THE BISTROBLISS</h3></div>
-          <div class="ggg"><div class="innerdiv"><img class="nlogo" src="rLogo.png" alt=""></div></div>
-          <div class="container-fluid"><a class="navbar-brand" href="#"></a><button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-              <div id="navcol-1" class="collapse navbar-collapse">
-                  <div class="row ms-auto">
-                  
-                      <div class="col-12">
-                          <hr>
-                          <ul class="top1 navbar-nav float-none float-md-end">
-                              <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
-                              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                ROOMS
-                              </a><ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">ROOM LIST</a></li>
-                                <li><a class="dropdown-item" href="#">ROOM DETAILS</a></li>
-                              </ul></li>
-                              <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:5501/rindex.html#">ACTIVITIES</a></li>
-                              <li class="nav-item"><a class="nav-link" href="#">LOCATION</a></li>
-                              <li class="nav-item"><a class="nav-link" href="#">EVENTS</a></li>
-                              <li class="nav-item"><a class="nav-link" href="#">TEAM</a></li>
-                              <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
-                              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                LOGIN
-                              </a><ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="rlogin.html">User SignIn</a></li>
-                                <li><a class="dropdown-item" href="rAdmin.html">Admin Login</a></li>
-                              </ul></li>
-                          </ul>
-                      </div>
-                      <div class="col-12 order-md-first top3">
-                          <ul class="top2">
-                              <div>
-                                  <span style="color: #b5876d; font-size: large; font-weight: bolder;">Contact:</span>
-                                  <span style="color: white;">123456</span>
-                              </div>
-                              <div class="logo">
-                                  <a href="https://www.facebook.com/"><img  class="rlogoi" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU9G2ZdJ4ZmDQi_P9w6TTkZDrKmUgEqk-X0A&usqp=CAU" alt=""></a>
-                                  <a href="https://twitter.com/"><img  class="rlogoi" src="data:image/png;base64,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" alt=""></a>
-                                  <a href="https://workspaceupdates.googleblog.com/2023/04/new-community-features-for-google-chat-and-an-update-currents%20.html"><img  class="rlogoi" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADjCAMAAADdXVr2AAAAjVBMVEUAAAD////+/v7t7e3s7Oz6+vr09PT19fXx8fFERET7+/tAQECmpqbm5ubX19eYmJiysrLDw8MhISG8vLxfX18ZGRne3t5aWlqxsbGqqqrh4eHR0dFra2uNjY27u7tycnI6Ojp6enpOTk6CgoIxMTGenp6Tk5MNDQ1/f38bGxsrKytJSUlUVFQ0NDRmZmYReRuxAAAPJElEQVR4nO1daXujKhQWkaVONtt0SdIm3dLOnXT6/3/eFXCXTQWd5On75fJAdXhvhHM4G0GYAlCYggDWjtJWxDsJ66SsE/BOlDYBKjtxYzwG9Ydo+RAbh6DxUigbL2cSi5nUe4HoLf99XE46rr+fvyAo6EW4QQ9HDXr88bLTNA7zzhCVc1KPl/SiKr1Q1gtkk47r71fRoxQDhpCkiHmTtQgomshqHNU7W+NENi5/SNobs1ZYdLJJm+iB9DdJji/3p6sUvxiu6q1mp2m82Wn1Us1Dyn//9bBMKGjR4+xplIL/Zsl9cMa42kACo4iKryvlFFAGxJD+wLOp5zccLxDEiJPCKaeg3L/AzfXUc3OCIxBbDftEg3z/AuBl6nm5wimiuXjI6QH8PPWsHCLBBT22qyAQ3U49JafYY7HBBASnQBfGLghuYsyEYSYY/kw9Hee4E4KBi/X11JNxj08UZloL2Ew9Fx9YA0EP0Kln4gc3VNA7TD0RP7hONZcggoup5+ELD6lggPht6mn4wl+QinX6OfU0vGEBAnoz9ST84QkEl/ttBsEzCMDr1JPwiCgAU0/BJ3YBnnoKPrFPf78LxiaYTz0Fn5gFd1NPwScegotVyRhWP/TOGBdP78K3lgsXDD/0zhc/9M4Zs0sXDD/0zhc/9M4Zq2A79RR84uJP6z/0zhcXT8/t1nL7/Hr//Xh4XN+/Pv/n9M29sHElGG7vnzbJIoIiQpBFJVCAosX+43vKUCcncu/6sJ+zqENKG5GmLFQRk+3N09Xwf6QXhtM7HRdUhFLKIk1ZTCulCNBkEg/3QHqnTcR+syw6NpLTg1kA4urb1aytMYjeW/pJxpDFFvKQYNaAhAeKsk7Ign9DwkMP+Tgm8+PIC7G/KenPimKaR4ayuLSI7yqEtURnFq3GFiAf5503v5zO34C+cu/9phrX2yFUPMbJiPtMP3rXe77794qEhxTtR4tg60XviIcF+lMyVpRXD3rfd1isLVwuM/u1l43TRx9sWuhuSkpSESd2Rr5JIt4UOyeU7ZysU+ycsLqzor0XPg109e+taZn1UebHmOVe8QUX43g+QpRlR7k3I5VEo+ayUmkttQVajkPgP62gE73rBa6mJA2kl+qk3u08XejdRzRLVQkj2a7BU1lIOR7K9h8+Hufj2LOQ72BKegl5ohKLLCe8VTYR5s1GJ6l34uZDhI36XYD2pqQlKTd+CMI+giFsj0Pw2yc9a7m3IZ7y98DTP0DvgfhKTwRoenornMs5UsqxpkiLG+MwkgjH5ngIfZpk7ExJK1RmwfHzW1w2eS9tjPMmZk1SjsseInOv6S9WpqQjaeQwOhMMwLMZ0kbuPRF5Ku5gsR4C3w4OC3rfRJFpPFxr8R5TY6b3TFWJ1GzXGELPv05mQe+O1taW5dqD2rXHn8c77+xSeobFnTS0EiS0FuVxFmC2YYoWhcrjbIoR2Bnl3u/YuupAOucoOR5en68/Pz+v/34dnh4WFIeNLzh/HiQjsDPR+0stiyqkAmz10rYQ3X5vIP/1mvTAKId1E72dFb30O0zUFuj79PuGTXor50yk0NN7I9W1hSonhvrae3jX/iO3M0praw+NZynTyJ7bMK7oU7FQsuJCyRL6FkYrs2X9cwXCuHgIHB0y0EJrSkpA21TE62ZUTElgZ3fgfo1yuQfGY6eVe18ysV3XWkCH09oDyeh9uJi4HXT0FiZ6qUb83OHfOjBBSLweX5vQ0FsDmVZS01o6yq5TRCMwaj6dJlR8m5l+iArd19A7HDkNWe3f+24pXU3B0OMruxpcVeT2ugXNX6vl3sJgSxl1DZVY8uO+EKFc0ACo+WslvZPBfweWXmZvxBLzrY6rFUwXwkCXoaekl4CWqagwJTGdcSStqoUlbcrhXvTCmtef+6746Zx30hFOogrwj5M53OKQa1F6eipT0huuWX0agmHC4jXLxlaHoM6ioZJ7O5rZDaRiHYwfoZJj2bQQ96H3TqCG3jhHUTmc0HvCGnoATViGwQm9HY00a28aiSfQde3Jds5brjc3vf4o65w0wHWJi1AFzOdn2Dllk32RukgysU4mLdfmQu6tNA4uOG1mQKa1VPaC7vTupAZmQQ+PeBqVwAG9P1RqYM6W8rQF25a0udXp6Uk2nkdQCRAovP4iFABNKPMYlmEZqoDYpIhup5OakmbC609kp/Vw4rJYDpSyXcXZ0xDrkBgn8Gszmy0ZZgxH1jry5rLRlI6nPVqjqQOxjtX0qPnb/GY/dPrtiFWL0iYVpX55Z1w2pePsv7q3fwynB8rot6adE5s1ljUAhpA53XgMqmXh9skNR8KRNvaLxvkzXTz7bLz4y11RH0lmSvoFWl7/IhQgNldWWgNFKAGVvZS0OyuhdFTUaeZRkiIoSvI8yeL4xHBYregoMyWtsdzzyD8hIzv2uDlcVTnOos9L79EWhuWupj5/VkIV2PtxUZ1ZJvd+Y2VVca2QyemRgVXFaenY3ArtsmNVcaKl96ShZ+FSHU6vXC8+6B2pmp6FBalBT+Gd1dCD5ZR80NtQ+dpje7pFAO3gtQdLy+XwtdcWDDegorXUX0ctTrJrc1SSZjyu7V9UzKSceVsHLq3m5f+DYueUyb0EKMU6toi+XAPrqKR8vPmFVenB2ndndddBf3oWR9kfelPTU50YbKpdWqy9WD3ueu21bQsrwvWduAzdjAt9ycJxskbVhxrxnK2XNse55le8ay7UuVbUgjSUoZg0KnZOmSlpQ+XabirCbCpYr0mXaNzWVS9psww/ZoIh761q4/VQhvy7zl08erm31GgtFpVmB2stlTOlD7H+pqFn4RkaTq9UbH3QO2hODBYFyIdrLeV20ElrKfIoqvTaW8tXqIwWILE5bn2tehypX1tHqVJHsQASOwxrtV+bjxd/We6cMv/eH7VgiCySYoYLhvJYsk/2DCtxGmetRVswrPZ7Ps7/lB/XT/nzKmOEQqxDag72sLK1UI1Y1+5fDmwtcw09895iYyn72FMNPd2xxIGlLKnoNw1TEoz1sY22mFGVKSlt6FSjZdOU1J3eB8gKCMRxnhubLlrhqo/duBi2PLc2fynm78+9bNq7PZaA/SkVf8rmR3UuHWlU0hdWq4PISUzEq04wUN0H0vYxdA7b+dRdUIe/hnILhIdNbWvRPenCAbbT+Pec3ACANPSo1lzlgt5R5750cN3Uk04po1p7jgt690C59tLjwPCfL9IpZVjrg+q69qRbRSSrKoCzqgJg6Or7AGVVAtyKTwB/dc9ywZDvnGx+tEfgx57KxHp2vhqalvYJGhds1l0oeq29KtZ7yr0geNRHJQ0LZU+aHqKa1mIIeXISthOolLLsgswhFWUObVNTjZ7enOOG3ooqnM8iInBAXuF/yHBi0Cd9dHU+yxfSF0BZ1QDh2iuaojPsn522Q/lLSf2lwmqEDG9eouJPs+d1oQPKqgORwr+Xh4r3zeCaYf1pnRjM/F0DPxT0Pkyx1P2qkbwBg60FGRKSuFjPUrQgX7a9QsWD2BQJ3yeL69FoSjJ99YKe2JUEvV6/XrBRh4pHImmvu/byCIx2TpOP5vO/2ya09FQy+jrUVBXgFpt40TFs9QXEhlCC2Bw20wmaqgObUCkY8hyiuFNM9ZLdV6w3JenV6e7QpEhdS/PSawluXTbQzx1p2GIlYh1r9c3u0CW4bYz02Fq0DF79jSwcYM5vk9Om5bOfT5u/x2aK7yyC6NZb9vEZ6eGT+VWdoKX3BLRG70wiQ3JnEMWHXcOMqzDzWgSsdYS+6sCCtk1JmdZSnxlVlxY9bVBGBxRaj0prcV73Sp/YfcK6YkEVsQ8pocnHV1NQvB8eGClbD5H7VH1DWv4MW1Yd4K30V9qtlm8vh8Pvt6fZzW6eku4StuM++8NUM+IOW9PjggLEzJOQVeepT99Ez6RM+6B3hRQnBrWpyXAiUI3r7X+96RlOph+xuuqArSu/FiqgGI8dOS/qMBewTMpqO1Fb7kkLWPaJxvWTmGRRK2lLNVrLsFJQpVj3lDNnQe/vGPQ8XTBqU8jrHnevlaQ0FUlPDFhvuh1Cz8LodQitvf794K0WgV0Byyd2UvMoGLxlXVmWQPwgVmJdK7aVYr2X1cYpPf77eSpg6TPD37r86AuB1aoDMpEWA+n0w1bIXH3cZ/0C+6ria8pd/aLqAHf1k9LrX7ryK+NCSxH+/fpDlXG/1Rk63IVyNaeuBENl3G/dpC6Fm5kxyHEBS9+1d7pVFT8it2W3w3vzvzkIHYum38+RO3pg6/3qkK53oXzeuFp7kIxQ8sVYwLKFxznJrnZRVSWgMLv6BRb+fdaCYXUckDGqhvS5oG6GsVzuyeWaVO718L/0Qa/LQv6wKyeGaC1o7iJyywI9b7I57UDfq14iSrajVZ3ofUHd607sKl1PDAhvR6yHYjQlqfHrAYGa178ZCkDqnTxkIFyMmtbf9S6UOj7mrHAq+2GEKYlv/GFYCAa+QPmvyTQUSqKNOXHaKYbe4HZ62BJMoVGsMwvEfpzLeapwcP/e6bjDpVW6RY+JRAS2mxHurWnDzbW6t4+bBRbJ/HnZbZhFZ4R0mywfp7pB0cqUZIf39dMs2c1JZpCG27vdzfH316Q3YPa/oO4scPEXs/7QO19cPL0Lv2/9h9754ofeOaPDBXXniD6mpDPCxcu9H3rnC7sL6s4WHfx754iLl3s/9M4XF07v4k1JFiUpzxebwFOo4b+BfWBRL/V8sQvAyE6bUTEPyKi3Vo2LZxA4z7r6h/AEAn15lPPGIqVnU7XxPPEMwiCCF6u3PAAQIDTypXGj4ZoQHIDQpvDfOSKhUcQu+/IYqz0hvlkwUcAd/JP49f3iEzEPfyBiNtr3GZ877ngiViACiubTXuDiHom4NiHIIk+nu3LOC/ZYRLYFWdwecFB+7N9BgrO4xJxeCMCkl1+5xCnit9LU6LEKJVMFD7nFMYuKEvTKqEtqUTv1n8cbzfMD+dprZB4mvlMLvOJqA1kungiXZWGXQqxXSpDhKDm+3J+uUvxiuKq3mp2m8Wan1Us1Dyn//dfDMqGgEuzM4xIb9HhZESoCGHkBZlGqV+RIFk1kNY7qna1xIhuXPyTtjVkrLDrZpEMLeqoEEl/pifJbBypBoV2rikvpwRY92Jg+z88rO5vjcWOctWArjwFCRZ5DSQ82ktvbvUA26bj+fk7vf0bNIhby5qbvAAAAAElFTkSuQmCC" alt=""></a>
-                                  <a href="https://www.instagram.com/"><img  class="rlogoi" src="https://cdn.freebiesupply.com/images/large/2x/instagram-logo-white-on-black.png" alt=""></a>
-                                  <a href="https://www.pinterest.com/"><img  class="rlogoi" src="https://www.logologo.com/freelogos/Circular-Pinterest-icon-black.png" alt=""></a>
-                              </div>
-                          </ul> 
-                      </div>
-                  </div>
-              </div>
+          <div class="rmedia">
+            <h3>THE BISTROBLISS</h3>
           </div>
-      </nav>
+          <div class="ggg">
+            <div class="innerdiv"> <a href="index.html">
+                <img class="nlogo" src="rLogo.png" alt="">
+            </a></div>
+          </div>
+          <div class="container-fluid"><a class="navbar-brand" href="#"></a><button class="navbar-toggler"
+              data-bs-toggle="collapse" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle
+                navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div id="navcol-1" class="collapse navbar-collapse">
+              <div class="row ms-auto">
+    
+                <div class="col-12">
+                  <hr>
+                  <ul class="top1 navbar-nav float-none float-md-end">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        ROOMS
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="room-list.html">ROOM LIST</a></li>
+                        <li><a class="dropdown-item" href="roomdetails.html">ROOM DETAILS</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:5501/rindex.html#">ACTIVITIES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">LOCATION</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">EVENTS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">TEAM</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        LOGIN
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="rlogin.html">User SignIn</a></li>
+                        <li><a class="dropdown-item" href="rAdmin.html">Admin Login</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-12 order-md-first top3">
+                  <ul class="top2">
+                    <div>
+                      <span style="color: #b5876d; font-size: large; font-weight: bolder;">Contact:</span>
+                      <span style="color: white;">123456</span>
+                    </div>
+                    <div class="logo">
+                      <a href="https://www.facebook.com/"><img class="rlogoi"
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU9G2ZdJ4ZmDQi_P9w6TTkZDrKmUgEqk-X0A&usqp=CAU"
+                          alt=""></a>
+                      <a href="https://twitter.com/"><img class="rlogoi"
+                          src="data:image/png;base64,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"
+                          alt=""></a>
+                      <a
+                        href="https://workspaceupdates.googleblog.com/2023/04/new-community-features-for-google-chat-and-an-update-currents%20.html"><img
+                          class="rlogoi"
+                          src="data:image/png;base64,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"
+                          alt=""></a>
+                      <a href="https://www.instagram.com/"><img class="rlogoi"
+                          src="https://cdn.freebiesupply.com/images/large/2x/instagram-logo-white-on-black.png" alt=""></a>
+                      <a href="https://www.pinterest.com/"><img class="rlogoi"
+                          src="https://www.logologo.com/freelogos/Circular-Pinterest-icon-black.png" alt=""></a>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
       </header>
     
     <!-- <iframe src="rindex.html" width="100%" height="100px" frameborder="0"></iframe> -->
@@ -218,7 +243,7 @@
     </section>
 
     <div class="mayank">
-        <div class="container">
+        <div class="container246" style="border: none;">
 
             <div class="mtop">
                 <div class="min">
@@ -232,11 +257,8 @@
                                 magnaa liqua. Ut enim minimn.</p>
                         </div>
                         <div class="maysocial">
-                            <a
-                                href="https://www.facebook.com/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNzAyNTM5NDYxLCJjYWxsc2l0ZV9pZCI6MjY5NTQ4NDUzMDcyMDk1MX0%3D"><i
-                                    class="iconb fa-brands fa-square-facebook"></i></a>
-                            <a href="https://www.instagram.com/accounts/login/"><i
-                                    class="iconb fa-brands fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNzAyNTM5NDYxLCJjYWxsc2l0ZV9pZCI6MjY5NTQ4NDUzMDcyMDk1MX0%3D"><i class="iconb fa-brands fa-square-facebook"></i></a>
+                            <a href="https://www.instagram.com/accounts/login/"><i class="iconb fa-brands fa-instagram"></i></a>
                             <a href="#"><i class="iconb fa-solid fa-rss"></i></a>
                             <a href="#"><i class="iconb fa-brands fa-twitter"></i></a>
                             <a href="#"><i class="iconb fa-brands fa-pinterest-p"></i></a>
@@ -247,10 +269,9 @@
                             <h4>CONTACT US</h4>
                         </div>
                         <div class="maycontactin">
-                            <a href=""><i class=" iconc fa-solid fa-location-dot"></i> Magnum House 1,<br>
-                                Karampura,Delhi</a>
-                            <a href=""><i class="iconc fa-solid fa-envelope"></i> demo@example.com </a>
-                            <a href=""><i class=" iconc fa-solid fa-phone"></i> 0123456789 </a>
+                            <a href=""><i class=" iconc fa-solid fa-location-dot"></i>      Magnum House 1,<br> Karampura,Delhi</a>
+                            <a href=""><i class="iconc fa-solid fa-envelope"></i>   hotelbliss@bristobliss.com </a>
+                            <a href=""><i class=" iconc fa-solid fa-phone"></i> +91 25789-32345 </a>
 
                         </div>
                     </div>
@@ -262,7 +283,7 @@
                         <ul class="quickin">
                             <li><a href="">Home</a></li>
                             <li><a href="">Stuffs</a></li>
-                            <li><a href="">Suits & Rooms</a></li>
+                            <li><a href="">Suits and Rooms</a></li>
                             <li><a href="">Event</a></li>
                             <li><a href="">Location</a></li>
                             <li><a href="">Contact</a></li>
@@ -273,22 +294,18 @@
                             <h4>COLLECTIONS</h4>
                         </div>
                         <div class="colimg">
-                            <a href=""><img src="room1.webp" alt=""></a>
-                            <a href=""><img src="room2.webp" alt=""></a>
-                            <a href=""><img src="room1.webp" alt=""></a>
-                            <a href=""><img src="room3.webp" alt=""></a>
-                            <a href=""><img src="room2.webp" alt=""></a>
-                            <a href=""><img src="room3.webp" alt=""></a>
-
-
+                            <a href=""><img src="imagemay/room1.webp" alt=""></a>
+                            <a href=""><img src="imagemay/room2.webp" alt=""></a>
+                            <a href=""><img src="imagemay/room1.webp" alt=""></a>
+                            <a href=""><img src="imagemay/room3.webp" alt=""></a>
+                            <a href=""><img src="imagemay/room2.webp" alt=""></a>
+                            <a href=""><img src="imagemay/room3.webp" alt=""></a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="mbot">
-                <p><i class="fa-regular fa-copyright"></i> 2021 Oestin Made with <i class="heart fa-solid fa-heart"></i>
-                    by </p>
-                <p class="th"> HasThemes</p>
+                <p><i class="fa-regular fa-copyright"></i> 2021 Oestin Made with <i class="heart fa-solid fa-heart"></i> by </p> <p class="th">     HasThemes</p>
             </div>
         </div>
     </div>

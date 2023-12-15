@@ -3,120 +3,119 @@
   padding: 0;
   box-sizing: border-box;
 }
-.mayank .container {
-  border: 2px solid rgb(0, 0, 0);
+.mayank .container246 {
   font-weight: 400;
   color: white;
 }
-.mayank .container a {
+.mayank .container246 a {
   text-decoration: none;
 }
-.mayank .container .mtop {
+.mayank .container246 .mtop {
   background-color: #212530;
   height: 420px;
   width: 100%;
   display: flex;
 }
-.mayank .container .mtop .min {
+.mayank .container246 .mtop .min {
   display: flex;
   padding: 5%;
 }
-.mayank .container .mtop .min a {
+.mayank .container246 .mtop .min a {
   font-size: 18px;
 }
-.mayank .container .mtop .min a:not(:empty) {
+.mayank .container246 .mtop .min a:not(:empty) {
   color: white;
   /* Change the text color only */
 }
-.mayank .container .mtop .min .mayoestin {
+.mayank .container246 .mtop .min .mayoestin {
   width: 25%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.mayank .container .mtop .min .mayoestin .oetitle {
+.mayank .container246 .mtop .min .mayoestin .oetitle {
   font-size: 26px;
 }
-.mayank .container .mtop .min .mayoestin .mayoest {
+.mayank .container246 .mtop .min .mayoestin .mayoest {
   height: 140px;
 }
-.mayank .container .mtop .min .mayoestin .mayoest p {
+.mayank .container246 .mtop .min .mayoestin .mayoest p {
   font-size: 20px;
   font-weight: 200;
 }
-.mayank .container .mtop .min .mayoestin .maysocial {
+.mayank .container246 .mtop .min .mayoestin .maysocial {
   height: 40px;
 }
-.mayank .container .mtop .min .mayoestin .maysocial .iconb {
+.mayank .container246 .mtop .min .mayoestin .maysocial .iconb {
   border: 1px solid #b1b1b1;
   font-size: 28px;
   margin-right: 25px;
   color: #b1b1b1;
 }
-.mayank .container .mtop .min .mayoestin .maysocial .iconb:hover {
+.mayank .container246 .mtop .min .mayoestin .maysocial .iconb:hover {
   color: white;
   border: 1px solid white;
 }
-.mayank .container .mtop .min .maycontact {
+.mayank .container246 .mtop .min .maycontact {
   width: 20%;
   margin-left: 80px;
 }
-.mayank .container .mtop .min .contitle {
+.mayank .container246 .mtop .min .contitle {
   font-size: 20px;
   height: 64px;
 }
-.mayank .container .mtop .min .maycontactin {
+.mayank .container246 .mtop .min .maycontactin {
   height: 210px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding-top: 20px;
 }
-.mayank .container .mtop .min .maycontactin .iconc {
+.mayank .container246 .mtop .min .maycontactin .iconc {
   border: 2px solid #b1b1b1;
   font-size: 24px;
   margin-right: 5px;
   color: #b1b1b1;
 }
-.mayank .container .mtop .min .maycontactin .iconc:hover {
+.mayank .container246 .mtop .min .maycontactin .iconc:hover {
   color: white;
   border: 1px solid white;
 }
-.mayank .container .mtop .min .mayquick {
+.mayank .container246 .mtop .min .mayquick {
   width: 15%;
   display: flex;
   flex-direction: column;
   margin-left: 50px;
 }
-.mayank .container .mtop .min .mayquick .linktitle {
+.mayank .container246 .mtop .min .mayquick .linktitle {
   font-size: 20px;
   height: 64px;
 }
-.mayank .container .mtop .min .mayquick .quickin {
+.mayank .container246 .mtop .min .mayquick .quickin {
   height: 230px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   font-size: 22px;
 }
-.mayank .container .mtop .min .mayquick .quickin li {
+.mayank .container246 .mtop .min .mayquick .quickin li {
   list-style: none;
 }
-.mayank .container .mtop .min .mayquick a:hover {
+.mayank .container246 .mtop .min .mayquick a:hover {
   color: #b1b1b1;
 }
-.mayank .container .mtop .min .maycollections {
+.mayank .container246 .mtop .min .maycollections {
   width: 25%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-left: 80px;
 }
-.mayank .container .mtop .min .maycollections .coltitle {
+.mayank .container246 .mtop .min .maycollections .coltitle {
   font-size: 20px;
   height: 64px;
 }
-.mayank .container .mtop .min .maycollections .colimg {
+.mayank .container246 .mtop .min .maycollections .colimg {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   height: 230px;
@@ -124,14 +123,14 @@
   justify-content: center;
   gap: 10px;
 }
-.mayank .container .mtop .min .maycollections .colimg img {
+.mayank .container246 .mtop .min .maycollections .colimg img {
   height: 90px;
   width: 90px;
 }
-.mayank .container .mtop .min .maycollections a:hover {
+.mayank .container246 .mtop .min .maycollections a:hover {
   opacity: 0.25;
 }
-.mayank .container .mbot {
+.mayank .container246 .mbot {
   width: 100%;
   height: 70px;
   display: flex;
@@ -140,10 +139,10 @@
   background-color: #000000;
   font-size: 14px;
 }
-.mayank .container .mbot .heart {
+.mayank .container246 .mbot .heart {
   color: rgb(221, 33, 149);
 }
-.mayank .container .mbot .th {
+.mayank .container246 .mbot .th {
   color: green;
   margin-left: 5px;
 }/*# sourceMappingURL=mayank.css.map */

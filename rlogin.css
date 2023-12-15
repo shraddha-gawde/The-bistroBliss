@@ -9,6 +9,7 @@
     background: #f6f6f6;
     min-height: 100%;
     margin: 5.5%;
+    background-image: url("https://media-cdn.tripadvisor.com/media/photo-s/2a/a9/1a/91/swimming-pool.jpg");
 }
 .rcontainer{
     position: relative;
@@ -34,7 +35,7 @@
 .sign-in{
     width: 50%;
     z-index: 2;
-    /* position: absolute; */
+    position: relative;
     top: 0;
     left: 0;
     height: 500px;
@@ -54,17 +55,30 @@
     font-weight: bold;
     margin: 0;
 }
+.rname{
+    display: flex;
+    gap: 2%;
+}
+.rinpu{
+    background-color: #eee;
+    padding: 10px 15px;
+    margin: 5px 0px;
+    width: 50%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
 .rp{
     font-size: 14px;
     font-weight: 100;
     line-height: 20px;
     letter-spacing: 0.5px;
-    margin: 10px 0 10px;
+    margin: 5px 0 5px;
 }
 .rinput{
     background-color: #eee;
-    padding: 12px 15px;
-    margin: 8px 15px;
+    padding: 10px 15px;
+    margin: 5px 15px;
     width: 100%;
     border-radius: 5px;
     border: none;
@@ -74,15 +88,15 @@
     color: #333;
     font-size: 14px;
     text-decoration: none;
-    margin: 10px 0;
+    margin: 5px 0;
 }
 .rbutton{
     color: #fff;
     background: #b5876d;
     font-size: 12px;
     font-weight: bold;
-    padding: 12px 55px;
-    margin: 20px;
+    padding: 10px 55px;
+    margin: 10px;
     border-radius: 20px;
     border: 1px solid #ff4b2b2c;
     outline: none;
@@ -161,7 +175,7 @@
     transform: translateX(20%);
 }
 .social-container{
-  margin: 20px 0;
+  margin: 5px 0;
 }
 .social-container a{
     height: 40px;

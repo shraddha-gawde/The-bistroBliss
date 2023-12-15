@@ -11,6 +11,7 @@
 <body>
     <header class="skicky">
       <nav class=" navbar navbar-light navbar-expand-md">
+        <div class="rmedia"><h3>THE BISTROBLISS</h3></div>
         <div class="ggg"><div class="innerdiv"><img class="nlogo" src="rLogo.png" alt=""></div></div>
         <div class="container-fluid"><a class="navbar-brand" href="#"></a><button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div id="navcol-1" class="collapse navbar-collapse">
@@ -26,17 +27,16 @@
                               <li><a class="dropdown-item" href="#">ROOM LIST</a></li>
                               <li><a class="dropdown-item" href="#">ROOM DETAILS</a></li>
                             </ul></li>
-                            <li class="nav-item"><a class="nav-link" href="#">ACTIVITIES</a></li>
+                            <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:5501/rindex.html#">ACTIVITIES</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">LOCATION</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">EVENTS</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">TEAM</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
-                            <!-- <button class="signb">SinIn Or Create Account</button> -->
                             <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                               LOGIN
                             </a><ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <li><a class="dropdown-item" href="#">User SignIn</a></li>
-                              <li><a class="dropdown-item" href="#">Admin Details</a></li>
+                              <li><a class="dropdown-item" href="rlogin.html">User SignIn</a></li>
+                              <li><a class="dropdown-item" href="rAdmin.html">Admin Login</a></li>
                             </ul></li>
                         </ul>
                     </div>
@@ -69,7 +69,7 @@
             <div class="carousel-inner">
                
               <div class="carousel-item active c-item">
-                <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/446985261.jpg?k=e84b3cb60c5a1a1b28ab0873a9606c4ea961bdad7c8b15d06aee6a0df6d35e01&o=" class="d-block w-100 c-img" alt="...">
+                <img src="https://htmldemo.net/oestin/oestin/img/slider/1.jpg" class="d-block w-100 c-img" alt="...">
                 <div class="carousel-caption d-none top-0 mt-4 d-md-block">
                     <h1 class="mt display-1 fw-bolder">WELCOME TO THE BISTROBLISS</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sint ducimus distinctio reprehenderit exercitationem nemo assumenda autem unde perferendis earum.</p>
@@ -77,7 +77,7 @@
                 </div>
               </div>
               <div class="carousel-item c-item">
-                <img src="https://www.travelandleisure.com/thmb/rMPmRcvZKIpEmyQoaCwhmXdoGAQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/waldorf-astoria-maldives-ithaafushi-00_ASIARESORTSWB22-ba575bbc118b453d8683c4b7b673a4df.jpg" class="d-block w-100 c-img" alt="...">
+                <img src="https://htmldemo.net/oestin/oestin/img/slider/2.jpg" class="d-block w-100 c-img" alt="...">
                 <div class="carousel-caption d-none top-0 mt-4 d-md-block">
                     <h1 class="mt display-1 fw-bolder">WELCOME TO THE BISTROBLISS</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sint ducimus distinctio reprehenderit exercitationem nemo assumenda autem unde perferendis earum.</p>
@@ -104,9 +104,9 @@
           </div>
           <div class="rdate">
             <!-- <label for="start"></label> -->
-<input type="date" id="start" name="trip-start" value="2018-07-22" min="2023-01-01" max="2025-12-31" />
-<input type="date" id="start" name="trip-start" value="2018-07-22" min="2023-01-01" max="2025-12-31" />
-<select name="pets" id="Astart">
+<input type="date" class="start" name="trip-start" placeholder="YYYY-MM-DD"  min="2023-01-01" max="2025-12-31" />
+<input type="date" class="start" name="trip-start" placeholder="YYYY-MM-DD" min="2023-01-01" max="2025-12-31" />
+<select name="pets" class="Astart">
   <option value="">ADULTS</option>
   <option value="1">1</option>
   <option value="2">2</option>
@@ -115,7 +115,7 @@
   <option value="5">5</option>
   <option value="6">6</option>
 </select>
-<select name="pets" id="Astart">
+<select name="pets" class="Astart">
   <option value="">CHILDREN</option>
   <option value="1">1</option>
   <option value="2">2</option>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="styles/room-list.css"> -->
+    <link rel="stylesheet" href="styles/room-list.css">
     <link rel="stylesheet" href="styles/responsiveness.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,8 +21,8 @@
 
     <!--  add ,post, delete -->
     <div id="container-modification">
-        <div id="adding-container"  style="border: 2px solid black;">
-            <h2 style="color: blueviolet">ADD NEW HOTELS</h2>
+        <div id="adding-container"  >
+            <h2 style="color: chocolate">ADD NEW HOTELS</h2>
             <br>
         <div><input type="text" id="image-input-d" placeholder="Enter image source..."></div>
         <br>
@@ -32,15 +32,17 @@
         <br>
         <div><input type="text"  id="roomFacilities-d" placeholder="roomFacilities..."></div>
         <br>
-        <div><input type="number"  id="price-d" placeholder="prce..."></div>
+        <div><input type="number"  id="price-d" placeholder="price..."></div>
         <br>
         <button id="addbtn">ADD NEW</button>
         
         </div>
     <!-- modify -->
         
-        <div id="modify-container" style="border: 2px solid red;">
-            <h2 style="color: blueviolet;">MODIFY EXISTING HOTELS</h2>
+        <div id="modify-container" >
+            <h3 style="color: chocolate;">MODIFY EXISTING HOTELS</h3>
+            <br>
+            <div><input type="text" id="id-d" placeholder="Enter id..."></div>
             <br>
             <div><input type="text" id="image-inputmod-d" placeholder="Enter image source..."></div>
             <br>
@@ -50,9 +52,9 @@
             <br>
             <div><input type="text"  id="roomFacilitiesmod-d" placeholder="roomFacilities..."></div>
             <br>
-            <div><input type="number"  id="pricemod-d" placeholder="prce..."></div>
+            <div><input type="number"  id="pricemod-d" placeholder="price..."></div>
             <br>
-            <button id="addbtn">MODIFY EXISTING</button>
+            <button id="modbtn">MODIFY EXISTING</button>
             
             </div>
         </div>

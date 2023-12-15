@@ -131,6 +131,8 @@ let adddes=document.getElementById("adddesciption");
 let addfac=document.getElementById("addfacilities");
 let addprice=document.getElementById("addprice")
 
+
+
 async function addData(url){
     try {
         let res=await fetch(url,{
@@ -169,6 +171,7 @@ let modifysuit=document.getElementById("modsuit");
 let modifydes=document.getElementById("moddescription");
 let modifyfac=document.getElementById("modfacilities");
 let modifyprice=document.getElementById("modprice")
+
 
 
 async function modifyData(url,id){

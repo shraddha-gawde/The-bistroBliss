@@ -1,45 +1,80 @@
+.roomdetails {
+  width: 90%;
+  margin: auto;
+}
 .roomdetails * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 .roomdetails .rd1 {
-  width: 90%;
+  width: 100%;
   height: auto;
   display: flex;
   gap: 50px;
+  box-sizing: border-box;
+  margin-top: 50px;
 }
 .roomdetails .rd1 .rd1l {
-  width: 80%;
-  border: 2px solid rgb(20, 224, 64);
+  width: 72%;
+  box-sizing: border-box;
 }
 .roomdetails .rd1 .rd1l .rd1lup {
   height: 580px;
-  border: 2px solid rgb(53, 54, 128);
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: #604332;
+  border-radius: 5px;
 }
 .roomdetails .rd1 .rd1l .rd1lup img {
   max-width: 100%;
   box-sizing: border-box;
-  height: auto;
+  height: 580px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .roomdetails .rd1 .rd1l .rd1ldown {
-  height: 250px;
-  border: 2px solid rgb(5, 5, 5);
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.roomdetails .rd1 .rd1l .rd1ldown .item {
+  width: 200px;
+}
+.roomdetails .rd1 .rd1l .rd1ldown .owl-carousel {
+  box-sizing: border-box;
+  width: 100% !important;
+  padding: 20px;
+}
+.roomdetails .rd1 .rd1l .rd1ldown button.owl-prev {
+  position: absolute;
+  top: 40%;
+  left: 0;
+}
+.roomdetails .rd1 .rd1l .rd1ldown button.owl-next {
+  position: absolute;
+  top: 40%;
+  right: 0;
 }
 .roomdetails .rd1 .rd1r {
   width: 25%;
-  border: 2px solid rgb(76, 120, 202);
   height: 800px;
+  box-sizing: border-box;
 }
 .roomdetails .rd1 .rd1r .rd1rup {
-  border: 2px solid rgb(159, 201, 43);
-  height: 520px;
+  height: 480px;
   display: flex;
   flex-direction: column;
   background-color: #f1f1f1;
   align-items: center;
+  text-decoration: underline;
+  text-decoration-color: #ee8743;
+  border-radius: 10px;
 }
-.roomdetails .rd1 .rd1r .rd1rup p {
+.roomdetails .rd1 .rd1r .rd1rup h4 {
   margin-top: 20px;
   font-size: 22px;
 }
@@ -47,15 +82,16 @@
   border-radius: 5px;
   margin-top: 25px;
   font-size: 12px;
+  text-align: center;
   width: 90%;
   height: 40px;
   border: none;
 }
 .roomdetails .rd1 .rd1r .rd1rup button {
-  width: 90%;
-  height: 50px;
-  margin-top: 30px;
-  font-size: 14px;
+  width: 80%;
+  height: 40px;
+  margin-top: 25px;
+  font-size: 16px;
   color: white;
   background-color: #b5876d;
   border: none;
@@ -71,14 +107,14 @@
   transition-property: background-color black;
 }
 .roomdetails .rd1 .rd1r .rd1rdown {
-  border: 2px solid rgb(161, 17, 130);
   height: 200px;
   background-color: #f1f1f1;
-  margin-top: 50px;
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   padding: 8%;
   font-weight: 400;
+  border-radius: 10px;
 }
 .roomdetails .rd1 .rd1r .rd1rdown a {
   text-decoration: none;
@@ -101,55 +137,86 @@
   color: rgb(100, 82, 82);
   border: 1px solid white;
 }
-.roomdetails .rd2 {
-  width: 90%;
-  height: 450px;
-  border: 2px solid rgb(0, 0, 0);
+
+.rd2 {
+  width: 100%;
+  height: 400px;
   display: flex;
   gap: 50px;
 }
-.roomdetails .rd2 a {
+.rd2 a {
   text-decoration: none;
 }
-.roomdetails .rd2 a:not(:empty) {
+.rd2 a:not(:empty) {
   color: rgb(87, 80, 80);
   /* Change the text color only */
 }
-.roomdetails .rd2 span {
+.rd2 span {
   font-size: 14px;
 }
-.roomdetails .rd2 .rd2l {
-  border: 2px solid rgb(0, 0, 0);
-  height: 450px;
+.rd2 .rd2l {
+  height: 400px;
   width: 80%;
 }
-.roomdetails .rd2 .rd2l p {
+.rd2 .rd2l p {
   margin-top: 20px;
 }
-.roomdetails .rd2 .rd2r {
-  border: 2px solid rgb(144, 48, 233);
-  height: 450px;
+.rd2 .rd2r {
+  height: 380px;
   width: 25%;
   background-color: #f1f1f1;
+  border-radius: 10px;
+  padding: 15px;
 }
-.roomdetails .rd2 .rd2r h4 {
-  margin-top: 20px;
+.rd2 .rd2r h4 {
+  margin-top: 0px;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 22px;
 }
-.roomdetails .rd2 .rd2r .post-content {
+.rd2 .rd2r .post-content {
   display: flex;
   gap: 8%;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 30px;
 }
-.roomdetails .rd3 {
-  width: 90%;
-  height: 300px;
-  border: 2px solid rgb(0, 0, 0);
+.rd2 .rd2r img {
+  border: 1px solid rgb(44, 165, 235);
+}
+.rd2 .rd2r img:hover {
+  opacity: 0.25;
+  cursor: pointer;
+}
+.rd2 .rd2r a:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.rd3 {
+  width: 100%;
+  height: 250px;
   display: flex;
   gap: 50px;
 }
-.roomdetails .rd3 .rd3l {
-  border: 2px solid rgb(0, 0, 0);
-  height: 400px;
+.rd3 .rd3l {
+  height: 250px;
   width: 73%;
+}
+.rd3 .rd3l .rd3ldown {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 200px;
+}
+.rd3 .rd3l .rd3ldown .facility {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.rd3 .rd3l .rd3ldown .facility i {
+  margin-right: 10px;
+  color: rgb(141, 223, 19);
+  font-size: 22px;
+}
+.rd3 .rd3l .rd3ldown .facility .fa-xmark {
+  color: red;
 }/*# sourceMappingURL=roomdetails.css.map */

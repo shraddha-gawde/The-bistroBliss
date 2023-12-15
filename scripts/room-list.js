@@ -12,6 +12,21 @@ let roomDetailsURL = `https://neural-innovator-5123.onrender.com/roomDetails`;
 
 let pageNumber = 1;
 
+function includeHTML(file, containerId) {
+  const container = document.getElementById(containerId);
+  const xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+          container.innerHTML = this.responseText;
+      }
+  };
+  xhttp.open("GET", file, true);
+  xhttp.send();
+}
+
+// Load header and footer
+includeHTML('rindex.html', 'header-container');
+includeHTML('mayank.html', 'footer-container');
 
 function fetchData(url, data_param, page) {
   fetch(`${url}?${data_param || ""}_page=${page || pageNumber}&_limit=6`)
@@ -171,16 +186,19 @@ filterByType.addEventListener("change", (e) => {
 const subscribeBtn = document.getElementById("mc-submit");
 
 subscribeBtn.addEventListener("click", (event) => {
+  event.preventDefault();
+
   const emailInput = document.getElementById("mc-email");
+
   const emailValue = emailInput.value;
+
   if (emailValue.trim() !== "") {
     const emailObj = {
-        email: emailValue,
+      email: emailValue,
     };
-addEmail(emailObj);
-  } 
-  else {
-    alert("Email cannot be empty or please enter correct email id");
+    addEmail(emailObj);
+  } else {
+    alert("Email cannot be empty");
   }
 });
 
@@ -197,9 +215,16 @@ function addEmail(emailObj) {
     .then((res) => res.json())
     .then((data) => {
       console.log(data);
-      alert("Wonderful! You have successfully subscribed to our newsletter.");
+      showSuccessPopup();
     })
     .catch((error) => {
       console.error(error);
     });
 }
+
+function showSuccessPopup() {
+  alert("Wonderful! You have successfully subscribed to our newsletter.");
+}
+
+
+

@@ -34,8 +34,9 @@
 
 .bg-3 {
     background-image: url(https://htmldemo.net/oestin/oestin/img/bg/3.jpg);
-    overflow: hidden;
-    filter: blur(4px);
+    /* overflow: hidden; */
+    /* filter: blur(4px); */
+    /* opacity: 5; */
 }
 
 
@@ -345,13 +346,13 @@ p {
     margin-right: auto;
     margin-left: auto;
 }
-.row{
+/* .row{
     
     padding-top: 3%;
     padding-bottom: 3%;
     margin-right: auto;
     margin-left: auto;
-}
+} */
 
 .firstlogo:hover{
     content: url(https://htmldemo.net/oestin/oestin/img/client/1-hover.png);

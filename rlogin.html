@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="rlogin.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="rlogin.js">
 </head>
 <body class="rbody">
     <div class="rcontainer" id="rmain">
@@ -18,11 +19,16 @@
                     <a href="#" class="ra social"><i class="fab fa-linkedin-in"></i></a>
                 </div>
                 <p class="rp">or use your email for registration</p>
-                <input class="rinput" type="text" name="txt" placeholder="Name" required="">
-                <input class="rinput" type="email" name="email" placeholder="Email" required="">
-                <input class="rinput" type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31" />
-                <input class="rinput" type="password" name="pswd" placeholder="Password" required="">
-                <button class="rbutton">Sign Up</button>
+                <div class="rname">
+                    <input class="rinpu" id="fname" type="text" name="txt" placeholder="FirstName" required="">
+                    <input class="rinpu" id="lname" type="text" name="txt" placeholder="LastName" required="">
+                </div>
+                <!-- <input class="rinput" type="text" name="txt" placeholder="Name" required=""> -->
+                <input class="rinput" id="remail" type="email" name="email" placeholder="Email" required="">
+                <input class="rinput" id="rphone" type="tel" id="phone" name="phone" placeholder="999-999-9999" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+                <input class="rinput" id="rdob" type="date" id="start" name="trip-start" value="YYYY-MM-DD" min="2023-01-01" max="2025-12-31" />
+                <input class="rinput" id="rpswd" type="password" name="pswd" placeholder="Password" required="">
+                <button class="rbutton" id="rsbtn">Sign Up</button>
             </form>
         </div>
         <div class="sign-in">

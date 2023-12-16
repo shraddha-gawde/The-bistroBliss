@@ -12,7 +12,7 @@ function fetchData(url, data_param, page) {
   fetch(`${url}?${data_param || ""}_page=${page || pageNumber}&_limit=6`)
     .then((res) => {
       let total = res.headers.get("x-total-count");
-      let numberOfButtons = Math.ceil(total / 5);
+      let numberOfButtons = Math.ceil(total / 6);
       createButtons(numberOfButtons, data_param);
       return res.json();
     })
@@ -123,7 +123,7 @@ function createButtons(number, query) {
 // adding
 
 var addbutton=document.getElementById("addbtn");
-var modifybtn=document.getElementById("modifybtn");
+// var modifybtn=document.getElementById("modifybtn");
 
 let addimage=document.getElementById("addimage");
 let addsuit=document.getElementById("addsuit");
@@ -166,38 +166,71 @@ addbutton.addEventListener("click",()=>{
 
 
 // modifying
-let modifyid=document.getElementById("modid");
-let modifyimage=document.getElementById("modimage");
-let modifysuit=document.getElementById("modsuit");
-let modifydes=document.getElementById("moddescription");
-let modifyfac=document.getElementById("modfacilities");
-let modifyprice=document.getElementById("modprice")
+// let modifyid=document.getElementById("modid");
+// let modifyimage=document.getElementById("modimage");
+// let modifysuit=document.getElementById("modsuit");
+// let modifydes=document.getElementById("moddescription");
+// let modifyfac=document.getElementById("modfacilities");
+// let modifyprice=document.getElementById("modprice")
 
 
 
-async function modifyData(url,id){
+// async function modifyData(url,id){
 
-        let res=await fetch(`${url}/${id}`,{
-            method:"PATCH",
-            headers:{
-                "Content-type":"application/json"
-            },
-            body:JSON.stringify({
-                image:addimage.value,
-                type:addsuit.value,
-                description:adddes.value,
-                roomFacilities:addfac.value,
-                price:addprice.value
-            })
+//         let res=await fetch(`${url}/${id}`,{
+//             method:"PATCH",
+//             headers:{
+//                 "Content-type":"application/json"
+//             },
+//             body:JSON.stringify({
+//                 image:modifyimage.value,
+//                 type:modifysuit.value,
+//                 description:modifydes.value,
+//                 roomFacilities:modifyfac.value,
+//                 price:modifyprice.value
+//             })
+//         })
+//     fetchData(roomDetailsURL)   
+// }
+
+
+let modifyid = document.getElementById("modid");
+let modifyimage = document.getElementById("modimage");
+let modifysuit = document.getElementById("modsuit");
+let modifydes = document.getElementById("moddescription");
+let modifyfac = document.getElementById("modfacilities");
+let modifyprice = document.getElementById("modprice");
+let modifybtn = document.getElementById("modifybtn"); // Define the modifybtn variable
+
+async function modifyData(url, id) {
+    let res = await fetch(`${url}/${id}`, {
+        method: "PATCH",
+        headers: {
+            "Content-type": "application/json"
+        },
+        body: JSON.stringify({
+            image: modifyimage.value,
+            type: modifysuit.value,
+            description: modifydes.value,
+            roomFacilities: modifyfac.value,
+            price: modifyprice.value
         })
-    fetchData(roomDetailsURL)   
+    });
+    fetchData(roomDetailsURL);
 }
 
-let modid=modifyid.value;
-modifybtn.addEventListener("click",()=>{
-    modifyData(url,modid);
-    
-})
+modifybtn.addEventListener("click", () => {
+    let modid = modifyid.value;
+    modifyData(url, modid);
+    alert("Modification successful...");
+});
+
+
+// let modid=modifyid.value;
+// modifybtn.addEventListener("click",()=>{
+//     modifyData(url,modid);
+//     alert("Modification successfull...");
+// })
 
 
 

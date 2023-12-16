@@ -166,8 +166,8 @@
             "id" : 1,
             "email" : "shraddha@gmail.com"
         }
-    ],
-    "adminLogin": [
+
+    ], "adminLogin": [
         {
             "id": 1,
             "email": "shraddha@gmail.com",
@@ -267,5 +267,6 @@
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellente sque"
         }
       ]
-
 }
+
+

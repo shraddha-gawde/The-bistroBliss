@@ -5,9 +5,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Payment Page</title>
+    <title>Booking Payment</title>
     <link rel="stylesheet" href="rstyle.css">
-
+    <link rel="shortcut icon" href="rLogo.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/payment.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -20,6 +20,30 @@
 
     </style>
 </head>
+
+<!-- <body> -->
+<!-- <div class="container-md text-center"> -->
+<!-- <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Payment methods</h1>
+                </div>
+                <div class="col">
+                    <h2>order summary</h2>
+                    <img src="" alt="">
+                </div>
+            </div>
+
+        </div>
+        <form id="form">
+            <input type="text" id="name" placeholder="Enter a name" />
+            <input type="text" id="cardNo" placeholder="Enter a 12-digit card number" pattern="[0-9]{12}" />
+            <input type="text" id="cardExpiry" placeholder="Enter expiry date MM/YY" pattern="(0[1-9]|1[0-2])\/\d{2}" />
+            <input type="text" id="cardCvv" placeholder="Enter a 3-digit CVV" pattern="[0-9]{3}" />
+            <input type="submit" value="Confirm" />
+
+            <h2></h2>
+          </form> -->
 <header class="skicky">
     <nav class=" navbar navbar-light navbar-expand-md">
         <div class="rmedia">
@@ -103,18 +127,14 @@
     <div class="rcontainer" id="rmain">
         <div class="sign-up">
             <form class="rform" action="#">
-                <h1 class="rh1">Sign in</h1>
-                <div class="social-container">
-                    <a href="https://www.paypal.com" class="ra payment"><i class="fab fa-paypal"></i></a>
-                    <a href="https://venmo.com" class="ra payment"><i class="fab fa-cc-visa"></i></a>
-                    <a href="https://stripe.com" class="ra payment"><i class="fab fa-cc-mastercard"></i></a>
+                
+                <h1 class="rh1" style="margin-bottom: 10%;">Enter your otp</h1>
+               
+                <input id="otpInput" class="rinput" type="number" name="email" placeholder="Enter OTP" required="">
+                
+                <p>Didn't receive the OTP? <a id="otpResend" class="ra" href="#">Resend OTP</a></p>
 
-                </div>
-                <p class="rp">or card payment</p>
-                <input class="rinput" type="email" name="email" placeholder="Email" required="">
-                <input class="rinput" type="password" name="pswd" placeholder="Password" required="">
-                <a class="ra" href="#">Forget your Password?</a>
-                <button class="rbutton">Sign In</button>
+                <button id="otpSubmit" class="rbutton">Submit</button>
             </form>
 
         </div>
@@ -143,61 +163,107 @@
                     pattern="(0[1-9]|1[0-2])\/\d{2}" required />
                 <input class="rinput" id="cardCvv" placeholder="Enter a 3-digit CVV" pattern="[0-9]{3}" />
                 <input class="rinput" id="rpswd" type="password" name="pswd" placeholder="Password" required="">
-                <button class="rbutton" id="booknow">Book Now</button>
+                
             </form>
         </div>
         <div class="overlay-container">
             <div class="overlay">
                 <div class="overlay-left">
-                    <h1 class="rh1">Welcome Back!</h1>
-                    <p class="rp">To keep connected with us please login with your personal info</p>
-                    <button class="rbutton" id="signIn">Sign In</button>
+                    <div class="social-container">
+                        <a href="#" class="ra social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="ra social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="ra social"><i class="fab fa-linkedin-in"></i></a>
+                        
+                    </div>
+                    <p class="rp">To keep connected with us follow on us the social media</p>
+                    <h2>Just few more minutes. Processing...</h2>
+                    <button class="rbutton" id="signIn">Change details</button>
                 </div>
+                
                 <div class="overlay-right">
                     <h1 class="rh1">Booking Summary</h1>
                     <img class="imageclass" src="https://htmldemo.net/oestin/oestin/img/room/12.jpg" alt="image">
-
                     <p class="rp">total Amount <span style="text-align: right;">$220</span></p>
+                    <button class="rbutton" id="signUp">BookNow</button>
                     <button class="rbutton" id="diffRoom">for Diffrent Room click here</button>
+                    
+                    <!-- <button class="rbutton" id="signUp">Book Now</button>
+                    <button class="rbutton" id="signIn">Book Now</button> -->
+                    
                 </div>
             </div>
         </div>
     </div>
     <script type="text/javascript">
-        const BookNowButton = document.getElementById('booknow');
-        const signInButton = document.getElementById('signIn');
+        const BookNowButton = document.getElementById('signUp');
+        const otpVerifyButton = document.getElementById('signIn'); // Change variable name
         const fnameInput = document.getElementById("fname");
         const lnameInput = document.getElementById("lname");
         const cardNoInput = document.getElementById("cardNo");
         const cardExpInput = document.getElementById("cardExp");
         const cardCvvInput = document.getElementById("cardCvv");
+        const otpInput = document.getElementById('otpInput'); // Corrected ID
+        const otpSubmitButton = document.getElementById('otpSubmit'); // Corrected ID
         const main = document.getElementById('rmain');
+    
         BookNowButton.addEventListener('click', function (e) {
-            event.preventDefault();
+            e.preventDefault();
             if (!fnameInput.value || !lnameInput.value || !cardNoInput.value || !cardExpInput.value || !cardCvvInput.value) {
-
                 alert("Any of the Given fields are empty");
             } else {
-                main.classList.remove("right-panel-active");
-
-                // window.location.href = "otp.html";
+                main.classList.add("right-panel-active");
             }
-
         });
-        // .addEventListener('click', () => {
-        //     main.classList.add("right-panel-active");
-        // });
-
+    
         const diffRoomButton = document.getElementById('diffRoom');
         diffRoomButton.addEventListener("click", function (e) {
             e.preventDefault();
             window.location.href = "room-list.html";
         });
-
-
-
-
+    
+        otpSubmitButton.addEventListener('click', () => {
+            const serverGeneratedOTP = "1234";
+    
+            if (otpInput.value === serverGeneratedOTP) {
+                alert("Payment Successful. WELCOME to The BistoBliss....");
+                window.location.href = "index.html";
+            } else {
+                alert("Invalid OTP. Payment Failed.");
+            }
+    
+            main.classList.add("right-panel-active");
+        });
+    
+        // Event listener for OTP Resend link
+        const otpResendLink = document.getElementById('otpResend');
+        otpResendLink.addEventListener('click', function (e) {
+            e.preventDefault();
+            // Implement OTP Resend functionality here
+            alert("Resending OTP...");
+        });
+    
+        // Event listener for switching between sign-up and sign-in
+        otpVerifyButton.addEventListener('click', function () {
+            // e.preventDefault();
+            main.classList.remove("right-panel-active");
+        });
+    
     </script>
+    
 </body>
+
+
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script> -->
+<!-- </body> -->
+
 
 </html>

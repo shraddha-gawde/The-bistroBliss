@@ -314,13 +314,14 @@
     /* border: 1px solid; */
     border-radius: 10px ;
     align-items: center;
+    margin-bottom: 10%;
     
 }
 .devDataBox{
     width: 100%;
-    height: 50%;
+    height: 60%;
     align-content: end;
-    margin-top: 50%;
+    margin-top: 40%;
     background-color: rgb(3, 3, 3);
     opacity: 50%;
     z-index: 1;
@@ -349,6 +350,7 @@
     margin: auto;
     
 }
+
 .developers{
     scale: .7;
     margin-top: 5%;
@@ -360,8 +362,13 @@
     background-image: url(https://htmldemo.net/oestin/oestin/img/bg/2.jpg);
     color: white;
     margin-top: 100px;
-    
+    justify-content: center; /* Center the items horizontally */
+
+    align-items: center;
+    text-align: center; /* Center the text content */
     display: flex;
+    flex-direction: row;
+
     align-items: center;
     
     font-size: 3rem;

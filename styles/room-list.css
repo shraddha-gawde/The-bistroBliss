@@ -1,3 +1,8 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
 #room-list-cards-container{
     display: flex;
     justify-content: center;
@@ -21,7 +26,7 @@
     margin-bottom: 19px;
     text-transform: uppercase;
     margin: 1%;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'raleway', sans-serif;
     font-weight: bolder;
 }
 .breadcrumb-text p {
@@ -136,6 +141,9 @@ body {
 #search-by-button {
     padding: 8px 15px;
     cursor: pointer;
+}
+#search-by-button:hover{
+    background-color: #131313;
 }
 
 /* Sort By Section */
@@ -444,6 +452,12 @@ p {
     transition: all 0.5s ease 0s;
     font-size: 16px;
    
+}
+
+/* deepak */
+
+#dbuttonh:hover{
+    transform: scale(1.1);
 }
 
 

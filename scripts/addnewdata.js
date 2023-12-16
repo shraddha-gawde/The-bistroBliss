@@ -1,16 +1,12 @@
 const cardsContainer = document.getElementById('room-list-cards-container');
 const paginationContainer = document.getElementById('room-list-pagination-container');
 
-let searchBySelect = document.getElementById("search-by-select");
-let searchByInput = document.getElementById("search-by-input");
-let searchByButton = document.getElementById("search-by-button");
-let sortBySelect = document.getElementById("sort-by-select");
-let filterByType = document.getElementById("filter-by-type");
 
 
 let roomDetailsURL = `https://neural-innovator-5123.onrender.com/roomDetails`;
 
 let pageNumber = 1;
+
 
 function fetchData(url, data_param, page) {
   fetch(`${url}?${data_param || ""}_page=${page || pageNumber}&_limit=6`)
@@ -48,7 +44,7 @@ function displayRoom(roomData) {
 function createArtCard(PerRoom) {
   const room = document.createElement("div");
   room.className = "room-list";
-  room.setAttribute("data-id", PerRoom.id);
+  room.setAttribute("data-id", room.id);
 
   const imgDiv = document.createElement("div");
   imgDiv.className = "room-img";
@@ -123,92 +119,89 @@ function createButtons(number, query) {
     paginationContainer.append(pageButtons);
   }
 }
-searchByButton.addEventListener("click", () => {
-  const searchOption = searchBySelect.value;
-  const searchQuery = searchByInput.value.trim();
 
-  if (searchQuery !== "") {
-    let searchParam;
-    if (searchOption === "type") {
-      searchParam = `type=${searchQuery}&`;
-    } 
-    fetchData(roomDetailsURL, searchParam);
-  } 
-  else{
-    fetchData(roomDetailsURL);
-  }
-});
+// adding
 
-sortBySelect.addEventListener("change", (e) => {
-  
-  const sortOption = sortBySelect.value;
+var addbutton=document.getElementById("addbtn");
+var modifybtn=document.getElementById("modifybtn");
 
-  if (sortOption === "low-to-high") {
-      fetchData(roomDetailsURL, "_sort=price&_order=asc&");
-  } else if (sortOption === "high-to-low") {
-      fetchData(roomDetailsURL, "_sort=price&_order=desc&");
-  }
-});
-filterByType.addEventListener("change", (e) => {
-  const filterOption = filterByType.value;
-  if (filterOption ==="single-room") {
-    fetchData(roomDetailsURL, "type=Single Room&");
-  }
-  else if(filterOption ==="royal-suit"){
-    fetchData(roomDetailsURL, "type=Royal Suit&");
-  }
-  else if(filterOption ==="delux-suit"){
-    fetchData(roomDetailsURL, "type=Delux Suit&");
-  }
-  else if(filterOption ==="double-room"){
-    fetchData(roomDetailsURL, "type=Double Room&");
-  }
-});
+let addimage=document.getElementById("addimage");
+let addsuit=document.getElementById("addsuit");
+let adddes=document.getElementById("adddesciption");
+let addfac=document.getElementById("addfacilities");
+let addprice=document.getElementById("addprice")
 
 
-// subcribe button event handller
-const subscribeBtn = document.getElementById("mc-submit");
 
-subscribeBtn.addEventListener("click", (event) => {
-  event.preventDefault();
+async function addData(url){
+    try {
+        let res=await fetch(url,{
+            method:"POST",
+            headers:{
+                "Content-type":"application/json"
+        },
+        body:JSON.stringify({
+            image:addimage.value,
+            type:addsuit.value,
+            description:adddes.value,
+            roomFacilities:addfac.value,
+            price:addprice.value
+        }) 
 
-  const emailInput = document.getElementById("mc-email");
-
-  const emailValue = emailInput.value;
-
-  if (emailValue.trim() !== "") {
-    const emailObj = {
-      email: emailValue,
-    };
-    addEmail(emailObj);
-  } else {
-    alert("Email cannot be empty");
-  }
-});
-
-function addEmail(emailObj) {
-  const subscribeURL = 'https://neural-innovator-5123.onrender.com/newsletterSubScribers';
-
-  fetch(subscribeURL, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(emailObj),
-  })
-    .then((res) => res.json())
-    .then((data) => {
-      console.log(data);
-      showSuccessPopup();
     })
-    .catch((error) => {
-      console.error(error);
-    });
+    fetchData(roomDetailsURL)   
+    } catch (error) {
+        console.log(error);
+    }
+
 }
 
-function showSuccessPopup() {
-  alert("Wonderful! You have successfully subscribed to our newsletter.");
+
+addbutton.addEventListener("click",()=>{
+    addData(roomDetailsURL);
+})
+
+
+
+
+// modifying
+let modifyid=document.getElementById("modid");
+let modifyimage=document.getElementById("modimage");
+let modifysuit=document.getElementById("modsuit");
+let modifydes=document.getElementById("moddescription");
+let modifyfac=document.getElementById("modfacilities");
+let modifyprice=document.getElementById("modprice")
+
+
+
+async function modifyData(url,id){
+
+        let res=await fetch(`${url}/${id}`,{
+            method:"PATCH",
+            headers:{
+                "Content-type":"application/json"
+            },
+            body:JSON.stringify({
+                image:addimage.value,
+                type:addsuit.value,
+                description:adddes.value,
+                roomFacilities:addfac.value,
+                price:addprice.value
+            })
+        })
+    fetchData(roomDetailsURL)   
 }
+
+let modid=modifyid.value;
+modifybtn.addEventListener("click",()=>{
+    modifyData(url,modid)
+})
+
+
+// deletebtn.addEventListener("click",()=>{
+
+// })
+
 
 
 

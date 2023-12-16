@@ -1,13 +1,26 @@
 get https://neural-innovator-5123.onrender.com/roomDetails/
 
 ###
-PATCH https://neural-innovator-5123.onrender.com/roomDetails/19
+PATCH https://neural-innovator-5123.onrender.com/roomDetails/21
 Content-Type: application/json
 
 {
-    "descriptionOfRoom": "The room features a plush king-size bed with high-quality linens, offering a perfect blend of comfort and style.A modern and stylish headboard serves as a focal point, complementing the room's contemporary design.A separate sitting area is furnished with a comfortable sofa and a coffee table, creating a cozy space for relaxation or casual meetings.Large windows provide ample natural light and offer panoramic views of the cityscape.A well-equipped workstation with a spacious desk and ergonomic chair caters to business travelers, providing a dedicated space for work or planning.A flat-screen TV with premium cable channels is mounted for entertainment, along with a selection of on-demand movies and streaming services.A well-stocked mini-bar offers a selection of beverages and snacks, providing convenience for guests looking to unwind in the comfort of their room."
+"id" : 1
 }
 
 
 ###
-DELETE https://neural-innovator-5123.onrender.com/roomDetails/1
+DELETE https://neural-innovator-5123.onrender.com/newsletterSubScribers/1
+
+###
+POST  https://neural-innovator-5123.onrender.com/roomDetails/
+Content-Type: application/json
+
+{
+ 
+  "image": "https://htmldemo.net/oestin/oestin/img/room/13.jpg",
+  "type": "Double Room",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod hytt tempor incididuc utd labore et dolore magna aliqua. Ut enim ad minim yttveniam, quis nostrud exercitation csdd ullamco laboris  ed do eiusmod hytt ",
+  "roomFacilities": "Breakfast Include , Free wi-fi , Private Balcony , Free Newspaper , Full AC, Beach View , Sweeming Pool",
+  "price": 190
+}

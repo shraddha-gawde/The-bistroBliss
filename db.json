@@ -166,9 +166,107 @@
             "id" : 1,
             "email" : "shraddha@gmail.com"
         }
-    ]
-    
-      
 
+    ], "adminLogin": [
+        {
+            "id": 1,
+            "email": "shraddha@gmail.com",
+            "password":"1234"
+        },
+        {
+            "id": 2,
+            "email": "raushan@gmail.com",
+            "password":"1234"
+        },
+        {
+            "id": 3,
+            "email": "deepak@gmail.com",
+            "password":"1234"
+        },
+        {
+            "id": 4,
+            "email": "mayank@gmail.com",
+            "password":"1234"
+        },
+        {
+            "id": 5,
+            "email": "vishnuraj@gmail.com",
+            "password":"1234"
+        }
+    ],
+    "users":[
+    ],
+    "horizontalGridsData" : [
+        {
+          "id": 1,
+          "name": "Beauty & Health",
+          "description":
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. In\nquisquam molestias veritatis",
+          "image": "https://htmldemo.net/oestin/oestin/img/icon/spa.png"
+        },
+        {
+          "id": 2,
+          "name": "Swimming Pool",
+          "description":
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. In\nquisquam molestias veritatis",
+          "image": "https://htmldemo.net/oestin/oestin/img/icon/swim.png"
+        },
+        {
+          "id": 3,
+          "name": "Restaurant",
+          "description":
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. In\nquisquam molestias veritatis",
+          "image": "https://htmldemo.net/oestin/oestin/img/icon/restaurent.png"
+        },
+        {
+          "id": 4,
+          "name": "Conference",
+          "description":
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. In\nquisquam molestias veritatis",
+          "image": "https://htmldemo.net/oestin/oestin/img/icon/conference.png"
+        }
+      ],
+      "developersData" : [
+        {
+          "id": 1,
+          "name": "Sophieee Rundle",
+          "role": "Developer",
+          "image": "https://htmldemo.net/oestin/oestin/img/team/1.jpg",
+          "about":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellente sque"
+        },
+        {
+          "id": 2,
+          "name": "Sophieee Rundle",
+          "role": "Developer",
+          "image": "https://htmldemo.net/oestin/oestin/img/team/1.jpg",
+          "about":
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellente sque"
+        },
+        {
+          "id": 3,
+          "name": "Sophieee Rundle",
+          "role": "Developer",
+          "image": "https://htmldemo.net/oestin/oestin/img/team/1.jpg",
+          "about":
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellente sque"
+        },
+        {
+          "id": 4,
+          "name": "Sophieee Rundle",
+          "role": "Developer",
+          "image": "https://htmldemo.net/oestin/oestin/img/team/1.jpg",
+          "about":
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellente sque"
+        },
+        {
+          "id": 5,
+          "name": "Sophieee Rundle",
+          "role": "Developer",
+          "image": "https://htmldemo.net/oestin/oestin/img/team/1.jpg",
+          "about":
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellente sque"
+        }
+      ]
 }
+
 

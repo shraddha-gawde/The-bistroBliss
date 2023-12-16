@@ -1,0 +1,265 @@
+.roomdetails {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+width: 90%;
+margin: auto;
+
+    .rd1 {
+        width:100%;
+        //  border: 8px solid rgb(81, 255, 28);
+        height: auto;
+        display: flex;
+        gap: 50px;
+        box-sizing: border-box;
+        margin-top: 50px;
+
+        .rd1l {
+            width: 72%;
+            // border: 2px solid rgb(20, 224, 64);
+            box-sizing: border-box;
+
+            .rd1lup {
+                height: 580px;
+                //  border: 2px solid rgb(53, 54, 128);
+                box-sizing: border-box;
+                overflow: hidden;
+                background-color: #604332;
+                border-radius: 5px;
+
+                img {
+                    max-width: 100%;
+                    box-sizing: border-box;
+                    height: 580px;
+                    // display: block;
+                    object-fit: cover;
+                }
+            }
+
+            .rd1ldown {
+                height: 200px;
+                width: 100%;
+                // border: 2px solid rgb(5, 5, 5);
+                // background-color: #ee8743;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 20px;
+
+                .item {
+                    width: 200px;
+                }
+
+                .owl-carousel {
+                    box-sizing: border-box;
+                    width: 100% !important;
+                    padding: 20px;
+                }
+
+                button.owl-prev {
+                    position: absolute;
+                    top:40%;
+                    left: 0;
+                }
+
+                button.owl-next {
+                    position: absolute;
+                    top: 40%;
+                    right: 0;
+                }
+            }
+        }
+
+        .rd1r {
+            width: 25%;
+            // border: 2px solid rgb(76, 120, 202);
+            height: 800px;
+            box-sizing: border-box;
+
+            .rd1rup {
+                // border: 2px solid rgb(159, 201, 43);
+                height: 480px;
+                display: flex;
+                flex-direction: column;
+                background-color: #f1f1f1;
+                align-items: center;
+                text-decoration: underline;
+                text-decoration-color: #ee8743;
+                border-radius: 10px;
+
+                h4 {
+                    margin-top: 20px;
+                    font-size: 22px;
+                }
+
+                #starta,#startb,#startc,#startd {
+                    border-radius: 5px;
+                    margin-top: 25px;
+                    font-size: 12px;
+                    text-align:center ;
+                    // margin-left: 5%;
+                    width: 90%;
+                    height: 40px;
+                    border: none;
+                }
+                button {
+                    width: 80%;
+                    height: 40px;
+                    margin-top: 25px;
+                    font-size: 16px;
+                    color: white;
+                    background-color: #b5876d;
+                    border: none;
+                    transform: perspective(1px) translateZ(0px);
+                    transition-duration: 0.2s;
+                    transition-property: color;
+                }
+                button:hover {
+                    background-color: black;
+                    cursor: pointer;
+                    transform: perspective(1px) translateZ(0px);
+                    transition-duration: 0.2s;
+                    transition-property: background-color black;
+                }
+            }
+
+            .rd1rdown {
+                // border: 2px solid rgb(161, 17, 130);
+                height: 200px;
+                background-color: #f1f1f1;
+                margin-top: 40px;
+                display: flex;
+                flex-direction: column;
+                padding: 8%;
+                font-weight: 400;
+                border-radius: 10px;
+                a {
+                    text-decoration: none;
+                    font-size: 16px;
+                }
+
+                a:not(:empty) {
+                    color: rgb(58, 52, 52);
+                    /* Change the text color only */
+                }
+
+                p {
+                    color: rgb(58, 52, 52);
+                }
+                .iconc {
+
+                    font-size: 20px;
+                    margin-right: 5px;
+                    color: #ee8743;
+                    padding-top: 30px;
+                }
+
+                .iconc:hover {
+                    color: rgb(100, 82, 82);
+                    border: 1px solid white;
+                }
+            }
+        }
+    }
+}
+
+.rd2 {
+    width: 100%;
+    height: 400px;
+    //  border: 2px solid rgb(0, 0, 0);
+    display: flex;
+    gap: 50px;
+
+    a {
+        text-decoration: none;
+    }
+
+    a:not(:empty) {
+        color: rgb(87, 80, 80);
+        /* Change the text color only */
+    }
+
+    span {
+        font-size: 14px;
+    }
+
+    .rd2l {
+        height: 400px;
+        width: 80%;
+        p {
+            margin-top: 20px;
+        }
+    }
+
+    .rd2r {
+        // border: 2px solid rgb(144, 48, 233);
+        height: 380px;
+        width: 25%;
+        background-color: #f1f1f1;
+        border-radius: 10px;
+        padding: 15px;
+
+        h4 {
+            margin-top: 0px;
+            text-align: center;
+            text-decoration: underline;
+            font-size: 22px;
+        }
+
+        .post-content {
+            display: flex;
+            gap: 8%;
+            align-items: center;
+            margin-top: 30px;
+        }
+img{
+    border: 1px solid rgb(44, 165, 235);
+}
+        img:hover {
+            opacity: 0.25;
+            cursor: pointer;
+        }
+
+        a:hover {
+            color: black;
+            cursor: pointer;
+        }
+    }
+}
+
+.rd3 {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    gap: 50px;
+
+    .rd3l {
+        height:250px;
+        width: 73%;
+
+        .rd3ldown {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            height: 200px;
+           
+            .facility {
+                // border: 2px solid rgb(111, 26, 221);
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+
+                i {
+                    margin-right: 10px;
+                    color: rgb(141, 223, 19);
+                    font-size: 22px;
+                }
+
+                .fa-xmark {
+                    color: red;
+                }
+            }
+        }
+    }
+}

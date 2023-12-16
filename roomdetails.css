@@ -1,0 +1,222 @@
+.roomdetails {
+  width: 90%;
+  margin: auto;
+}
+.roomdetails * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.roomdetails .rd1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 50px;
+  box-sizing: border-box;
+  margin-top: 50px;
+}
+.roomdetails .rd1 .rd1l {
+  width: 72%;
+  box-sizing: border-box;
+}
+.roomdetails .rd1 .rd1l .rd1lup {
+  height: 580px;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: #604332;
+  border-radius: 5px;
+}
+.roomdetails .rd1 .rd1l .rd1lup img {
+  max-width: 100%;
+  box-sizing: border-box;
+  height: 580px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.roomdetails .rd1 .rd1l .rd1ldown {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.roomdetails .rd1 .rd1l .rd1ldown .item {
+  width: 200px;
+}
+.roomdetails .rd1 .rd1l .rd1ldown .owl-carousel {
+  box-sizing: border-box;
+  width: 100% !important;
+  padding: 20px;
+}
+.roomdetails .rd1 .rd1l .rd1ldown button.owl-prev {
+  position: absolute;
+  top: 40%;
+  left: 0;
+}
+.roomdetails .rd1 .rd1l .rd1ldown button.owl-next {
+  position: absolute;
+  top: 40%;
+  right: 0;
+}
+.roomdetails .rd1 .rd1r {
+  width: 25%;
+  height: 800px;
+  box-sizing: border-box;
+}
+.roomdetails .rd1 .rd1r .rd1rup {
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f1f1;
+  align-items: center;
+  text-decoration: underline;
+  text-decoration-color: #ee8743;
+  border-radius: 10px;
+}
+.roomdetails .rd1 .rd1r .rd1rup h4 {
+  margin-top: 20px;
+  font-size: 22px;
+}
+.roomdetails .rd1 .rd1r .rd1rup #starta, .roomdetails .rd1 .rd1r .rd1rup #startb, .roomdetails .rd1 .rd1r .rd1rup #startc, .roomdetails .rd1 .rd1r .rd1rup #startd {
+  border-radius: 5px;
+  margin-top: 25px;
+  font-size: 12px;
+  text-align: center;
+  width: 90%;
+  height: 40px;
+  border: none;
+}
+.roomdetails .rd1 .rd1r .rd1rup button {
+  width: 80%;
+  height: 40px;
+  margin-top: 25px;
+  font-size: 16px;
+  color: white;
+  background-color: #b5876d;
+  border: none;
+  transform: perspective(1px) translateZ(0px);
+  transition-duration: 0.2s;
+  transition-property: color;
+}
+.roomdetails .rd1 .rd1r .rd1rup button:hover {
+  background-color: black;
+  cursor: pointer;
+  transform: perspective(1px) translateZ(0px);
+  transition-duration: 0.2s;
+  transition-property: background-color black;
+}
+.roomdetails .rd1 .rd1r .rd1rdown {
+  height: 200px;
+  background-color: #f1f1f1;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  padding: 8%;
+  font-weight: 400;
+  border-radius: 10px;
+}
+.roomdetails .rd1 .rd1r .rd1rdown a {
+  text-decoration: none;
+  font-size: 16px;
+}
+.roomdetails .rd1 .rd1r .rd1rdown a:not(:empty) {
+  color: rgb(58, 52, 52);
+  /* Change the text color only */
+}
+.roomdetails .rd1 .rd1r .rd1rdown p {
+  color: rgb(58, 52, 52);
+}
+.roomdetails .rd1 .rd1r .rd1rdown .iconc {
+  font-size: 20px;
+  margin-right: 5px;
+  color: #ee8743;
+  padding-top: 30px;
+}
+.roomdetails .rd1 .rd1r .rd1rdown .iconc:hover {
+  color: rgb(100, 82, 82);
+  border: 1px solid white;
+}
+
+.rd2 {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  gap: 50px;
+}
+.rd2 a {
+  text-decoration: none;
+}
+.rd2 a:not(:empty) {
+  color: rgb(87, 80, 80);
+  /* Change the text color only */
+}
+.rd2 span {
+  font-size: 14px;
+}
+.rd2 .rd2l {
+  height: 400px;
+  width: 80%;
+}
+.rd2 .rd2l p {
+  margin-top: 20px;
+}
+.rd2 .rd2r {
+  height: 380px;
+  width: 25%;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  padding: 15px;
+}
+.rd2 .rd2r h4 {
+  margin-top: 0px;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 22px;
+}
+.rd2 .rd2r .post-content {
+  display: flex;
+  gap: 8%;
+  align-items: center;
+  margin-top: 30px;
+}
+.rd2 .rd2r img {
+  border: 1px solid rgb(44, 165, 235);
+}
+.rd2 .rd2r img:hover {
+  opacity: 0.25;
+  cursor: pointer;
+}
+.rd2 .rd2r a:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.rd3 {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  gap: 50px;
+}
+.rd3 .rd3l {
+  height: 250px;
+  width: 73%;
+}
+.rd3 .rd3l .rd3ldown {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 200px;
+}
+.rd3 .rd3l .rd3ldown .facility {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.rd3 .rd3l .rd3ldown .facility i {
+  margin-right: 10px;
+  color: rgb(141, 223, 19);
+  font-size: 22px;
+}
+.rd3 .rd3l .rd3ldown .facility .fa-xmark {
+  color: red;
+}/*# sourceMappingURL=roomdetails.css.map */

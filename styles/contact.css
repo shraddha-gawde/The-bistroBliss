@@ -44,7 +44,64 @@
         width: 50px;
         
     }
+    body {
+        font-size: 16px;
+ 
+    }
+ 
+    body {
+        font-size: 14px; 
+    }
 
+    .newsletter-container {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #contact-Details {
+        width: 100%; 
+        margin-top: 10px; 
+    }
+
+    #contact-Details h1,
+    #contact-Details p,
+    #contact-Details img {
+        margin-right: 0; 
+    }
+
+    #dtext-area {
+        width: 100%;
+        margin-top: 5%;
+    }
+    #dbutton {
+        width: 100%; 
+        padding: 10px;
+    }
+    .default-btn{
+        justify-content: end;
+    }
+    .newsletter-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mc-form {
+        flex-direction: column;
+    }
+
+    #mc-email {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    
+}
+
+
+
+body {
+    font-family:'Lato', sans-serif;
+    font-weight: 400;
 }
 
 
@@ -123,8 +180,9 @@
     display: flex;
     gap: 80px;
     flex-wrap: wrap;
-    margin-left: 120px;
+    /* margin-left: 120px; */
 }
 .dcal:hover{
     background-color: #ab7540;
 }
+

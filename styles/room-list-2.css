@@ -1,3 +1,10 @@
+@media only screen and (max-width: 768px) {
+    #adding-container,
+    #modify-container {
+        width: 80%; 
+    }
+}
+
 #room-list-cards-container{
     display: flex;
     justify-content: center;
@@ -9,185 +16,8 @@
     padding-left: 5%;
     margin-right: 12%;
     margin-left: 12%;
+    /* color: #fff; */
 }
-
-.breadcrumb-area {
-    padding: 261px 0 33px;
-}
-.breadcrumb-text h2 {
-    color: #ffffff;
-    font-size: 36px;
-    line-height: 26px;
-    margin-bottom: 19px;
-    text-transform: uppercase;
-    margin: 1%;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: bolder;
-}
-.breadcrumb-text p {
-    color: #fff;
-    margin-bottom: 7px;
-    margin-top: 2%;
-    line-height: 24px;
-    font-size: 15px;
-}   
-
-.bg-3 {
-    background-image: url(https://htmldemo.net/oestin/oestin/img/bg/3.jpg);
-    /* overflow: hidden; */
-    /* filter: blur(4px); */
-    /* opacity: 5; */
-}
-
-
-.bg-3{
-    background-attachment: scroll;
-    background-clip: initial;
-    background-color: rgba(0, 0, 0, 0);
-    background-origin: initial;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-*, ::after, ::before {
-    box-sizing: border-box;
-}
-.breadcrumb-bar .breadcrumb {
-    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-    line-height: 12px;
-    margin: 0;
-    padding: 86px 0 0;
-    text-align: left;
-}
-.breadcrumb {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 0;
-    margin-bottom: 1rem;
-    list-style: none;
-}
-.breadcrumb-bar li:first-child {
-    margin-left: 0;
-}
-.breadcrumb-bar li {
-    font-family: "raleway";
-    font-size: 18px;
-    line-height: 14px;
-    margin: 0 18px;
-    position: relative;
-    text-transform: capitalize;
-    color: #f1f1f1;
-   
-}
-.breadcrumb-bar a {
-    color: #fff;
-    text-decoration: none;
-}
-
-body, h1, h2, h3, p, ul, li {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Raleway', sans-serif;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.col {
-    flex: 1;
-    margin-right: 20px;
-}
-
-/* Search Arts Section */
-.search-arts-wrapper {
-    display: flex;
-    align-items: center;
-}
-
-#search-by-select,
-#sort-by-select,
-#filter-by-type {
-    margin-right: 10px;
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-
-#search-by-input {
-    flex: 1;
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-
-#search-by-button {
-    padding: 8px 15px;
-    cursor: pointer;
-}
-
-/* Sort By Section */
-#sort-by-select {
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-
-#sort-low-to-high,
-#sort-high-to-low {
-    padding: 8px 15px;
-    background-color: #b5876d;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-/* Filter Section */
-h2 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-button {
-    margin-bottom: 10px;
-    padding: 10px 15px;
-    background-color: #b5876d;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-}
-
-
-/* Responsive Styles */
-@media screen and (max-width: 768px) {
-    .row {
-        flex-direction: column;
-    }
-
-    .col {
-        margin-bottom: 20px;
-    }
-}
-.containerfilter{
-    display: flex;
-    column-width: 50%;
-
-}
-
-/* card */
 .card-list{
     display: flex;
   flex-wrap: wrap;
@@ -210,12 +40,14 @@ button {
     flex: 0 0 auto;
     width: 56%;
     max-width: 100%;
+    
     margin-left: 5%;
     margin-top: var(0);
     box-sizing: border-box;
 }
 .room-img{
     flex: 0 0 auto;
+    /* width: 42%; */
 }
 .card-body > h3 {
     margin-bottom: 15px;
@@ -346,13 +178,13 @@ p {
     margin-right: auto;
     margin-left: auto;
 }
-/* .row{
+.row{
     
     padding-top: 3%;
     padding-bottom: 3%;
     margin-right: auto;
     margin-left: auto;
-} */
+}
 
 .firstlogo:hover{
     content: url(https://htmldemo.net/oestin/oestin/img/client/1-hover.png);
@@ -390,7 +222,6 @@ p {
 .newsletter-container > h3 {
     margin-top: 0;
     margin-bottom: 0.5rem;
-    
     font-weight: 500;
     line-height: 1.2;
     color: #444;
@@ -417,12 +248,20 @@ p {
     font-family: "raleway";
     font-size: 14px;
     height: 38px;
-    padding: 0 20px;
-    width: 24rem;
+    padding: 0 40px;
+    width: 284px;
     border: none;
     cursor: pointer;
 }
 
+/* .newsletter-form button {
+    
+    float: right;
+    line-height: 38px;
+    
+    
+    
+} */
 .default-btn {
     position: relative;
     overflow: hidden;
@@ -447,3 +286,87 @@ p {
 }
 
 
+/* deepak -css */
+#container-modification{
+    /* padding-left: 10px; */
+    justify-content: space-evenly;
+    padding-right: 10px;
+     display: flex;
+}
+
+
+#addbtn, #delbtn,#modbtn{
+    border: none;
+    background-color: chocolate;
+    color: white;
+    font-size: 14px;
+}
+
+#addbtn:hover, #delbtn:hover,#modbtn:hover{
+    transform: scale(1.1);
+    background-color: gold;
+}
+
+#adding-container{
+    width: 48%;
+    margin: 5%;
+    background-image: url('https://t4.ftcdn.net/jpg/01/04/13/57/240_F_104135791_1cLZHNM7Y74TFsLKtG08JcfbIe3SiRma.jpg');
+    background-size: cover;
+    background-position: center center;
+    color: rgb(17, 15, 16);
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#modify-container{
+    width: 48%;
+    margin: 5%;
+    background-image: url('https://t4.ftcdn.net/jpg/01/04/13/57/240_F_104135791_1cLZHNM7Y74TFsLKtG08JcfbIe3SiRma.jpg');
+    background-size: cover;
+    background-position: center center;
+    color: rgb(17, 15, 16);
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* margin-left: 12%; */
+    /* padding-right: 11%; */
+}
+
+/* hovering */
+
+#adding-container:hover,#modify-container:hover{
+    transform: scale(1.1);
+
+}
+
+#modify-containe{
+    margin-left: 10px;
+}
+
+
+
+
+
+
+/* input */
+
+/* #image-input-d,#hotel-type-d,#description-d,#roomFacilities-d,#price-d{
+    /* background-color: #b5876d; */
+    /* color:  white; */
+/* } */ 
+
+#addbtn{
+    margin-bottom: 12px;
+}
+
+#adding-container input,
+#modify-container input,
+#adding-container button,
+#modify-container button 
+{
+    width: 60%; 
+    margin: 10px 0; 
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}

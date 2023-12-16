@@ -73,6 +73,7 @@ function displayGrids(data) {
       singleGrid.gridText.style.display = "block";
       singleGrid.querySelector(".grid-price").style.display = "block";
     });
+// <<<<<<< fw28_140_day3
 
     singleGrid.append(gridTitle, gridText, gridButton, gridPrice, perNight);
     vishnu_page1_mainContainer_div_3.appendChild(singleGrid);
@@ -256,4 +257,12 @@ function DevelopersDataDisplay(data) {
 // =========================== div 9 developers start =================================
 
 // =========================== div 9 developers end =================================
+// =======
+
+//     singleGrid.append(gridTitle, gridText, gridButton, gridPrice, perNight);
+//     vishnu_page1_mainContainer_div_3.appendChild(singleGrid);
+//   });
+// }
+
+// >>>>>>> main
 vishnu_page1_mainContainer.appendChild(vishnu_page1_mainContainer_div_3);

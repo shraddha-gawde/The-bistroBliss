@@ -4,29 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles/room-list.css">
-    <link rel="stylesheet" href="styles/responsiveness.css">
-    <link rel="stylesheet" href="rstyle.css">
-    <link rel="stylesheet" href="mayank.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Room Details</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- ********owl carosuel********* -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Raleway:ital,wght@0,400;0,500;1,300;1,500&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Raleway:ital,wght@0,400;1,300;1,500&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="roomdetails.css">
+    <link rel="stylesheet" href="rstyle.css">
+    <link rel="stylesheet" href="styles/room-list.css">
+    <link rel="stylesheet" href="mayank.css">
 </head>
 
 <body>
+    <!-- header -->
     <header class="skicky">
         <nav class=" navbar navbar-light navbar-expand-md">
           <div class="rmedia">
@@ -102,10 +104,8 @@
           </div>
         </nav>
       </header>
-    
-    <!-- <iframe src="rindex.html" width="100%" height="100px" frameborder="0"></iframe> -->
-    <!-- <div class="breadcrumb-area overlay-dark-2 bg-3"> -->
-    <section class="breadcrumb-area overlay-dark-2 bg-3">
+
+      <section class="breadcrumb-area overlay-dark-2 bg-3">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -123,71 +123,159 @@
             </div>
         </div>
     </section>
-    <!-- </div> -->
 
-
-    <!-- into of page here -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 mx-auto">
-                <div class="section-title text-center">
-                    <h3>OUR ATR ROOMS</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellente sque vel volutpat felis, eu
-                        condimentum massa. Pellentesque mollis eros vel mattis tempor. Aliquam </p>
+    <!-- header complete -->
+    <div class="roomdetails">
+        <div class="rd1">
+            <div class="rd1l">
+                <div class="rd1lup">
+                    <img src="imagemay/rd1.webp" alt="">
+                </div>
+                <div class="rd1ldown">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item"><img src="imagemay/c1.webp" alt="">
+                        </div>
+                        <div class="item"><img src="imagemay/c2.webp" alt="">
+                        </div>
+                        <div class="item"><img src="imagemay/c3.webp" alt="">
+                        </div>
+                        <div class="item"><img src="imagemay/c4.webp" alt="">
+                        </div>
+                        <div class="item"><img src="imagemay/c5.webp" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
+            <div class="rd1r">
+                <div class="rd1rup">
+                    <h4>YOUR RESERVATION</h4>
+                    <hr>
+                    <!-- <label for="start"></label> -->
+                    <input type="date" id="starta" name="trip-start" value="2018-07-22" min="2023-01-01"
+                        max="2025-12-31" />
 
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <div class="search-arts-wrapper" id="search-arts-wrapper">
-                    <select id="search-by-select">
-                        <option value="search">Search By</option>
-                        <option value="type">Type</option>
+                    <input type="date" id="startb" name="trip-start" value="2018-07-22" min="2023-01-01"
+                        max="2025-12-31" />
+
+                    <select name="pets" id="startc">
+                        <option value="">ADULTS</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
                     </select>
-                    <input type="text" id="search-by-input" placeholder="Enter Room Type" />
-                    <button id="search-by-button">
-                        Search
-                    </button>
+
+                    <select name="pets" id="startd">
+                        <option value="">CHILDREN</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                    <button class="Check">CHECK AVAILABILITY</button>
+                    <button class="bnow"><a href=""></a>BOOK NOW</button>
+
+                </div>
+                <div class="rd1rdown">
+                    <p>If you have any question please don't hesitate to contact us</p>
+                    <a href=""><i class="iconc fa-solid fa-envelope"></i> hotelbliss@bristobliss.com </a>
+                    <a href=""><i class=" iconc fa-solid fa-phone"></i> +91 25789-32345 </a>
                 </div>
             </div>
+        </div>
+        <div class="rd2">
+            <div class="rd2l">
+                <h2>DESCRIPTION OF ROOM</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisi cing elit, sed do eius mod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut the enim ad minim veniam, quis nostrud exer citation ullamco
+                    laboris nisi ut aliquip ex ea com modo conse quat. Duis aute irure dolor in reprehend erit in volupt
+                    ate velit esse cillum dolore eu fugiat nulla pari atur. Except eur sint occa ecat cupi datat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde
+                    omnis iste natus error sit volup tatem accusantium the doloremque lauda ntium, totam rem aper iam,
+                    eaque ipsa quae</p>
 
-            <div class="col-auto">
-                <select id="filter-by-type">
-                    <option value="">Filter By Type</option>
-                    <option value="single-room">Single Room</option>
-                    <option value="royal-suit">Royal Suit</option>
-                    <option value="delux-suit">Delux Suit</option>
-                    <option value="double-room">Double Room</option>
-                </select>
+                <p>Nemo enim ipsam voluptatem quia volu ptas sit asper natur aut odit aut fugit, sed quia consequ untur
+                    magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolo rem
+                    ipsum quia dolor sit amet, conse ctetur, adipisci velit, sed quia a non numquam eius modi tempora
+                    incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore
+                    et dolore magna aliqua. Ut new newenim ad im veniam, quis nostrud exercitation ullamco laboris nisi
+                    ut aliquip</p>
             </div>
+            <div class="rd2r">
 
-            <div class="col-auto">
-                <select id="sort-by-select">
-                    <option value="">Sort By Price</option>
-                    <option value="low-to-high">Low To High</option>
-                    <option value="high-to-low">High To Low</option>
-                </select>
+                <div class="sidebar-widget">
+                    <h4 class="room-details-title">POPULAR POST</h4>
+                    <div class="post-content">
+                        <div class="post-img">
+                            <a href="#" class="block"><img src="imagemay/imgsidebar1.webp" alt=""></a>
+                        </div>
+                        <div class="post-text">
+                            <h6><a href="#">LUXURY VACATION</a></h6>
+                            <span>22 Dec, 2019</span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-img">
+                            <a href="#" class="block"><img src="imagemay/imgsidebar2.webp" alt=""></a>
+                        </div>
+                        <div class="post-text">
+                            <h6><a href="#">HOTEL LIVING</a></h6>
+                            <span>10 Feb, 2019</span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-img">
+                            <a href="#" class="block"><img src="imagemay/imgsidebar3.webp" alt=""></a>
+                        </div>
+                        <div class="post-text">
+                            <h6><a href="#">THE BRISTOBLISS</a></h6>
+                            <span>06 Mar, 2019</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+        </div>
+        <div class="rd3">
+            <div class="rd3l">
+                <div class="rd3lup">
+                    <h2>ROOM FACILITIES</h2>
+                    <hr>
+                </div>
+                <div class="rd3ldown">
+                    <div class="facility">
+                        <span><i class="fa-solid fa-check"></i>Single Room</span>
+                        <span><i class="fa-solid fa-check"></i>F70 sq mt</span>
+                        <span><i class="fa-solid fa-check"></i>3 Persons</span>
+                        <span><i class="fa-solid fa-check"></i>Free Internet</span>
+                    </div>
 
+                    <div class="facility">
+                        <span><i class="fa-solid fa-check"></i> Breakfast Inclide</span>
+                        <span><i class="fa-solid fa-xmark"></i>Free wi-fi</span>
+                        <span><i class="fa-solid fa-check"></i>Private Balcony</span>
+                        <span><i class="fa-solid fa-check"></i>Free News</span>
+                    </div>
 
+                    <div class="facility">
+                        <span><i class="fa-solid fa-check"></i>Full AC</span>
+                        <span><i class="fa-solid fa-xmark"></i>Flat Screen TV</span>
+                        <span><i class="fa-solid fa-check"></i>Beach View</span>
+                        <span><i class="fa-solid fa-xmark"></i>Room Service</span>
+                    </div>
 
-
+                </div>
+            </div>
         </div>
     </div>
-    <!-- room list cards here -->
-
-    <div id="room-list-cards-container">
-        <!--  -->
-    </div>
-
-    <!-- paggination buttons here -->
-    <div id="room-list-pagination-container">
-
-    </div>
-    <!-- logo's here -->
+    <!-- body end part -->
     <div class="container text-center">
         <div class="row">
             <div class="col">
@@ -231,7 +319,7 @@
         </div>
 
     </section>
-
+    <!-- footer -->
     <div class="mayank">
         <div class="container246" style="border: none;">
 
@@ -299,8 +387,72 @@
             </div>
         </div>
     </div>
-    <!-- <div id="footer-container"></div> -->
-    <script src="scripts/room-list.js" type="module"></script>
-    
-    
+
+    <!-- *****owl carosuel****** -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+    <!-- ********other**************** -->
+
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script> -->
+
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 20,
+
+            nav: true,
+            dots: false,
+            autoplay: true,
+            center: false,
+            autoplayTimeout: 3000,
+            stagePadding: 0,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 4
+                }
+                
+            }
+        });
+    </script>
+    <!-- // *******Footer******* -->
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script>
+        // Use jQuery to load the header and footer
+        $(function () {
+            // Load the header
+            // $("#header").load("header.html");
+
+            // Load the footer
+            $("#footer").load("mayank.html");
+        });
+    </script> -->
+
 </body>
+
+</html>

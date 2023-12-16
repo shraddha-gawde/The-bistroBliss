@@ -27,3 +27,5 @@ const cardCvvInput = document.getElementById("cardCvv");
       window.location.href = "otp.html";
     }
   });
+
+  

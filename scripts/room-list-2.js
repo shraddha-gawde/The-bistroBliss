@@ -205,7 +205,7 @@ const adminbtn=document.getElementById("dbuttonadd");
 adminbtn.addEventListener("click",function(e){
   e.preventDefault();
   window.location.href="cardadd.html";
-
 })
+
 
 

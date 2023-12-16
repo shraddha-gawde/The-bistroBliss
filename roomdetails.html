@@ -455,7 +455,51 @@
             $("#footer").load("mayank.html");
         });
     </script> -->
-
+    <script>
+        const subscribeBtn = document.getElementById("mc-submit");
+    
+    subscribeBtn.addEventListener("click", (event) => {
+      event.preventDefault();
+    
+      const emailInput = document.getElementById("mc-email");
+    
+      const emailValue = emailInput.value;
+    
+      if (emailValue.trim() !== "") {
+        const emailObj = {
+          email: emailValue,
+        };
+        addEmail(emailObj);
+      } else {
+        alert("Email cannot be empty");
+      }
+    });
+    
+    function addEmail(emailObj) {
+      const subscribeURL = 'https://neural-innovator-5123.onrender.com/newsletterSubScribers';
+    
+      fetch(subscribeURL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(emailObj),
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          console.log(data);
+          showSuccessPopup();
+        })
+        .catch((error) => {
+          console.error(error);
+        });
+    }
+    
+    function showSuccessPopup() {
+      alert("Wonderful! You have successfully subscribed to our newsletter.");
+    }
+    
+      </script>
 </body>
 
 </html>

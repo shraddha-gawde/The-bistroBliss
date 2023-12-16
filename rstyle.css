@@ -1,7 +1,6 @@
 body{
     margin: 0;
     padding: 0;
-    height: 1500px;
 }
 .top1{
     width: 100%;
@@ -100,19 +99,20 @@ a.nav-link:hover{
     position: relative;
     background-color: white;
     top: -50px;
+    padding: 5%;
 }
   .start{
     height: 50px;
-    width: 180px;
+    width: 17%;
   }
   .Astart{
     height: 50px;
-    width: 180px;
+    width: 17%;
   }
   .Check{
     border: none;
     height: 50px;
-    width: 180px ;
+    width: 17% ;
     background-color: #b5876d;
     padding: 10px;
     color: white;
@@ -195,11 +195,6 @@ a.nav-link:hover{
     height: 500px;
 }
 .top2 {
-    /* display: ; */
-    /* justify-content: space-evenly; */
     width: 100%;
-    /* margin: 0; */
-    /* margin-left: 18%; */
-    /* margin-top: 30px; */
 }
   }

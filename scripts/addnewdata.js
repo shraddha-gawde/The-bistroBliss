@@ -21,7 +21,7 @@ function fetchData(url, data_param, page) {
         console.log(data)
     })
     .catch((error) => {
-      console.error("Fetch Error:", error);
+      console.log(error);
   });
 }
 fetchData(roomDetailsURL);
@@ -157,6 +157,7 @@ async function addData(url){
 
 addbutton.addEventListener("click",()=>{
     addData(roomDetailsURL);
+    alert("data added successfully...");
 })
 
 
@@ -191,9 +192,25 @@ async function modifyData(url,id){
 
 let modid=modifyid.value;
 modifybtn.addEventListener("click",()=>{
-    modifyData(url,modid)
+    modifyData(url,modid);
+    
 })
 
+
+
+// async function deleteData(url,id){
+
+//   let res=await fetch(`${url}/${id}`,{
+//       method:"DELETE",
+//       headers:{
+//           "Content-type":"application/json"
+//       },
+//       body:JSON.stringify({
+
+//       })
+//   })
+// fetchData(roomDetailsURL)   
+// }
 
 // deletebtn.addEventListener("click",()=>{
 

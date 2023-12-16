@@ -21,7 +21,7 @@
     margin-bottom: 19px;
     text-transform: uppercase;
     margin: 1%;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'raleway', sans-serif;
     font-weight: bolder;
 }
 .breadcrumb-text p {
@@ -136,6 +136,9 @@ body {
 #search-by-button {
     padding: 8px 15px;
     cursor: pointer;
+}
+#search-by-button:hover{
+    background-color: #131313;
 }
 
 /* Sort By Section */

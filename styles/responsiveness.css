@@ -54,9 +54,11 @@
         flex: 0 0 auto;
         width: 100%;
     }
-    .room-img img {
+
+    /* .room-img img { */
         /* width: 350px; */
-    }
+    /* } */
+
     
 }
 

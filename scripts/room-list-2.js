@@ -12,7 +12,7 @@ function fetchData(url, data_param, page) {
   fetch(`${url}?${data_param || ""}_page=${page || pageNumber}&_limit=6`)
     .then((res) => {
       let total = res.headers.get("x-total-count");
-      let numberOfButtons = Math.ceil(total / 5);
+      let numberOfButtons = Math.ceil(total / 6);
       createButtons(numberOfButtons, data_param);
       return res.json();
     })

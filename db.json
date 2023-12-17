@@ -290,38 +290,59 @@
       "TeamDetails":[
         {
             "id":1,
+            "image":"imagemay/shraddhapic.png",
             "Name":"SHRADDHA GAWDE",
             "Role":"FULLSTACK WEB DEVELOPER",
-            "Strength":"Solid understanding of database design."
+            "Strength":"Solid understanding of database design.",
+            "linkgit":"https://github.com/shraddha-gawde",
+            "linkinsta":"https://www.instagram.com/shraddhag_2716/",
+            "linkdin":"https://www.linkedin.com/in/shraddha-gawde-b2511a228/"
 
         },
         {
             "id":2,
+            "image":"imagemay/raushanpic.png",
             "Name":"RAUSHAN RAJ SINGH",
             "Role":"FULLSTACK WEB DEVELOPER",
-            "Strength":"Proficient in both front-end and back-end technologies"
+            "Strength":"Proficient in both front-end and back-end technologies",            
+            "linkgit":"https://github.com/Raushan8505",
+            "linkinsta":"https://www.instagram.com/raushanraj748/",
+            "linkdin":"https://www.linkedin.com/in/raushan-raj-singh-0b7913233/" 
 
         },
         {
             "id":3,
+            "image":"imagemay/dkpic.png",
             "Name":"DEEPAK KUMAR",
             "Role":"FULLSTACK WEB DEVELOPER",
-            "Strength":"Excellent communication skills, a collaborative team player, and a quick learner adaptable to evolving technologies."
-             },
+            "Strength":"Excellent communication skills, a collaborative team player, and a quick learner adaptable to evolving technologies.",
+            "linkgit":"https://github.com/DEEPAK101020",
+            "linkinsta":"https://www.instagram.com/i_idkwalks/",
+            "linkdin":"https://www.linkedin.com/in/deepak-kumar-56075a170/"
+        },
         {
             "id":4,
+            "image":"imagemay/dkpic.png",
             "Name":"MAYANK BELWAL",
             "Role":"FULLSTACK WEB DEVELOPER",
-            "Strength":"Analytical and detail-oriented aspiring Backend Web Developer."
+            "Strength":"Analytical and detail-oriented aspiring Backend Web Developer.",      
+            "linkgit":"https://github.com/MayankBelwal05",
+            "linkinsta":"https://www.instagram.com/mayank_belwal005/",
+            "linkdin":"https://www.linkedin.com/in/mayank-belwal-6bb808161?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
 
         },
 
          {
             "id":5,
-            "Name":"VISHNURAJ KAROCKAL",
+            "image":"imagemay/vishnupic.png",
+            "Name":"VISHNURAJ K R",
             "Role":"FULLSTACK WEB DEVELOPER",
-            "Strength":" Experienced in deploying applications to web servers and cloud platforms"
-             }
+            "Strength":" Experienced in deploying applications to web servers and cloud platforms",
+            "linkgit":"https://github.com/VishnurajKarockal",
+            "linkinsta":"https://www.instagram.com/_.kaarockan._/",
+            "linkdin":"https://www.linkedin.com/in/vishnuraj-k-r-0a3600280/"
+        }
+    
       ],
       "ClientLogos": [
         {

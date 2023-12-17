@@ -12,6 +12,7 @@
     background-image: url("https://images.unsplash.com/photo-1541194577687-8c63bf9e7ee3?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bXklMjByb29tfGVufDB8fDB8fHww");
 }
 .rcontainer{
+    margin-top: 5%;
     position: relative;
     width: 768px;
     max-width: 100%;

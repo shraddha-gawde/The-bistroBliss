@@ -3,23 +3,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
   }
   .roomdetails .rd1 {
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
+    margin-top: 10%;
   }
   .roomdetails .rd1 .rd1l {
     width: 100% !important;
     height: auto;
   }
   .roomdetails .rd1 .rd1l .rd1lup {
-    height: 400px !important;
+    height: 250px !important;
   }
   .roomdetails .rd1 .rd1l .rd1lup img {
     width: 100%;
-    height: 400px !important;
+    height: 250px !important;
+    
     -o-object-fit: cover;
        object-fit: cover;
     margin-right: 0%;
@@ -36,7 +39,8 @@
   .roomdetails .rd1 .rd1r {
     width: 100% !important;
   }
-  .roomdetails .rd1 .rd1r .rd1rup {
+
+  .roomdetails .rd1 .rd1r  {
     width: 100%;
     height: 480px;
   }
@@ -307,3 +311,11 @@
 .rd3 .rd3l .rd3ldown .facility .fa-xmark {
   color: red;
 }/*# sourceMappingURL=roomdetails.css.map */
+
+@media (min-width: 1440px) {
+  .roomdetails {
+    padding-top: 2%;
+   padding-left: 7%;
+   padding-right: 7%;
+  }
+}

@@ -286,7 +286,34 @@
           "about":
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellente sque"
         }
-      ]
+      ],
+      "ClientLogos": [
+        {
+            "id": 1,
+            "ordinary": "https://htmldemo.net/oestin/oestin/img/client/1.png",
+            "colored": "https://htmldemo.net/oestin/oestin/img/client/1-hover.png"
+        },
+        {
+            "id": 2,
+            "ordinary": "https://htmldemo.net/oestin/oestin/img/client/2.png",
+            "colored": "https://htmldemo.net/oestin/oestin/img/client/2-hover.png"
+        },
+        {
+            "id": 3,
+            "ordinary": "https://htmldemo.net/oestin/oestin/img/client/3.png",
+            "colored": "https://htmldemo.net/oestin/oestin/img/client/3-hover.png"
+        },
+        {
+            "id": 4,
+            "ordinary": "https://htmldemo.net/oestin/oestin/img/client/4.png",
+            "colored": "https://htmldemo.net/oestin/oestin/img/client/4-hover.png"
+        },
+        {
+            "id": 5,
+            "ordinary": "https://htmldemo.net/oestin/oestin/img/client/5.png",
+            "colored": "https://htmldemo.net/oestin/oestin/img/client/5-hover.png"
+        }
+    ]
 }
 
 

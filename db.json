@@ -195,6 +195,26 @@
         }
     ],
     "users":[
+        {
+            "id": 1,
+            "firstName": "shraddha",
+            "LastName": "Gawde",
+            "email": "shraddha@gmail.com",
+            "Phone": 7038536555,
+            "dateOfBirth":"1999-12-05",
+            "password":"123456"
+        },
+        {
+            "id": 5,
+            "firstName": "vishnu",
+            "LastName": "kr",
+            "email": "vishnuraj@gmail.com",
+            "Phone": 1234556789,
+            "dateOfBirth":"1999-08-05",
+            "password":"123456"
+        }
+        
+
     ],
     "horizontalGridsData" : [
         {

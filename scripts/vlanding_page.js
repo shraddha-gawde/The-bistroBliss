@@ -27,7 +27,7 @@ let Video_div = document.getElementsByClassName("Video_div");
 let gridVideo = document.getElementsByClassName("gridVideo");
 let videoImage = document.getElementById("videoImage");
 
-playButton.addEventListener("click", (e) => {
+videoImage.addEventListener("click", (e) => {
   playButton.style.display = "none";
 
   videoImage.style.display = "none";
@@ -62,6 +62,11 @@ function displayGrids(data) {
     let gridButton = document.createElement("button");
     gridButton.className = "gridButton";
     gridButton.textContent = "DETAILS";
+
+    gridButton.addEventListener("click", (e) =>{
+      e.preventDefault();
+      window.location.href = "roomdetails.html";
+    })
     let gridPrice = document.createElement("h4");
     gridPrice.className = "gridPrice";
     gridPrice.textContent = `$${item.price}`;
@@ -73,7 +78,7 @@ function displayGrids(data) {
       singleGrid.gridText.style.display = "block";
       singleGrid.querySelector(".grid-price").style.display = "block";
     });
-// <<<<<<< fw28_140_day3
+    // <<<<<<< fw28_140_day3
 
     singleGrid.append(gridTitle, gridText, gridButton, gridPrice, perNight);
     vishnu_page1_mainContainer_div_3.appendChild(singleGrid);
@@ -134,9 +139,9 @@ page1_div5.append(page1_div5_grid1, page1_div5_grid2);
 // ===========================div 5 end ==========================================
 // ========================= div 6 timer start=============================================
 
-// let timerdiv = document.getElementsByClassName(
-//   "vishnu_page1_mainContainer_div_6"
-// )[0];
+let timerdiv = document.getElementsByClassName(
+  "vishnu_page1_mainContainer_div_6"
+)[0];
 let timer1 = document.getElementById("timer1");
 let t1 = 1;
 
@@ -219,34 +224,36 @@ function DevelopersDataDisplay(data) {
         devAbout.className = "devAbout";
         let devSocial = document.createElement("div");
         devSocial.className = "devSocial";
+
         let devFacebook = document.createElement("button");
-        devFacebook.className = "fa fa-facebook";
-        // let devFbAnchor = document.createElement("a");
-        // devFbAnchor.setAttribute("href", "https://www.facebook.com/");
+        devFacebook.className = "fa fa-facebook developers";
+        let devFbAnchor = document.createElement("a");
+        devFbAnchor.setAttribute("href", "https://www.facebook.com/");
+
         let devTwitter = document.createElement("button");
-        devTwitter.className = "fa fa-twitter";
-        // let devTwitterAnchor = document.createElement("a");
-        // devTwitterAnchor.setAttribute("href", "https://twitter.com/");
+        devTwitter.className = "fa fa-twitter developers ";
+        let devTwitterAnchor = document.createElement("a");
+        devTwitterAnchor.setAttribute("href", "https://twitter.com/");
+
         let devPinterest = document.createElement("button");
-        devPinterest.className = "fa fa-pinterest";
-        // let devPinterestAnchor = document.createElement("a");
-        // devPinterestAnchor.setAttribute("href", "https://in.pinterest.com/");
+        devPinterest.className = "fa fa-pinterest developers";
+        let devPinterestAnchor = document.createElement("a");
+        devPinterestAnchor.setAttribute("href", "https://in.pinterest.com/");
 
         devName.innerText = item.name;
         devRole.textContent = item.role;
         devAbout.textContent = item.about;
 
-        // devFacebook.append(devFbAnchor);
-        // devTwitter.append(devTwitterAnchor);
-        // devPinterest.append(devPinterestAnchor);
+        devFbAnchor.appendChild(devFacebook);
+        devTwitterAnchor.appendChild(devTwitter);
+        devPinterestAnchor.appendChild(devPinterest);
 
-        devSocial.append(devFacebook, devTwitter, devPinterest);
+        devSocial.append(devFbAnchor, devTwitterAnchor, devPinterestAnchor);
         devDataBox.append(devName, devRole, devAbout, devSocial);
 
         singlegrid.append(devDataBox);
         devKey = false;
       }
-      // alert("vishnuraj");
     });
 
     developers.append(singlegrid);

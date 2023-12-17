@@ -1,21 +1,32 @@
-let teamurl="https://neural-innovator-5123.onrender.com/TeamDetails";
+var teamUrl = "https://neural-innovator-5123.onrender.com/TeamDetails";
+let mainteamdiv = document.getElementById("main-container-team");
 
-var mainteamdiv=document.getElementById("main-container-team");
+// Your existing code
 
 async function fetchData(url) {
     try {
         let res = await fetch(url);
+
+        if (!res.ok) {
+            throw new Error(`Failed to fetch data. Status: ${res.status}`);
+        }
+
         let data = await res.json();
         console.log(data);
-        createCard(data);
+       
+        data.forEach(createCard);
     } catch (error) {
-        console.error(error);
+        console.log(error);
     }
 }
-fetchData(teamurl);
 
-// maincard
+fetchData(teamUrl);
+
 function createCard(data) {
+    // Create a new 'allcard' for each set of data
+    let allcard = document.createElement("div");
+    allcard.className = "all-card";
+
     let singlecard = document.createElement("div");
     singlecard.className = "single-card";
 
@@ -24,6 +35,7 @@ function createCard(data) {
 
     let imageteam = document.createElement("img");
     imageteam.src = data.image;
+    imageteam.className="image-member"
     imagediv.appendChild(imageteam);
 
     singlecard.appendChild(imagediv);
@@ -69,13 +81,12 @@ function createCard(data) {
     logoDiv.appendChild(instaimage);
     logoDiv.appendChild(gitimage);
 
-    // Append cardbody and logopart to singlecard
+    // Append cardbody 
     singlecard.appendChild(cardbody);
     singlecard.appendChild(logoDiv);
 
-    // Append singlecard to allcard
+  
     allcard.appendChild(singlecard);
 
-    // Append allcard to the main container
     mainteamdiv.appendChild(allcard);
 }

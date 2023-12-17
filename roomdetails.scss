@@ -1,20 +1,135 @@
+@media (max-width: 1000px) {
+
+    .roomdetails {
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .rd1 {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+
+            .rd1l {
+                width: 100% !important;
+                height: auto;
+
+                .rd1lup {
+                    height: 400px !important;
+
+                    img {
+                        width: 100%;
+                        height: 400px !important;
+                        object-fit: cover;
+                        margin-right: 0%;
+                    }
+                }
+
+                .rd1ldown {
+                    width: 100% !important;
+                    height: 80px;
+
+                    .owl-carousel {
+                        box-sizing: border-box;
+                        width: 100% !important;
+                         padding: 20px;
+                    }
+                }
+            }
+
+            .rd1r {
+                width: 100% !important;
+
+                .rd1rup {
+                    width: 100%;
+                    height: 480px;
+                }
+
+                .rd1rdown {
+                    width: 100%;
+                    height: 480px;
+                }
+            }
+        }
+
+        .rd2 {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+
+            .rd2l {
+                width: 100%;
+                height: auto;
+                h2{
+                    font-size: 20px;
+                }
+            }
+
+            .rd2r {
+                width: 100%;
+                height: 400px;
+               
+                h4{
+                    text-align: start;
+                    font-size: 20px;
+                    
+                }
+              
+            }
+        }
+
+        .rd3 {
+            display: flex;
+            flex-direction: column;
+            width: 100% !important;
+            height: auto;
+             margin-top: 50px;
+           
+            .rd3l{
+                width: 100%;
+                height: auto;
+                .rd3lup{
+                   h2{
+                    font-size: 20px;
+                   }
+                }
+                .rd3ldown {
+                    width: 100%;
+                    height: auto;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                margin-top: 20px;
+                
+                }
+            }
+        }
+    }
+}
+
+
+
+
 .roomdetails {
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
-width: 90%;
-margin: auto;
+
+    width: 90%;
+    margin: auto;
 
     .rd1 {
-        width:100%;
-        //  border: 8px solid rgb(81, 255, 28);
+        width: 100%;
+    //   border: 8px solid rgb(81, 255, 28);
         height: auto;
         display: flex;
         gap: 50px;
         box-sizing: border-box;
-        margin-top: 50px;
+        // margin-top: 50px;
 
         .rd1l {
             width: 72%;
@@ -23,15 +138,16 @@ margin: auto;
 
             .rd1lup {
                 height: 580px;
-                //  border: 2px solid rgb(53, 54, 128);
+                // border: 8px solid rgb(53, 54, 128);
                 box-sizing: border-box;
                 overflow: hidden;
                 background-color: #604332;
                 border-radius: 5px;
 
                 img {
-                    max-width: 100%;
-                    box-sizing: border-box;
+                    width: 100%;
+                    object-fit: cover;
+                    // box-sizing: border-box;
                     height: 580px;
                     // display: block;
                     object-fit: cover;
@@ -48,19 +164,19 @@ margin: auto;
                 align-items: center;
                 margin-top: 20px;
 
-                .item {
-                    width: 200px;
-                }
+                // .item {
+                //     width: 200px;
+                // }
 
                 .owl-carousel {
                     box-sizing: border-box;
                     width: 100% !important;
-                    padding: 20px;
+                     padding: 20px;
                 }
 
                 button.owl-prev {
                     position: absolute;
-                    top:40%;
+                    top: 40%;
                     left: 0;
                 }
 
@@ -94,16 +210,20 @@ margin: auto;
                     font-size: 22px;
                 }
 
-                #starta,#startb,#startc,#startd {
+                #starta,
+                #startb,
+                #startc,
+                #startd {
                     border-radius: 5px;
                     margin-top: 25px;
                     font-size: 12px;
-                    text-align:center ;
+                    text-align: center;
                     // margin-left: 5%;
                     width: 90%;
                     height: 40px;
                     border: none;
                 }
+
                 button {
                     width: 80%;
                     height: 40px;
@@ -116,6 +236,7 @@ margin: auto;
                     transition-duration: 0.2s;
                     transition-property: color;
                 }
+
                 button:hover {
                     background-color: black;
                     cursor: pointer;
@@ -135,6 +256,7 @@ margin: auto;
                 padding: 8%;
                 font-weight: 400;
                 border-radius: 10px;
+
                 a {
                     text-decoration: none;
                     font-size: 16px;
@@ -148,6 +270,7 @@ margin: auto;
                 p {
                     color: rgb(58, 52, 52);
                 }
+
                 .iconc {
 
                     font-size: 20px;
@@ -187,7 +310,8 @@ margin: auto;
 
     .rd2l {
         height: 400px;
-        width: 80%;
+        width: 75%;
+
         p {
             margin-top: 20px;
         }
@@ -195,7 +319,7 @@ margin: auto;
 
     .rd2r {
         // border: 2px solid rgb(144, 48, 233);
-        height: 380px;
+        height: 400px;
         width: 25%;
         background-color: #f1f1f1;
         border-radius: 10px;
@@ -214,9 +338,11 @@ margin: auto;
             align-items: center;
             margin-top: 30px;
         }
-img{
-    border: 1px solid rgb(44, 165, 235);
-}
+
+        img {
+            border: 1px solid rgb(44, 165, 235);
+        }
+
         img:hover {
             opacity: 0.25;
             cursor: pointer;
@@ -230,23 +356,23 @@ img{
 }
 
 .rd3 {
-    width: 100%;
+    width: 100% ;
     height: 250px;
     display: flex;
     gap: 50px;
 
     .rd3l {
-        height:250px;
-        width: 73%;
+        height: 250px;
+        width: 75%;
 
         .rd3ldown {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             height: 200px;
-           
+
             .facility {
                 // border: 2px solid rgb(111, 26, 221);
-                display: flex;
+                display: flex !important;
                 flex-direction: column;
                 justify-content: space-evenly;
 

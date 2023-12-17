@@ -133,15 +133,17 @@ body {
 
 #search-by-input {
     flex: 1;
-    padding: 8px;
+    /* padding: 8px; */
     border: 1px solid #ddd;
     border-radius: 4px;
+    padding: 8px 0px
 }
 
 #search-by-button {
     padding: 8px 15px;
     cursor: pointer;
 }
+search-arts-wrapper
 #search-by-button:hover{
     background-color: #131313;
 }
@@ -191,7 +193,7 @@ button {
 }
 .containerfilter{
     display: flex;
-    column-width: 50%;
+    /* column-width: 50%; */
 
 }
 

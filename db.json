@@ -287,6 +287,42 @@
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellente sque"
         }
       ],
+      "TeamDetails":[
+        {
+            "id":1,
+            "Name":"SHRADDHA GAWDE",
+            "Role":"FULLSTACK WEB DEVELOPER",
+            "Strength":"Solid understanding of database design."
+
+        },
+        {
+            "id":2,
+            "Name":"RAUSHAN RAJ SINGH",
+            "Role":"FULLSTACK WEB DEVELOPER",
+            "Strength":"Proficient in both front-end and back-end technologies"
+
+        },
+        {
+            "id":3,
+            "Name":"DEEPAK KUMAR",
+            "Role":"FULLSTACK WEB DEVELOPER",
+            "Strength":"Excellent communication skills, a collaborative team player, and a quick learner adaptable to evolving technologies."
+             },
+        {
+            "id":4,
+            "Name":"MAYANK BELWAL",
+            "Role":"FULLSTACK WEB DEVELOPER",
+            "Strength":"Analytical and detail-oriented aspiring Backend Web Developer."
+
+        },
+
+         {
+            "id":5,
+            "Name":"VISHNURAJ KAROCKAL",
+            "Role":"FULLSTACK WEB DEVELOPER",
+            "Strength":" Experienced in deploying applications to web servers and cloud platforms"
+             }
+      ],
       "ClientLogos": [
         {
             "id": 1,
@@ -485,7 +521,7 @@
         }
     ]
 
-    
+
 }
 
 

@@ -519,9 +519,101 @@
             "address": "East Road, London",
             "distance": "1 kilometers"
         }
+    ],
+
+    "activities" :[
+        {
+            "id":1,
+            "image": "https://www.sassymamahk.com/wp-content/uploads/2017/02/SMHK-hero-family-activity-holiday-hotel-mr-mrs-smith.jpg",
+            "title" : "Rosewood Miyakojima",
+            "location" : "Japan",
+            "distance" :"30 kilometers"
+        },
+        {
+            "id":2,
+            "image": "https://www.sassymamahk.com/wp-content/uploads/2017/02/SMHK_MMS_KidActivities_Emirates_160217.jpg",
+            "title" : "Emirates One&Only Wolgan Valley",
+            "location" : "Blue Mountains, Australia",
+            "distance" :"4 kilometers"
+        },
+        {
+            "id":3,
+            "image": "https://www.sassymamahk.com/wp-content/uploads/2017/02/SMHK_MMS_KidActivities_Rosewood_160217.jpg",
+            "title" : "Rosewood Castiglion Del Bosco",
+            "location" : "Tuscany, Italy",
+            "distance" :"10 kilometers"
+        },
+        {
+            "id":4,
+            "image": "https://www.sassymamahk.com/wp-content/uploads/2017/02/SMHK_MMS_KidActivities_Nihiwatu_160217.jpg",
+            "title" : "Nihiwatu",
+            "location" : "Sumba, Indonesia",
+            "distance" :"21 kilometer"
+        },
+        {
+            "id":5,
+            "image": "https://www.sassymamahk.com/wp-content/uploads/2023/12/hotel-openings-asia-2024-soneva-secret-travel.jpeg",
+            "title" : "Soneva Secret – Haa Dhaalu",
+            "location" : "The Maldives",
+            "distance" :"15 kilometers"
+        },
+        {
+            "id":6,
+            "image": "https://www.sassymamahk.com/wp-content/uploads/2023/12/hotel-openings-asia-2024-six-senses-bangkok-travel.jpg",
+            "title" : "Six Senses Forestias",
+            "location" : "Bangkok, Thailand",
+            "distance" :"51 kilometers"
+        },
+        {
+            "id":7,
+            "image": "https://www.sassymamahk.com/wp-content/uploads/2017/02/SMHK-hero-family-activity-holiday-hotel-mr-mrs-smith.jpg",
+            "title" : "Rosewood Miyakojima",
+            "location" : "Japan",
+            "distance" :"30 kilometers"
+        },
+        {
+            "id":7,
+            "image": "https://www.sassymamahk.com/wp-content/uploads/2017/02/SMHK_MMS_KidActivities_Emirates_160217.jpg",
+            "title" : "Emirates One&Only Wolgan Valley",
+            "location" : "Blue Mountains, Australia",
+            "distance" :"4 kilometers"
+        },
+        {
+            "id":8,
+            "image": "https://www.sassymamahk.com/wp-content/uploads/2023/12/hotel-openings-asia-2024-soneva-secret-travel.jpeg",
+            "title" : "Soneva Secret – Haa Dhaalu",
+            "location" : "The Maldives",
+            "distance" :"15 kilometers"
+        },
+        {
+            "id":9,
+            "image": "https://www.sassymamahk.com/wp-content/uploads/2017/02/SMHK_MMS_KidActivities_Nihiwatu_160217.jpg",
+            "title" : "Nihiwatu",
+            "location" : "Sumba, Indonesia",
+            "distance" :"21 kilometer"
+        },
+        {
+            "id":10,
+            "image": "https://www.sassymamahk.com/wp-content/uploads/2017/02/SMHK_MMS_KidActivities_Rosewood_160217.jpg",
+            "title" : "Rosewood Castiglion Del Bosco",
+            "location" : "Tuscany, Italy",
+            "distance" :"10 kilometers"
+        },
+        {
+            "id":11,
+            "image": "https://www.sassymamahk.com/wp-content/uploads/2017/02/SMHK_MMS_KidActivities_Emirates_160217.jpg",
+            "title" : "Emirates One&Only Wolgan Valley",
+            "location" : "Blue Mountains, Australia",
+            "distance" :"4 kilometers"
+        },
+        {
+            "id":12,
+            "image": "https://www.sassymamahk.com/wp-content/uploads/2023/12/hotel-openings-asia-2024-six-senses-bangkok-travel.jpg",
+            "title" : "Six Senses Forestias",
+            "location" : "Bangkok, Thailand",
+            "distance" :"15 kilometers"
+        }
     ]
-
-
 }
 
 

@@ -77,9 +77,9 @@
     }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 700px) {
     .room-list .room-pamount {
-        width: 170px;
+        width: 50px;
     }
 
     .container {
@@ -120,7 +120,9 @@
     }
 
     .newsletter-container {
-        text-align: center;
+        /* text-align: center; */
+        display: flex;
+        flex-direction: column;
     }
 
     .newsletter-form {
@@ -130,7 +132,10 @@
     /* Adjust any other styles as needed for smaller screens */
     #mc-email {
         width: 100%;
-        margin-bottom: 15px;
+        /* margin-bottom: 15px; */
+    }
+    #mc-submit{
+        width: 50%;
     }
 }
 

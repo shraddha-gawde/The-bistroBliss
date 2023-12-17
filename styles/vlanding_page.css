@@ -35,7 +35,7 @@
     border-radius: 50%;
     position: absolute;
     top: 43%;
-    margin-left: 23%;
+    margin-left: 43%;
     /* width: 60px;
     height: 60px;
     border: 6px solid grey;
@@ -396,6 +396,7 @@
     margin: auto;
     text-align: center;
     margin-top: 50px;
+    
 
 }
 #ourPricing_desc{
@@ -618,10 +619,13 @@
 @media screen and (max-width:900px) {
     .vishnu_page1_mainContainer_div_1 {
         grid-template-columns: repeat(1,1fr) !important;
-        gap: 50px;
-        /* #playButton{
-            display: none;
-        } */
+        padding-top: 5%;
+        /* gap: 50px; */
+        #playButton{
+            position: absolute;
+            top: 10%;
+            bottom: 40%;
+        }
     }
     .vishnu_page1_mainContainer_div_3 {
         /* width: 80%;
@@ -636,6 +640,9 @@
     .vishnu_page1_mainContainer_div_5_grid2{
         margin-top: 30px;
     }
+    .vishnu_page1_mainContainer_div_7{
+        margin-top:50%;
+    }
     .vishnu_page1_mainContainer_div_6{
         grid-template-columns:repeat(2,1fr);
     }
@@ -643,22 +650,28 @@
         grid-template-columns: repeat(1,1fr);
     }
     .vishnu_page1_mainContainer_div_9{
+        display: flex;
+        flex-direction: column;
         font-size: 2rem;
+        font-size: 24px;
         #offerButton{
-            width: 20%;
-            
+            width: 100%;
             font-size: .9rem;
         
         }
+    }
+    .vishnu_page1_mainContainer_div_10{
+        margin-bottom: 20%;
     }
     .vishnu_page1_mainContainer_div_11{
         grid-template-columns: repeat(1,1fr);
     }
     .vishnu_page1_mainContainer_div_12{
-        margin-top: 200px;
+        margin-top: 70%;
     }
     .vishnu_page1_mainContainer_div_13{
         grid-template-columns: repeat(1,1fr);
+        margin-bottom: 40%;
     }
     .vishnu_page1_mainContainer_div_14{
         display: none;

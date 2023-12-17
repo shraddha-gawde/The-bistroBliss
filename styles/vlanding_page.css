@@ -29,21 +29,21 @@
     height: 400px;
 }
 #playButton {
-    width: 60px;
-    height: 60px;
-    border: 6px solid grey;
-    border-radius: 50%;
-    position: absolute;
-    top: 43%;
-    margin-left: 22%;
     /* width: 60px;
     height: 60px;
     border: 6px solid grey;
     border-radius: 50%;
     position: absolute;
+    top: 43%;
+    margin-left: 23%; */
+    width: 60px;
+    height: 60px;
+    border: 6px solid grey;
+    border-radius: 50%;
+    position: absolute;
     top: 50%;
-    left: 25%;
-    transform: translate(-50%, -50%); */
+    left: 27%;
+    transform: translate(-50%, -50%);
 }
 
 #triangle {
@@ -54,8 +54,8 @@
     border-bottom: 30px solid grey;
     rotate: 90deg;
     margin: auto;
-    margin-top: 13px;
-    margin-left: 14px;
+    margin-top: 10px;
+    margin-left: 9px;
 }
 .Video_div:hover {
     filter: brightness(0.6);
@@ -64,11 +64,11 @@
 }
 .Video_div:hover {
     #playButton {
-        margin-left: 43%;
+        margin-left: 24%;
         border-color: white;
     }
     #triangle {
-        margin-left: 25%;
+        margin-left: 23%;
     }
 }
 #playButton:hover {
@@ -106,7 +106,7 @@
     cursor: pointer;
 }
 .vishnu_page1_mainContainer_div_2 {
-    width: 42%;
+    width: 60%;
     margin: auto;
     margin-top: 100px;
     text-align: center;
@@ -124,7 +124,11 @@
 
 .singleGrid {
     width: 100%;
-    height: 450px;
+    visibility: visible;
+    transform: translateY(0);
+    transition: opacity 0.3s, transform 0.3s, visibility 0s 0.3s;
+
+    /* height: 450px; */
     /* HEIGHT 520PX */
 }
 
@@ -145,15 +149,17 @@
 .singleGrid:hover {
     filter: brightness(0.8);
     opacity: 100%;
-    transition: transform 3s;
-
+    transition: all 2s;
+    
     .gridTitle {
         transform: translateY(-100px);
+        /* transition-delay: 0.3s; */
     }
 
     .gridText {
         display: block;
         transform: translateY(-50px);
+        /* transition-delay: .5s; */
         color: white;
         text-align: center;
     }
@@ -167,13 +173,14 @@
         padding: 11px;
         font-weight: 700;
         margin-left: 43%;
+        transition: all .6s;
     }
 
     .gridButton:hover {
         color: #b5876d;
         background-color: white;
-        scale: 1.1;
-        transition: background-color 1s initial;
+        
+        transform: scale(1.1);
     }
 
     .gridPrice {
@@ -191,33 +198,37 @@
         text-align: right;
         margin-right: 30px;
     }
+    
+    
 }
 .vishnu_page1_mainContainer_div_4 {
     margin-top: 100px;
     text-align: center;
+    
 }
 #vishnu_page1_mainContainer_div_4_title{
     
     margin: auto ;
-    width: 40%;
+    width: 60%;
 }
 #vishnu_page1_mainContainer_div_4_text{
     margin: auto;
     margin-top: 30px;
-    width: 48%;
+    width: 70%;
 }
 
 .vishnu_page1_mainContainer_div_5{
     
     width: 80%;
-    height: 400px;
+    /* height: 400px; */
     margin: auto;
     margin-top: 50px;
     /* display: flex; */
-    position: relative;
-    justify-content: space-between;
+    /* position: relative; */
+    /* justify-content: space-between; */
     display: grid;
-    grid-template-columns: 40% 57%; 
+    grid-template-columns: repeat(2,1fr); 
+    gap: 30px;
 }
 .vishnu_page1_mainContainer_div_5_grid1{
     /* background-color: aqua; */
@@ -307,6 +318,7 @@
     /* border: 1px solid; */
     margin: auto;
     gap: 10px;
+    /* background-color: #cf7846; */
 
 }
 .developersgrid{
@@ -314,14 +326,21 @@
     /* border: 1px solid; */
     border-radius: 10px ;
     align-items: center;
-    margin-bottom: 10%;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
     
 }
 .devDataBox{
     width: 100%;
-    height: 60%;
+    /* height: 60%; */
     align-content: end;
-    margin-top: 40%;
+    /* margin-top: 40%; */
+    position: relative;
+    top: 0;
     background-color: rgb(3, 3, 3);
     opacity: 50%;
     z-index: 1;
@@ -375,7 +394,8 @@
     font-weight: 600;
 }
 #offerButton{
-    margin-left: 5%;
+    
+    margin-left: 10px;
     font-size: 1.2rem;
     color: #b5876d;
     background-color: white;
@@ -408,7 +428,7 @@
     grid-template-columns: repeat(3,1fr);
     margin: auto;
     justify-content: space-between;
-    gap: 6%;
+    gap: 40px;
 }
 .pricinggrids{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -416,6 +436,9 @@
     border-top: 2px solid #b5876d;
     border-bottom: 2px solid #b5876d;
     
+}
+.pricinggrids:hover{
+    scale: 1.05;
 }
 
 .pricinggrid_title{
@@ -426,20 +449,31 @@
     display: flex ;
     margin-left: 20%;
     padding: 20px;
+
     span{
         font-size: 3rem;
-        font-weight: 700;
+        font-weight: 700;  
     }
     p{
         margin-top: 10%;
-        font-size: 1.2rem;
+    font-size: 1.2rem;
     }
+    
 }
+/* .pricePerNightPrice{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.pricePerNightPerNight{
+    margin-top: 10%;
+    font-size: 1.2rem;
+} */
 .pricingGridDesc{
     font-size: 1.2rem;
     text-align: center;
-    padding: 10px;
-    background-color:#f1f1f1 ;
+    /* padding: 10px; */
+    background-color:#e2e1e1 ;
+    margin-bottom: 0;
 }
 
 .pricinggrid_signupButton{
@@ -468,9 +502,9 @@
     width: 80%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 5%;
+    gap: 20px;
     margin: auto;
-    align-items: center;
+    /* align-items: center; */
     margin-top: 50px;
 }
 
@@ -483,10 +517,11 @@
 }
 .blogGrid_FrontSide_Image{
     height: 50%;
+    width: 100%;
     
 }
 .blogGrid_FrontSide_Title{
-    padding: 10px;
+    padding: 10px ;
 }
 .blogGrid_FrontSide_Date{
     padding: 10px 0 10px 0 ;
@@ -621,12 +656,10 @@
         grid-template-columns: repeat(1,1fr) !important;
         padding-top: 5%;
         gap: 50px;
-        #playButton{
-            position: absolute;
-            top: 15%;
-            bottom: 40%;
-            margin-left: 40%;
-        }
+        
+    }
+    #playButton{
+        display: none;
     }
     .vishnu_page1_mainContainer_div_3 {
         /* width: 80%;
@@ -634,15 +667,18 @@
         margin-top: 80px; */
         grid-template-columns: repeat(1,1fr);
     }
+   
     .vishnu_page1_mainContainer_div_5{
+        /* border: 1px solid ; */
         grid-template-columns: repeat(1,1fr);
         grid-template-rows: repeat(2,1fr);
     }
     .vishnu_page1_mainContainer_div_5_grid2{
+        /* margin-top: 30px; */
         margin-top: 30px;
     }
     .vishnu_page1_mainContainer_div_7{
-        margin-top:50%;
+        /* margin-top:50%; */
     }
     .vishnu_page1_mainContainer_div_6{
         grid-template-columns:repeat(2,1fr);
@@ -655,11 +691,12 @@
         flex-direction: column;
         font-size: 2rem;
         font-size: 24px;
-        #offerButton{
-            width: 100%;
-            font-size: .9rem;
         
-        }
+    }
+    #offerButton{
+        width: 100%;
+        font-size: .9rem;
+    
     }
     .vishnu_page1_mainContainer_div_10{
         margin-bottom: 20%;
@@ -700,7 +737,12 @@
  
 @media screen and (max-width:500px) {
     .vishnu_page1_mainContainer_div_6{
-        /* grid-template-columns:repeat(1,1fr); */
-        display: none;
+        grid-template-columns:repeat(1,1fr);
+        height: auto;
+        /* display: none; */
     }
+    .blogGrid_FrontSide_Title{
+        font-size: 1rem;
+    }
+    
 }

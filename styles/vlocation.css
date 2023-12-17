@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.Vishnu_location_main{
+    /* position: absolute; */
+}
+#Vishnu_location_div1_Image{
+    width: 100%;
+    /* position: relative; */
+}
+.Vishnu_location_div1_TextDiv {
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    line-height: 40px;
+    width: 60%; /* Adjust the width as needed */
+    max-width: 400px; /* Set a max-width to prevent it from getting too wide */
+}
+
+#Vishnu_location_div1_Title{
+    font-size: 2.8rem;
+}
+#Vishnu_location_div1_Text{
+    font-size: 1.2rem;
+}
+.Vishnu_location_div2{
+    width: 50%;
+    /* border: 1px solid; */
+    margin: auto;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.Vishnu_location_div3{
+    width: 80%;
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* gap: 5%; */
+    
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 70px;
+    /* background-color: aqua; */
+    
+}
+.singleRoomGrid{
+    border-radius: 8px;
+    width: 90%;
+    margin: auto;
+    border: 1px solid rgb(194, 191, 191);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    margin-bottom: 45px;
+}
+.singleRoomGridImage{
+    height: 70%;
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    /* filter: brightness(1); */
+    transition: all 1s;
+    
+}
+.singleRoomGridTextDiv{
+    text-align: center;
+    line-height: 40px;
+    color: #615f5e;
+}
+.singleRoomGridTitle{
+    font-size: 1.9rem;
+}
+.LocationAndDistance{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.07rem;
+}
+.singleRoomGridLocation:hover{
+    color:#b5876d ;
+    font-weight: 600;
+}
+.singleRoomGridDist{
+    font-size: 1.1rem;
+}
+
+.Vishnu_location_div4{
+    
+    text-align: center;
+    width: 14%;
+    
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 30px;
+}
+.singleButton{
+    font-size: 1.4rem;
+    padding:4px 10px ;
+    border-radius: 5px  ;
+    cursor: pointer;
+}
+.singleButton:hover{
+    background-color: #c29981;
+    color: white;
+}
+
+
+.Vishnu_location_div5{
+    width: 80%;
+    /* height: 200px; */
+    margin: auto;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+    text-align: center;
+}
+
+.Vishnu_5Bottom_logos{
+    width: 60%;
+    margin: auto;
+}
+.Vishnu_location_div6{
+    width: 100%;
+    margin-top: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(238, 230, 230);
+    
+}
+.Vishnu_location_div61{
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    text-align: center;
+    padding: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    scale: 1.2;
+}
+#Vishnu_location_div61_grids_Input{
+    width: 70%;
+    padding: 1%;
+}
+#subscribeButton{
+    background-color: #f1a980;
+    font-size: .7rem;
+    padding: 1%;
+    font-weight: 600;
+    border-radius: 5px;
+}
+#subscribeButton:hover{
+    color: white;
+    cursor: pointer;
+}
+@media screen and (max-width:800px) {
+    .Vishnu_location_div3{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #Vishnu_location_div1_Title{
+        font-size: 2rem;
+    }
+    #Vishnu_location_div1_Text{
+        font-size: 1rem;
+    }
+    .Vishnu_location_div1_TextDiv {
+        top: 20%;
+    }
+    .Vishnu_location_div5{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .Vishnu_location_div61{
+        grid-template-columns: repeat(1,1fr);
+    }
+    /* .Vishnu_location_div3{
+        margin-bottom: 100px;
+    } */
+}
+
+@media screen and (max-width:600px) {
+    #Vishnu_location_div1_Title{
+        font-size: 1.8rem;
+    }
+    #Vishnu_location_div1_Text{
+        font-size: .6rem;
+    }
+    .Vishnu_location_div1_TextDiv {
+        top: 8%;
+    }
+    .Vishnu_location_div2_Title{
+        font-size: 1.7rem;
+        margin-bottom: 10px;
+    }
+    .Vishnu_location_div2_Text{
+        width: 100%;
+        font-size: .9rem;
+    }
+}
+

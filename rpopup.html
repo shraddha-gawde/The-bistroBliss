@@ -8,12 +8,12 @@
 </head>
 <body>
     <div class="pcontainer">
-        <button type="submit" class="pbtn" onclick="openPopUp()">submit</button>
+        <button type="submit" class="pbtn" onclick="openPopUp()">Click here to view your status</button>
         <div class="popup" id="pop">
             <img src="https://w7.pngwing.com/pngs/300/744/png-transparent-yellow-and-white-check-button-logo-symbol-yellow-orange-clear-tick-orange-data-check-mark-thumbnail.png" alt="">
             <h2>Thank You!</h2>
             <p class="pp">Your Room is Booked</p>
-            <button type="button" onclick="closePopUp()">Ok</button>
+            <button id="rok" type="button" onclick="closePopUp()">Ok</button>
         </div>
     </div>
     <script>
@@ -24,6 +24,12 @@
         function closePopUp(){
             po.classList.remove('open-popup');
         }
+        let ok = document.getElementById('rok');
+        ok.addEventListener('click',()=>{
+            setTimeout(() => {
+                    window.location.href = "index.html";
+            });   
+        })
     </script>
 </body>
 </html>

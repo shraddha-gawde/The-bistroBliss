@@ -28,8 +28,9 @@
             const serverGeneratedOTP = "1234";
     
             if (otpInput.value === serverGeneratedOTP) {
-                alert("Payment Successful. WELCOME to The BistoBliss....");
-                window.location.href = "index.html";
+                setTimeout(() => {
+                    window.location.href = "rpopup.html";
+                  });     
             } else {
                 alert("Invalid OTP. Payment Failed.");
             }

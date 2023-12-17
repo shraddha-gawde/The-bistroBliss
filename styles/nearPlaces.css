@@ -1,0 +1,71 @@
+body {
+    font-family: 'raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Set a background color for the body */
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Add some spacing between the cards */
+    margin: 0% 10%;
+}
+
+.single-location {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    background-color: #fff; /* Set a white background for each card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.single-location:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase box shadow on hover */
+}
+
+.location-image img {
+    width: 100%;
+    height: 250px; /* Set a fixed height for the image */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.location-text {
+    padding: 15px;
+}
+
+.location-text h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333; /* Set a darker text color */
+}
+
+.address-distance {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.address-distance span {
+    font-size: 14px;
+    color: #555;
+}
+
+.fix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+@media (max-width: 767px) {
+    #container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* gap: 20px; Add some spacing between the cards */
+        margin: 0% 10%;
+    }
+}

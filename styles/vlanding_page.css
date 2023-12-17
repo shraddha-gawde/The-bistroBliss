@@ -396,12 +396,13 @@
 #offerButton{
     
     margin-left: 10px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #b5876d;
     background-color: white;
     padding: 10px;
     font-weight: 700;
     border-radius: 8px;
+    display: flex;
 }
 #offerButton:hover{
     color: white;

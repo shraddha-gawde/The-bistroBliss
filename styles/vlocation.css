@@ -53,6 +53,7 @@
 .singleRoomGrid{
     border-radius: 8px;
     width: 90%;
+    height: 300px;
     margin: auto;
     border: 1px solid rgb(194, 191, 191);
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
@@ -73,12 +74,14 @@
     color: #615f5e;
 }
 .singleRoomGridTitle{
-    font-size: 1.9rem;
+    font-size: 1.3rem;
 }
 .LocationAndDistance{
     display: flex;
+    width: 90%;
     justify-content: space-between;
     font-size: 1.07rem;
+    margin: auto;
 }
 .singleRoomGridLocation:hover{
     color:#b5876d ;
@@ -164,6 +167,7 @@
     .Vishnu_location_div3{
         grid-template-columns: repeat(1,1fr);
     }
+    
     #Vishnu_location_div1_Title{
         font-size: 2rem;
     }
@@ -179,6 +183,10 @@
     .Vishnu_location_div61{
         grid-template-columns: repeat(1,1fr);
     }
+    .Vishnu_location_div4{
+        width: 20%;
+        /* border: 1px solid; */
+    }
     /* .Vishnu_location_div3{
         margin-bottom: 100px;
     } */
@@ -186,10 +194,10 @@
 
 @media screen and (max-width:600px) {
     #Vishnu_location_div1_Title{
-        font-size: 1.8rem;
+        font-size: .7rem;
     }
     #Vishnu_location_div1_Text{
-        font-size: .6rem;
+        font-size: .4rem;
     }
     .Vishnu_location_div1_TextDiv {
         top: 8%;
@@ -201,6 +209,11 @@
     .Vishnu_location_div2_Text{
         width: 100%;
         font-size: .9rem;
+    }
+    .Vishnu_location_div4{
+        width: 20%;
+        /* border: 1px solid; */
+        scale: .8;
     }
 }
 

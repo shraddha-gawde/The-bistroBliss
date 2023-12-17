@@ -3,7 +3,7 @@ let Vishnu_location_div3 = document.querySelector(".Vishnu_location_div3");
 async function FetchAllRooms(page) {
   try {
     let res = await fetch(
-      `https://neural-innovator-5123.onrender.com/roomDetails?_limit=9&_page=${page}`
+      `https://neural-innovator-5123.onrender.com/activities?_limit=9&_page=${page}`
     );
     let data = await res.json();
     if (res.ok) {

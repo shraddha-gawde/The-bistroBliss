@@ -35,7 +35,7 @@
     border-radius: 50%;
     position: absolute;
     top: 43%;
-    margin-left: 43%;
+    margin-left: 22%;
     /* width: 60px;
     height: 60px;
     border: 6px solid grey;
@@ -620,11 +620,12 @@
     .vishnu_page1_mainContainer_div_1 {
         grid-template-columns: repeat(1,1fr) !important;
         padding-top: 5%;
-        /* gap: 50px; */
+        gap: 50px;
         #playButton{
             position: absolute;
-            top: 10%;
+            top: 15%;
             bottom: 40%;
+            margin-left: 40%;
         }
     }
     .vishnu_page1_mainContainer_div_3 {

@@ -109,25 +109,26 @@
                     <input class="rinpu" id="lname" type="text" name="txt" placeholder="LastName" required="">
                 </div>
                 <input class="rinput" id="remail" type="email" name="email" placeholder="Email" required="">
-                <input class="rinput" id="rphone" type="tel" id="phone" name="phone" placeholder="999-999-9999" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+                <input class="rinput" id="rphone" type="tel" id="phone" name="phone" placeholder="000000000" required/>
                 <input class="rinput" id="rdob" type="date" id="start" name="trip-start" placeholder="YYYY-MM-DD" min="1990-01-01" max="2002-12-31" />
                 <input class="rinput" id="rpswd" type="password" name="pswd" placeholder="Password" required="">
                 <button class="rbutton" id="rsbtn">Sign Up</button>
             </form>
         </div>
         <div class="sign-in">
+            
             <form class="rform" action="#">
-                <h1 class="rh1">Sign in</h1>
+                <h1 class="rh1">User Login</h1>
                 <div class="social-container">
                     <a href="#" class="ra social"><i class="fab fa-facebook-f"></i></a>
                     <a href="#" class="ra social"><i class="fab fa-google-plus-g"></i></a>
                     <a href="#" class="ra social"><i class="fab fa-linkedin-in"></i></a>
                 </div>
                 <p class="rp">or use your account</p>
-                <input class="rinput" type="email" name="email" placeholder="Email" required="">
-                <input class="rinput" type="password" name="pswd" placeholder="Password" required="">
+                <input id = "email" class="rinput" type="email" name="email" placeholder="Email" required="">
+                <input class="rinput" id = "password" type="password" name="pswd" placeholder="Password" required="">
                 <a class="ra" href="#">Forget your Password?</a>
-                <button class="rbutton">Sign In</button>
+                <button class="rbutton1">Sign In</button>
             </form>
         </div>
         <div class="overlay-container">

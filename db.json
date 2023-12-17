@@ -203,7 +203,18 @@
             "Phone": 7038536555,
             "dateOfBirth":"1999-12-05",
             "password":"123456"
+        },
+        {
+            "id": 5,
+            "firstName": "vishnu",
+            "LastName": "kr",
+            "email": "vishnuraj@gmail.com",
+            "Phone": 1234556789,
+            "dateOfBirth":"1999-08-05",
+            "password":"123456"
         }
+        
+
     ],
     "horizontalGridsData" : [
         {
@@ -311,7 +322,206 @@
             "Role":"FULLSTACK WEB DEVELOPER",
             "Strength":" Experienced in deploying applications to web servers and cloud platforms"
              }
-      ]
+      ],
+      "ClientLogos": [
+        {
+            "id": 1,
+            "ordinary": "https://htmldemo.net/oestin/oestin/img/client/1.png",
+            "colored": "https://htmldemo.net/oestin/oestin/img/client/1-hover.png"
+        },
+        {
+            "id": 2,
+            "ordinary": "https://htmldemo.net/oestin/oestin/img/client/2.png",
+            "colored": "https://htmldemo.net/oestin/oestin/img/client/2-hover.png"
+        },
+        {
+            "id": 3,
+            "ordinary": "https://htmldemo.net/oestin/oestin/img/client/3.png",
+            "colored": "https://htmldemo.net/oestin/oestin/img/client/3-hover.png"
+        },
+        {
+            "id": 4,
+            "ordinary": "https://htmldemo.net/oestin/oestin/img/client/4.png",
+            "colored": "https://htmldemo.net/oestin/oestin/img/client/4-hover.png"
+        },
+        {
+            "id": 5,
+            "ordinary": "https://htmldemo.net/oestin/oestin/img/client/5.png",
+            "colored": "https://htmldemo.net/oestin/oestin/img/client/5-hover.png"
+        }
+    ],
+    "nearPlacesData":[
+        {
+            "id": 1,
+            "image": "https://htmldemo.net/oestin/oestin/img/location/1.jpg",
+            "title": "Near Place Dummy Title",
+            "address": "East Road, London",
+            "distance": "1 kilometers"
+        },
+        {
+            "id": 2,
+            "image": "https://htmldemo.net/oestin/oestin/img/location/2.jpg",
+            "title": "Paris Rail Day Trip",
+            "address": "Montan Road, Paris",
+            "distance": "10 kilometers"
+        },
+        {
+            "id": 3,
+            "image": "https://htmldemo.net/oestin/oestin/img/location/3.jpg",
+            "title": "London Eye Ticket with Skip",
+            "address": "Jorge Street, London",
+            "distance": "6 kilometers"
+        },
+        {
+            "id": 4,
+            "image": "https://htmldemo.net/oestin/oestin/img/location/4.jpg",
+            "title": "Warner Bros. Studio Tour",
+            "address": "2/16, kmiue, London",
+            "distance": "30 kilometers"
+        },
+        {
+            "id": 5,
+            "image": "https://htmldemo.net/oestin/oestin/img/location/5.jpg",
+            "title": "Near Place Dummy Title",
+            "address": "Park Street, London",
+            "distance": "21 kilometers"
+        },
+        {
+            "id": 6,
+            "image": "https://htmldemo.net/oestin/oestin/img/location/6.jpg",
+            "title": "Thames Hop-On Hop-Off ",
+            "address": "Frter Road, London",
+            "distance": "30 kilometers"
+        },
+        {
+            "id": 7,
+            "image": "https://htmldemo.net/oestin/oestin/img/location/6.jpg",
+            "title": "Thames Hop-On Hop-Off",
+            "address": "Frter Road, London",
+            "distance": "30 kilometers"
+        },
+        {
+            "id": 8,
+            "image": "https://htmldemo.net/oestin/oestin/img/location/5.jpg",
+            "title": "Madame Tussauds London",
+            "address": "Park Street, London",
+            "distance": "21 kilometers"
+        },
+        {
+            "id": 9,
+            "image": "https://htmldemo.net/oestin/oestin/img/location/4.jpg",
+            "title": "Warner Bros. Studio Tour",
+            "address": "2/16, kmiue, London",
+            "distance": "30 kilometers"
+        },
+        {
+            "id": 10,
+            "image": "https://htmldemo.net/oestin/oestin/img/location/3.jpg",
+            "title": "London Eye Ticket with Skip",
+            "address": "Jorge Street, London",
+            "distance": "6 kilometers"
+        },
+        {
+            "id": 11,
+            "image": "https://htmldemo.net/oestin/oestin/img/location/2.jpg",
+            "title": "Paris Rail Day Trip",
+            "address": "Montan Road, Paris",
+            "distance": "10 kilometers"
+        },
+        {
+            "id": 12,
+            "image": "https://htmldemo.net/oestin/oestin/img/location/1.jpg",
+            "title": "Near Place Dummy Title",
+            "address": "East Road, London",
+            "distance": "1 kilometers"
+        },
+        {
+            "id": 13,
+            "image": "https://htmldemo.net/oestin/oestin/img/location/2.jpg",
+            "title": "Paris Rail Day Trip",
+            "address": "Montan Road, Paris",
+            "distance": "10 kilometers"
+        },
+        {
+            "id": 14,
+            "image": "https://htmldemo.net/oestin/oestin/img/location/2.jpg",
+            "title": "Paris Rail Day Trip",
+            "address": "Montan Road, Paris",
+            "distance": "10 kilometers"
+        },
+        {
+            "id": 15,
+            "image": "https://htmldemo.net/oestin/oestin/img/location/3.jpg",
+            "title": "London Eye Ticket with Skip",
+            "address": "Jorge Street, London",
+            "distance": "6 kilometers"
+        },
+        {
+            "id": 16,
+            "image": "https://htmldemo.net/oestin/oestin/img/location/4.jpg",
+            "title": "Warner Bros. Studio Tour",
+            "address": "2/16, kmiue, London",
+            "distance": "30 kilometers"
+        },
+        {
+            "id": 17,
+            "image": "https://htmldemo.net/oestin/oestin/img/location/5.jpg",
+            "title": "Near Place Dummy Title",
+            "address": "Park Street, London",
+            "distance": "21 kilometers"
+        },
+        {
+            "id": 18,
+            "image": "https://htmldemo.net/oestin/oestin/img/location/6.jpg",
+            "title": "Thames Hop-On Hop-Off ",
+            "address": "Frter Road, London",
+            "distance": "30 kilometers"
+        },
+        {
+            "id": 19,
+            "image": "https://htmldemo.net/oestin/oestin/img/location/6.jpg",
+            "title": "Thames Hop-On Hop-Off",
+            "address": "Frter Road, London",
+            "distance": "30 kilometers"
+        },
+        {
+            "id": 20,
+            "image": "https://htmldemo.net/oestin/oestin/img/location/5.jpg",
+            "title": "Madame Tussauds London",
+            "address": "Park Street, London",
+            "distance": "21 kilometers"
+        },
+        {
+            "id": 21,
+            "image": "https://htmldemo.net/oestin/oestin/img/location/4.jpg",
+            "title": "Warner Bros. Studio Tour",
+            "address": "2/16, kmiue, London",
+            "distance": "30 kilometers"
+        },
+        {
+            "id": 22,
+            "image": "https://htmldemo.net/oestin/oestin/img/location/3.jpg",
+            "title": "London Eye Ticket with Skip",
+            "address": "Jorge Street, London",
+            "distance": "6 kilometers"
+        },
+        {
+            "id": 23,
+            "image": "https://htmldemo.net/oestin/oestin/img/location/2.jpg",
+            "title": "Paris Rail Day Trip",
+            "address": "Montan Road, Paris",
+            "distance": "10 kilometers"
+        },
+        {
+            "id": 24,
+            "image": "https://htmldemo.net/oestin/oestin/img/location/1.jpg",
+            "title": "Near Place Dummy Title",
+            "address": "East Road, London",
+            "distance": "1 kilometers"
+        }
+    ]
+
+
 }
 
 

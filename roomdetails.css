@@ -1,3 +1,95 @@
+@media (max-width: 1000px) {
+  .roomdetails * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+  }
+  .roomdetails .rd1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+  }
+  .roomdetails .rd1 .rd1l {
+    width: 100% !important;
+    height: auto;
+  }
+  .roomdetails .rd1 .rd1l .rd1lup {
+    height: 250px !important;
+  }
+  .roomdetails .rd1 .rd1l .rd1lup img {
+    width: 100%;
+    height: 250px !important;
+    
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-right: 0%;
+  }
+  .roomdetails .rd1 .rd1l .rd1ldown {
+    width: 100% !important;
+    height: 80px;
+  }
+  .roomdetails .rd1 .rd1l .rd1ldown .owl-carousel {
+    box-sizing: border-box;
+    width: 100% !important;
+    padding: 20px;
+  }
+  .roomdetails .rd1 .rd1r {
+    width: 100% !important;
+  }
+
+  .roomdetails .rd1 .rd1r  {
+    width: 100%;
+    height: 480px;
+  }
+  .roomdetails .rd1 .rd1r .rd1rdown {
+    width: 100%;
+    height: 480px;
+  }
+  .roomdetails .rd2 {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .roomdetails .rd2 .rd2l {
+    width: 100%;
+    height: auto;
+  }
+  .roomdetails .rd2 .rd2l h2 {
+    font-size: 20px;
+  }
+  .roomdetails .rd2 .rd2r {
+    width: 100%;
+    height: 400px;
+  }
+  .roomdetails .rd2 .rd2r h4 {
+    text-align: start;
+    font-size: 20px;
+  }
+  .roomdetails .rd3 {
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+    height: auto;
+    margin-top: 50px;
+  }
+  .roomdetails .rd3 .rd3l {
+    width: 100%;
+    height: auto;
+  }
+  .roomdetails .rd3 .rd3l .rd3lup h2 {
+    font-size: 20px;
+  }
+  .roomdetails .rd3 .rd3l .rd3ldown {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 20px;
+  }
+}
 .roomdetails {
   width: 90%;
   margin: auto;
@@ -13,7 +105,6 @@
   display: flex;
   gap: 50px;
   box-sizing: border-box;
-  margin-top: 50px;
 }
 .roomdetails .rd1 .rd1l {
   width: 72%;
@@ -27,11 +118,11 @@
   border-radius: 5px;
 }
 .roomdetails .rd1 .rd1l .rd1lup img {
-  max-width: 100%;
-  box-sizing: border-box;
-  height: 580px;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  height: 580px;
+  object-fit: cover;
 }
 .roomdetails .rd1 .rd1l .rd1ldown {
   height: 200px;
@@ -40,9 +131,6 @@
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-}
-.roomdetails .rd1 .rd1l .rd1ldown .item {
-  width: 200px;
 }
 .roomdetails .rd1 .rd1l .rd1ldown .owl-carousel {
   box-sizing: border-box;
@@ -78,7 +166,10 @@
   margin-top: 20px;
   font-size: 22px;
 }
-.roomdetails .rd1 .rd1r .rd1rup #starta, .roomdetails .rd1 .rd1r .rd1rup #startb, .roomdetails .rd1 .rd1r .rd1rup #startc, .roomdetails .rd1 .rd1r .rd1rup #startd {
+.roomdetails .rd1 .rd1r .rd1rup #starta,
+.roomdetails .rd1 .rd1r .rd1rup #startb,
+.roomdetails .rd1 .rd1r .rd1rup #startc,
+.roomdetails .rd1 .rd1r .rd1rup #startd {
   border-radius: 5px;
   margin-top: 25px;
   font-size: 12px;
@@ -156,13 +247,13 @@
 }
 .rd2 .rd2l {
   height: 400px;
-  width: 80%;
+  width: 75%;
 }
 .rd2 .rd2l p {
   margin-top: 20px;
 }
 .rd2 .rd2r {
-  height: 380px;
+  height: 400px;
   width: 25%;
   background-color: #f1f1f1;
   border-radius: 10px;
@@ -200,7 +291,7 @@
 }
 .rd3 .rd3l {
   height: 250px;
-  width: 73%;
+  width: 75%;
 }
 .rd3 .rd3l .rd3ldown {
   display: grid;
@@ -208,7 +299,7 @@
   height: 200px;
 }
 .rd3 .rd3l .rd3ldown .facility {
-  display: flex;
+  display: flex !important;
   flex-direction: column;
   justify-content: space-evenly;
 }
@@ -220,3 +311,11 @@
 .rd3 .rd3l .rd3ldown .facility .fa-xmark {
   color: red;
 }/*# sourceMappingURL=roomdetails.css.map */
+
+@media (min-width: 1440px) {
+  .roomdetails {
+    padding-top: 2%;
+   padding-left: 7%;
+   padding-right: 7%;
+  }
+}

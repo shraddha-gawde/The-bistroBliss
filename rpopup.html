@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/rpopup.css">
+</head>
+<body>
+    <div class="pcontainer">
+        <button type="submit" class="pbtn" onclick="openPopUp()">submit</button>
+        <div class="popup" id="pop">
+            <img src="https://w7.pngwing.com/pngs/300/744/png-transparent-yellow-and-white-check-button-logo-symbol-yellow-orange-clear-tick-orange-data-check-mark-thumbnail.png" alt="">
+            <h2>Thank You!</h2>
+            <p class="pp">Your Room is Booked</p>
+            <button type="button" onclick="closePopUp()">Ok</button>
+        </div>
+    </div>
+    <script>
+        let po = document.getElementById('pop');
+        function openPopUp(){
+            po.classList.add('open-popup');
+        }
+        function closePopUp(){
+            po.classList.remove('open-popup');
+        }
+    </script>
+</body>
+</html>

@@ -63,10 +63,10 @@ function displayGrids(data) {
     gridButton.className = "gridButton";
     gridButton.textContent = "DETAILS";
 
-    gridButton.addEventListener("click", (e) =>{
+    gridButton.addEventListener("click", (e) => {
       e.preventDefault();
       window.location.href = "roomdetails.html";
-    })
+    });
     let gridPrice = document.createElement("h4");
     gridPrice.className = "gridPrice";
     gridPrice.textContent = `$${item.price}`;

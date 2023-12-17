@@ -55,13 +55,13 @@ body {
 .developer {
     margin: 5px 0;
     font-size: 0.9em;
-    color: #555;
+    color: #1a0606;
 }
 
 .details-people {
-    margin-top: 5px;
-    font-size: 0.9em;
-    color: #666;
+    margin-top: 9px;
+    font-size: 0.8em;
+    color: #484d4d;
 }
 
 .logo-div {

@@ -1,11 +1,11 @@
-get https://neural-innovator-5123.onrender.com/roomDetails/
+get https://neural-innovator-5123.onrender.com/activities/
 
 ###
-PATCH https://neural-innovator-5123.onrender.com/roomDetails/21
+PUT  https://neural-innovator-5123.onrender.com/activities/7
 Content-Type: application/json
 
 {
-"id" : 1
+"title" : "Emirates Only Wolgan Valley",
 }
 
 

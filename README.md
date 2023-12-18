@@ -1,7 +1,7 @@
 # **The BilstroBliss**
 
 <p>We have been learning Full Stack-Web Development at Masai School. I and my team have made this project during the construct week of unit-4 at Masai school. Here is the link of our app is live on github:- </p> 
-<p<a href="https://neural-innovator-5123.netlify.app/">The BistoBliss</a></p>
+<a href="https://neural-innovator-5123.netlify.app/"><p>The BistoBliss</p></a>
 
 
 ## **Tech stack**

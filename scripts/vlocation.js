@@ -3,12 +3,12 @@ let Vishnu_location_div3 = document.querySelector(".Vishnu_location_div3");
 async function FetchAllRooms(page) {
   try {
     let res = await fetch(
-      `https://neural-innovator-5123.onrender.com/roomDetails?_limit=9&_page=${page}`
+      `https://neural-innovator-5123.onrender.com/activities?_limit=6&_page=${page}`
     );
     let data = await res.json();
     if (res.ok) {
       let Xtotal = res.headers.get("X-Total-Count");
-      let xTotalButtons = Math.ceil(Xtotal / 9);
+      let xTotalButtons = Math.ceil(Xtotal / 6);
       renderPaginationButtons(xTotalButtons);
       console.log(data);
       DisplayRooms(data);

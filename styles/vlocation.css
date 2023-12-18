@@ -8,6 +8,7 @@
 }
 #Vishnu_location_div1_Image{
     width: 100%;
+    height: fit-content;
     /* position: relative; */
 }
 .Vishnu_location_div1_TextDiv {
@@ -59,7 +60,7 @@
     margin-bottom: 45px;
 }
 .singleRoomGridImage{
-    height: 70%;
+    height: 300px;
     width: 100%;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -161,6 +162,7 @@
     cursor: pointer;
 }
 @media screen and (max-width:800px) {
+    
     .Vishnu_location_div3{
         grid-template-columns: repeat(1,1fr);
     }

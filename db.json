@@ -643,7 +643,7 @@
         {
             "id":11,
             "image": "https://www.sassymamahk.com/wp-content/uploads/2017/02/SMHK_MMS_KidActivities_Emirates_160217.jpg",
-            "title" : "Emirates One&Only Wolgan Valley",
+            "title" : "Emirates Only Wolgan Valley",
             "location" : "Blue Mountains, Australia",
             "distance" :"4 kilometers"
         },
@@ -653,6 +653,50 @@
             "title" : "Six Senses Forestias",
             "location" : "Bangkok, Thailand",
             "distance" :"15 kilometers"
+        }
+    ],
+    "eventsDetails":[
+        {
+            "id":1,
+            "image":"https://htmldemo.net/oestin/oestin/img/event/1.jpg",
+            "EventType":"MANAGEMENT CONFERENCES",
+            "eventBy":"Jhtyg Hyuir",
+            "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt"
+        },
+        {
+            "id":2,
+            "image":"https://htmldemo.net/oestin/oestin/img/event/2.jpg",
+            "EventType":"Music Concert",
+            "eventBy":"Jhon Doe",
+            "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt"
+        },
+        {
+            "id":3,
+            "image":"https://htmldemo.net/oestin/oestin/img/event/3.jpg",
+            "EventType":"birthday party",
+            "eventBy":"Marry Luis",
+            "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt"
+        },
+        {
+            "id":4,
+            "image":"https://htmldemo.net/oestin/oestin/img/event/4.jpg",
+            "EventType":"weeding party",
+            "eventBy":"Kathy Luis",
+            "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt"
+        },
+        {
+            "id":5,
+            "image":"https://htmldemo.net/oestin/oestin/img/event/5.jpg",
+            "EventType":"MANAGEMENT CONFERENCES",
+            "eventBy":"Dan Brownr",
+            "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt"
+        },
+        {
+            "id":6,
+            "image":"https://htmldemo.net/oestin/oestin/img/event/6.jpg",
+            "EventType":"photography",
+            "eventBy":"Khaled Hossaini",
+            "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt"
         }
     ]
 }

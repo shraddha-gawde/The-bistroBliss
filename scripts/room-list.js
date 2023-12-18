@@ -54,7 +54,7 @@ function createArtCard(PerRoom) {
   imgDiv.className = "room-img";
 
   const directedLink = document.createElement("a");
-  directedLink.href = "https://htmldemo.net/oestin/oestin/room-details.html";
+  directedLink.href = "room-list.html";
   imgDiv.append(directedLink);
 
   const image = document.createElement("img");
@@ -70,7 +70,7 @@ function createArtCard(PerRoom) {
 
   const type = document.createElement("h3");
   const bodyLink = document.createElement("a");
-  bodyLink.href = "https://htmldemo.net/oestin/oestin/room-details.html";
+  bodyLink.href = "room-list.html";
   bodyLink.textContent = PerRoom.type;
   type.append(bodyLink);
 

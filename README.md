@@ -32,13 +32,13 @@
 <br>
 <br>
 
-<a href=""><img src="https://github-production-user-asset-6210df.s3.amazonaws.com/101090200/291094317-32438124-006f-4571-b43c-4806a867f23e.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231217T190949Z&X-Amz-Expires=300&X-Amz-Signature=76ea6da334fc53d48ebc6e552329d814d882524e09fbc7f945cd70819be77722&X-Amz-SignedHeaders=host&actor_id=147656163&key_id=0&repo_id=729536692"></a>
+<a href=""><img src="https://github.com/shraddha-gawde/neural-innovator-5123/assets/101090200/254b5388-9fd4-4088-ae81-71110f51bfd6"></a>
 <br>
 
 <p>The above picture is of the Navbar and carousel that is created by <b>Raushan Raj Singh</b> where user can able to visit whole website pages. He used HTML, CSS, BOOTSTRAP, JAVASCRIPT to achieve this layout and functionality.</p>
 <br>
 
-<img src="">
+<img src="https://github.com/shraddha-gawde/neural-innovator-5123/assets/101090200/29a48c9f-e0fb-47af-adce-e1eb7fff748f">
 <br>
 <p></p>
 <br>
@@ -47,7 +47,7 @@
 <b>Footer</b>
 <br>
 <br>
-<a href=""><img src="https://github-production-user-asset-6210df.s3.amazonaws.com/101090200/291094313-7a4c0cc7-1573-4415-871c-4c342ebb9446.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231217T191635Z&X-Amz-Expires=300&X-Amz-Signature=9d3c20471662fe52d83c58ee847866ffcc4a62ac8d0f09c12a5ddaba33665405&X-Amz-SignedHeaders=host&actor_id=147656163&key_id=0&repo_id=729536692"></a>
+<a href=""><img src="https://github.com/shraddha-gawde/neural-innovator-5123/assets/101090200/115cfa50-ebf0-429a-b10d-54365cf788b5"></a>
 <br>
 <p>The above picture is of the <b>Footer</b> that is created by <b>Mayank Belwal</b>. He is involved in all the HTML, SASS, javascript to achieve this layout and functionality. After Click on Contact Us Now this page will redirect to the <b>Contact Us page.</b></p>
 
@@ -58,7 +58,7 @@
 
 <a href=""><img src="https://github.com/shraddha-gawde/neural-innovator-5123/assets/101090200/a03f8cda-3c6f-4197-b265-ad871a24bb80"></a>
 <br>
-<a href=""><img src="https://github-production-user-asset-6210df.s3.amazonaws.com/101090200/291094400-a5cd4b9c-650e-4fee-8208-64426693e7aa.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231217T193326Z&X-Amz-Expires=300&X-Amz-Signature=acbc6b9e8f2bf9fdcf5e584ff4aa98bc1b861cf8bf872df1dd88f997b08aca08&X-Amz-SignedHeaders=host&actor_id=147656163&key_id=0&repo_id=729536692"></a>
+<a href=""><img src="https://github.com/shraddha-gawde/neural-innovator-5123/assets/101090200/f9174142-a198-49b7-afde-790aa7b93126"></a>
 <br>
 <p>The above picture is of the Room list that is created by <b>Shraddha gawde</b> where user can able to select their needed Room. He used HTML, CSS, JAVASCRIPT to achieve this layout and functionality.</p>
 <br>
